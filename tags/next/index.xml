@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>NexT on Charle00001`s Blog</title>
-    <link>https://charle00001.github.io/tags/next/</link>
+    <link>/tags/next/</link>
     <description>Recent content in NexT on Charle00001`s Blog</description>
     <image>
       <title>Charle00001`s Blog</title>
-      <url>https://charle00001.github.io/47</url>
-      <link>https://charle00001.github.io/47</link>
+      <url>/47</url>
+      <link>/47</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Oct 2023 20:30:51 +0200</lastBuildDate><atom:link href="https://charle00001.github.io/tags/next/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Oct 2023 20:30:51 +0200</lastBuildDate><atom:link href="/tags/next/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>第一次来到Hugo的第一篇博文</title>
-      <link>https://charle00001.github.io/posts/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%9D%A5%E5%88%B0hugo%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/</link>
+      <link>/posts/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%9D%A5%E5%88%B0hugo%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/</link>
       <pubDate>Tue, 24 Oct 2023 20:30:51 +0200</pubDate>
       
-      <guid>https://charle00001.github.io/posts/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%9D%A5%E5%88%B0hugo%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/</guid>
+      <guid>/posts/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%9D%A5%E5%88%B0hugo%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/</guid>
       <description>博客迁移声明与《发牢骚》</description>
       <content:encoded><![CDATA[<h2 id="关于迁移博客的声明">关于迁移博客的声明</h2>
 <h4 id="经过了一番深思熟虑之后我将hexo的博客迁移到了hugo">经过了一番深思熟虑之后，我将Hexo的博客迁移到了Hugo.</h4>
@@ -74,10 +74,10 @@
     
     <item>
       <title>对于NexT主题8.15.1的所有板块透明度修改（附7.8.0的修改方法）</title>
-      <link>https://charle00001.github.io/posts/%E5%AF%B9%E4%BA%8Enext%E4%B8%BB%E9%A2%988-15-1%E7%9A%84%E6%89%80%E6%9C%89%E6%9D%BF%E5%9D%97%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BF%AE%E6%94%B9%E9%99%847-8-0%E7%9A%84%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95/</link>
+      <link>/posts/%E5%AF%B9%E4%BA%8Enext%E4%B8%BB%E9%A2%988-15-1%E7%9A%84%E6%89%80%E6%9C%89%E6%9D%BF%E5%9D%97%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BF%AE%E6%94%B9%E9%99%847-8-0%E7%9A%84%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95/</link>
       <pubDate>Mon, 01 May 2023 14:28:07 +0000</pubDate>
       
-      <guid>https://charle00001.github.io/posts/%E5%AF%B9%E4%BA%8Enext%E4%B8%BB%E9%A2%988-15-1%E7%9A%84%E6%89%80%E6%9C%89%E6%9D%BF%E5%9D%97%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BF%AE%E6%94%B9%E9%99%847-8-0%E7%9A%84%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95/</guid>
+      <guid>/posts/%E5%AF%B9%E4%BA%8Enext%E4%B8%BB%E9%A2%988-15-1%E7%9A%84%E6%89%80%E6%9C%89%E6%9D%BF%E5%9D%97%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BF%AE%E6%94%B9%E9%99%847-8-0%E7%9A%84%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95/</guid>
       <description>这篇博文提供了关于如何修改NexT主题版本7.8.0和8.15.1的透明度设置的详细说明.</description>
       <content:encoded><![CDATA[<h2 id="更新于2023-05-05"><em><strong>更新于2023-05-05</strong></em></h2>
 <h2 id="更新于2023-08-08"><em><strong>更新于2023-08-08</strong></em></h2>

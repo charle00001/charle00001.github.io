@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>防火长城 on Charle00001`s Blog</title>
-    <link>https://charle00001.github.io/tags/%E9%98%B2%E7%81%AB%E9%95%BF%E5%9F%8E/</link>
+    <link>/tags/%E9%98%B2%E7%81%AB%E9%95%BF%E5%9F%8E/</link>
     <description>Recent content in 防火长城 on Charle00001`s Blog</description>
     <image>
       <title>Charle00001`s Blog</title>
-      <url>https://charle00001.github.io/47</url>
-      <link>https://charle00001.github.io/47</link>
+      <url>/47</url>
+      <link>/47</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 03 Nov 2023 10:37:10 +0100</lastBuildDate><atom:link href="https://charle00001.github.io/tags/%E9%98%B2%E7%81%AB%E9%95%BF%E5%9F%8E/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Nov 2023 10:37:10 +0100</lastBuildDate><atom:link href="/tags/%E9%98%B2%E7%81%AB%E9%95%BF%E5%9F%8E/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何获取自由门、无界、自由浏览、迷雾通</title>
-      <link>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E8%87%AA%E7%94%B1%E9%97%A8%E6%97%A0%E7%95%8C%E8%87%AA%E7%94%B1%E6%B5%8F%E8%A7%88%E8%BF%B7%E9%9B%BE%E9%80%9A/</link>
+      <link>/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E8%87%AA%E7%94%B1%E9%97%A8%E6%97%A0%E7%95%8C%E8%87%AA%E7%94%B1%E6%B5%8F%E8%A7%88%E8%BF%B7%E9%9B%BE%E9%80%9A/</link>
       <pubDate>Fri, 03 Nov 2023 10:37:10 +0100</pubDate>
       
-      <guid>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E8%87%AA%E7%94%B1%E9%97%A8%E6%97%A0%E7%95%8C%E8%87%AA%E7%94%B1%E6%B5%8F%E8%A7%88%E8%BF%B7%E9%9B%BE%E9%80%9A/</guid>
+      <guid>/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E8%87%AA%E7%94%B1%E9%97%A8%E6%97%A0%E7%95%8C%E8%87%AA%E7%94%B1%E6%B5%8F%E8%A7%88%E8%BF%B7%E9%9B%BE%E9%80%9A/</guid>
       <description>下载自由门、无界、自由浏览、迷雾通破网软件</description>
       <content:encoded><![CDATA[
 
@@ -127,10 +127,10 @@
     
     <item>
       <title>Tor和I2P是什么以及如何获取Tor和I2P</title>
-      <link>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96tor%E5%92%8Ci2p/</link>
+      <link>/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96tor%E5%92%8Ci2p/</link>
       <pubDate>Thu, 02 Nov 2023 11:18:34 +0100</pubDate>
       
-      <guid>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96tor%E5%92%8Ci2p/</guid>
+      <guid>/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96tor%E5%92%8Ci2p/</guid>
       <description>下载Tor和I2P以及I2P补种</description>
       <content:encoded><![CDATA[
 
@@ -336,10 +336,10 @@ Android: <a href="/files/i2p/net.i2p.android.router_4745279.apk">Download</a></p
     
     <item>
       <title>如何获取破网软件2023</title>
-      <link>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E7%A0%B4%E7%BD%91%E8%BD%AF%E4%BB%B62023/</link>
+      <link>/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E7%A0%B4%E7%BD%91%E8%BD%AF%E4%BB%B62023/</link>
       <pubDate>Mon, 23 Oct 2023 20:44:32 +0000</pubDate>
       
-      <guid>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E7%A0%B4%E7%BD%91%E8%BD%AF%E4%BB%B62023/</guid>
+      <guid>/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E7%A0%B4%E7%BD%91%E8%BD%AF%E4%BB%B62023/</guid>
       <description>如何获取Tor浏览器进行翻墙与破网</description>
       <content:encoded><![CDATA[
 

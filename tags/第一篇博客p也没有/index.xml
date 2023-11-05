@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>第一篇博客，p也没有 on Charle00001`s Blog</title>
-    <link>https://charle00001.github.io/tags/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2p%E4%B9%9F%E6%B2%A1%E6%9C%89/</link>
+    <link>/tags/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2p%E4%B9%9F%E6%B2%A1%E6%9C%89/</link>
     <description>Recent content in 第一篇博客，p也没有 on Charle00001`s Blog</description>
     <image>
       <title>Charle00001`s Blog</title>
-      <url>https://charle00001.github.io/47</url>
-      <link>https://charle00001.github.io/47</link>
+      <url>/47</url>
+      <link>/47</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 04 Jun 2022 14:46:00 +0000</lastBuildDate><atom:link href="https://charle00001.github.io/tags/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2p%E4%B9%9F%E6%B2%A1%E6%9C%89/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Jun 2022 14:46:00 +0000</lastBuildDate><atom:link href="/tags/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2p%E4%B9%9F%E6%B2%A1%E6%9C%89/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>发布第一篇在Hexo个人博客（旧）</title>
-      <link>https://charle00001.github.io/posts/%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%9C%A8hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%97%A7/</link>
+      <link>/posts/%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%9C%A8hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%97%A7/</link>
       <pubDate>Sat, 04 Jun 2022 14:46:00 +0000</pubDate>
       
-      <guid>https://charle00001.github.io/posts/%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%9C%A8hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%97%A7/</guid>
+      <guid>/posts/%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%9C%A8hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%97%A7/</guid>
       <description>如何使用Hexo和GitHub Pages搭建免费的博客</description>
       <content:encoded><![CDATA[<h2 id="终于做了一个博客">终于做了一个博客</h2>
 <h3 id="我感觉我应该不会有太多时间写博客">我感觉我应该不会有太多时间写博客</h3>

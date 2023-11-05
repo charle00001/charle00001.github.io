@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>disqus on Charle00001`s Blog</title>
-    <link>https://charle00001.github.io/tags/disqus/</link>
+    <link>/tags/disqus/</link>
     <description>Recent content in disqus on Charle00001`s Blog</description>
     <image>
       <title>Charle00001`s Blog</title>
-      <url>https://charle00001.github.io/47</url>
-      <link>https://charle00001.github.io/47</link>
+      <url>/47</url>
+      <link>/47</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 28 Oct 2023 19:13:06 +0200</lastBuildDate><atom:link href="https://charle00001.github.io/tags/disqus/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Oct 2023 19:13:06 +0200</lastBuildDate><atom:link href="/tags/disqus/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何给hugo添加评论系统</title>
-      <link>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E7%BB%99hugo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</link>
+      <link>/posts/%E5%A6%82%E4%BD%95%E7%BB%99hugo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Sat, 28 Oct 2023 19:13:06 +0200</pubDate>
       
-      <guid>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E7%BB%99hugo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</guid>
+      <guid>/posts/%E5%A6%82%E4%BD%95%E7%BB%99hugo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</guid>
       <description>详细讲述如何给Hugo博客papermod主题添加评论系统</description>
       <content:encoded><![CDATA[<h2 id="给博客添加的各种改动---评论系统篇">给博客添加的各种改动&mdash;评论系统篇</h2>
 <h3 id="目标添加评论系统walinedisqus">目标：添加评论系统（waline/disqus）</h3>
@@ -87,10 +87,10 @@
     
     <item>
       <title>关于waline的那些事</title>
-      <link>https://charle00001.github.io/posts/%E5%85%B3%E4%BA%8Ewaline%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</link>
+      <link>/posts/%E5%85%B3%E4%BA%8Ewaline%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</link>
       <pubDate>Sat, 28 Oct 2023 12:38:44 +0200</pubDate>
       
-      <guid>https://charle00001.github.io/posts/%E5%85%B3%E4%BA%8Ewaline%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</guid>
+      <guid>/posts/%E5%85%B3%E4%BA%8Ewaline%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</guid>
       <description>waline的一些问题以及解决方法</description>
       <content:encoded><![CDATA[<h2 id="测试文章">测试文章</h2>
 <h3 id="啥也没有">啥也没有</h3>
