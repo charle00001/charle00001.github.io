@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>markdown on Charle00001`s Blog</title>
+    <link>https://charle00001.github.io/tags/markdown/</link>
+    <description>Recent content in markdown on Charle00001`s Blog</description>
+    <image>
+      <title>Charle00001`s Blog</title>
+      <url>https://charle00001.github.io/47</url>
+      <link>https://charle00001.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 31 Oct 2023 10:17:52 +0100</lastBuildDate><atom:link href="https://charle00001.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何在使用Hugo模版框架时在文章中嵌入HTML代码</title>
+      <link>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%BD%BF%E7%94%A8hugo%E6%A8%A1%E7%89%88%E6%A1%86%E6%9E%B6%E6%97%B6%E5%9C%A8%E6%96%87%E7%AB%A0%E4%B8%AD%E5%B5%8C%E5%85%A5html%E4%BB%A3%E7%A0%81/</link>
+      <pubDate>Tue, 31 Oct 2023 10:17:52 +0100</pubDate>
+      
+      <guid>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%BD%BF%E7%94%A8hugo%E6%A8%A1%E7%89%88%E6%A1%86%E6%9E%B6%E6%97%B6%E5%9C%A8%E6%96%87%E7%AB%A0%E4%B8%AD%E5%B5%8C%E5%85%A5html%E4%BB%A3%E7%A0%81/</guid>
+      <description>使用 Hugo 模板框架时，在文章中嵌入 HTML 代码（两种方法）</description>
+      <content:encoded><![CDATA[<h2 id="起因">起因</h2>
+<p>由于昨天写了一篇关于如何翻墙的文章（我很纠结要不要继续写下去），所以为了自身以后的安全问题，我给它加了一个弹窗来保命（你们怎么选就不关我的事了）.<br>
+后来总算是把这个搞成了，但是真的是困难重重啊&hellip;&hellip;</p>
+<h2 id="so咋搞的呢">so，咋搞的呢？</h2>
+<p>我以前使用的博客系统是Hexo，要是想在markdown文章里加入html代码，那就直接加就行；运行的也嘎嘎流畅.<br>
+Hugo就不这样. 因为Hugo的Markdown渲染器会自动忽略Html代码（<code>&lt;br&gt;</code>什么的不算），我认为这个渲染器小心过头了（Html又咋样）.</p>
+<p>不过虽然要在文章里嵌入html的人很少（而且Hugo的用户量没有Hexo的多），我也找到了两个方法.</p>
+<hr>
+<h3 id="方法一------配置文件修改大法">方法一&mdash;&mdash;配置文件修改大法</h3>
+<p>在配置文件hugo.yaml里添加几条：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">markup</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">goldmark</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">renderer</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">unsafe</span>: <span style="color:#66d9ef">true</span>
+</span></span></code></pre></div><p>我也是吐了：&ldquo;unsafe&quot;是什么鬼？？？自己的博客自己还会添加恶意代码吗？？？<br>
+这个方法应该是简单的一个了，还有一个方法，虽然麻烦一点点，但是我也说一下吧.</p>
+<h3 id="方法二------shortcode启动">方法二&mdash;&mdash;shortcode，启动！！</h3>
+<p>众所周知，Hugo里有一种叫做&quot;shortcode&quot;的玩意（我也不知道是啥，反正这玩意挺有用就对了）. 依靠这玩意的功能，我们也可以在文章中嵌入html代码.</p>
+<p>在<code>博客根目录/layouts</code>下新建<code>shortcode</code>文件夹，然后新建<code>raw.html</code>.<br>
+打开<code>raw.html</code>，在里面写入下面那行玩意：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{ .Inner }}
+</span></span></code></pre></div><p>这里说一下原理：Hugo的shortcode功能允许你创建shortcode，中文直译就是“短代码”. 这个东西合理配置能发挥很多功能，就像上面的那行.<br>
+如果你在文章中要嵌入Html代码，直接把代码复制进去然后用{{&lt;raw&gt;}}和{{&lt;/raw&gt;}}括起来就行.</p>
+<p>比如：
+<img loading="lazy" src="/images/shortcode.png" alt="代码图片"  />
+
+把上面的玩意嵌入文章，就能用了. 中间的html可以自由发挥.<br>
+<em><strong>（你们知道为什么要用图片吗，因为这玩意六亲不认，把它放在markdown代码块、html注释和Hugo短代码注释中居然还能执行html！！！）</strong></em></p>
+<p><em><strong>（你们知道我是怎么打出上面的{{&lt;raw&gt;}}和{{&lt;/raw&gt;}}的吗，使用转义代码！！！实际上我这边是这样的：<code>{{&amp;lt;raw&amp;gt;}}和{{&amp;lt;/raw&amp;gt;}}</code>）</strong></em></p>
+<h3 id="与此文章相关的还有">与此文章相关的还有：</h3>
+<p><a href="/posts/%E5%A6%82%E4%BD%95%E7%BB%99hugo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/">如何给hugo添加评论系统</a><br>
+<a href="/posts/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%9D%A5%E5%88%B0hugo%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87">第一次来到hugo的第一篇博文</a><br>
+<a href="/posts/%E7%BB%99%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%90%84%E7%A7%8D%E6%94%B9%E5%8A%A8-%E8%AE%B0%E5%BD%95%E4%BB%A5%E5%A4%87%E5%BF%98/">给博客的各种改动-记录以备忘</a></p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

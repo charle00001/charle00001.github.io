@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>搭建博客 on Charle00001`s Blog</title>
+    <link>https://charle00001.github.io/tags/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
+    <description>Recent content in 搭建博客 on Charle00001`s Blog</description>
+    <image>
+      <title>Charle00001`s Blog</title>
+      <url>https://charle00001.github.io/47</url>
+      <link>https://charle00001.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 04 Jun 2022 14:46:00 +0000</lastBuildDate><atom:link href="https://charle00001.github.io/tags/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何用Hexo&#43;Github Page搭建免费博客</title>
+      <link>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E7%94%A8hexo&#43;github-page%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sat, 04 Jun 2022 14:46:00 +0000</pubDate>
+      
+      <guid>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E7%94%A8hexo&#43;github-page%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2/</guid>
+      <description>详细介绍如何搭建免费的Hexo博客（多图），较长</description>
+      <content:encoded><![CDATA[<h3 id="在2023-10-22修正"><em><strong>在2023-10-22修正</strong></em></h3>
+<h2 id="了解hexo">了解Hexo</h2>
+<p>如果你也想做一个像这样的个人博客,请务必认真看完！！本文针对Mac,使用windows和Linux请自行上网查询！！</p>
+<!-- more -->
+<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。<br>
+（好吧，Hexo官网是这么讲的）</p>
+<p>它是个非常不错博客框架，有很多好看的主题可以应用在自己的博客上，这篇文章要讲述如何用hexo写博客并部署到github上就好了。</p>
+<p>如果你已经用hexo写了博客并部署到github上了，就不要再看这篇文章了，快去 <a href="https://hexo.io/themes/">https://hexo.io/themes/</a> 寻找好看的、心仪的主题吧！！！</p>
+<h2 id="配置需要的环境">配置需要的环境</h2>
+<h3 id="先安装nodejs">先安装Node.js：</h3>
+<p><a href="https://nodejs.org/zh-cn/download/">https://nodejs.org/zh-cn/download/</a><br>
+下载好了后请自行根据提示安装，推荐LTS版本（长期支持版）。</p>
+<h3 id="安装git">安装git：</h3>
+<p>Macos（好像有自带的，不过建议重新安装）:
+<a href="https://sourceforge.net/projects/git-osx-installer/">https://sourceforge.net/projects/git-osx-installer/</a></p>
+<h3 id="安装hexo">安装Hexo:</h3>
+<p>官网给的是这条命令：<br>
+<code>npm install -g hexo-cli</code></p>
+<p>大家注意了，要使用管理员权限，在命令开头加上sudo空格。<br>
+<code>npm install -g hexo-cli</code><br>
+回车，等待下载安装即可！<br>
+熟悉 npm 的进阶用户，可以仅局部安装 hexo 包。<br>
+<code>npm install hexo</code></p>
+<h2 id="使用hexo搭建博客">使用Hexo搭建博客</h2>
+<h3 id="在桌面新建一个空文件夹blog">在桌面新建一个空文件夹blog</h3>
+<p>（因为我早就自己搭建过一个名字一样，所以使用blog2演示）<br>
+<img loading="lazy" src="/images/blog2.png" alt="blog"  />
+</p>
+<h3 id="使用hexo初始化博客">使用Hexo初始化博客</h3>
+<p>首先进入blog文件夹：
+<code>npx hexo init</code><br>
+<img loading="lazy" src="/images/hexo_init.png" alt="初始化"  />
+<br>
+<img loading="lazy" src="/images/hexo.png" alt="文件夹中"  />
+</p>
+<h3 id="启动hexo">启动hexo</h3>
+<p><code>npx hexo s</code></p>
+<p>如果提示4000端口被占用：<br>
+<img loading="lazy" src="/images/port_4000_error.jpg" alt="端口占用"  />
+</p>
+<p>遇到这种情况的话，你肯定之前也运行过这个命令并且没有control+c<br>
+解决方法如下：<br>
+<code>sudo lsof -i:4000</code>，查看被占用进程的pid<br>
+再输<code>sudo kill -9 pid</code> （pid为上一步查看到的数字）<br>
+然后再继续<code>npx hexo s</code>，则成功。<br>
+<img loading="lazy" src="/images/port_4000_error%e8%a7%a3%e5%86%b3%e6%96%b9%e6%b3%95.png" alt="端口占用解决方法"  />
+</p>
+<p>在浏览器输入：http://localhost:4000，可查看到默认生成了一篇博文：<br>
+<img loading="lazy" src="/images/%e5%88%9d%e5%a7%8b.png" alt=" "  />
+</p>
+<h3 id="如何新建一篇博文">如何新建一篇博文？</h3>
+<p>control+c断开刚刚的链接，新建一篇博文：<br>
+<code>npx hexo n &quot;发布第一篇个人博客&quot;</code><br>
+<img loading="lazy" src="/images/%e6%96%b0%e5%bb%ba%e5%8d%9a%e6%96%87.png" alt="新建博文"  />
+</p>
+<h3 id="更改博文内容">更改博文内容：</h3>
+<p>接下来就是更改博文内容，直接使用Visual Studio Code打开文章，找到<code>博客根目录/source/_posts</code>，里面有你创建的文章，直接做修改即可，不熟悉MarkDown格式的可以看看这个网站：<br>
+<a href="https://www.runoob.com/markdown/md-tutorial.html">https://www.runoob.com/markdown/md-tutorial.html</a><br>
+（不难，现在我就在写这玩意）<br>
+随便使用哪个编辑器，反正我习惯用VSCode。<br>
+<img loading="lazy" src="/images/Visual_Studio_Code.png" alt="Visual Studio Code"  />
+</p>
+<h3 id="在本地预览">在本地预览：</h3>
+<p>同样在blog2文件夹下：<br>
+清理public文件夹：<code>npx hexo clean</code><br>
+生成：<code>npx hexo g</code><br>
+启动：<code>npx hexo s</code><br>
+<img loading="lazy" src="/images/%e6%9b%b4%e6%96%b0.png" alt=" "  />
+<br>
+刷新http://localhost:4000/则看到，内容已经更新上去了：<br>
+<img loading="lazy" src="/images/%e5%b7%b2%e6%9b%b4%e6%96%b0.png" alt=" "  />
+</p>
+<h2 id="部署至github">部署至github</h2>
+<p>如果你想让别人也能访问到（废话），那么免费的方法就是把网站部署至github。<br>
+还有很多地方可以部署网站，这种云部署平台一搜一大把。我还推荐两个：Vercel和CF Pages。<br>
+这三个平台是绝对靠谱滴，微软、cloudflare。还有vercel，绝对是神器。他还可以部署【动态】网站，重点是【免费】！</p>
+<h3 id="登录github">登录github：</h3>
+<p><a href="https://github.com/">https://github.com/</a><br>
+没账号的新建一个（这个我不用教了吧），新创建一个仓库：<br>
+<img loading="lazy" src="/images/%e5%88%9b%e5%bb%ba%e4%bb%93%e5%ba%93.png" alt=" "  />
+<br>
+仓库名必须为：<code>昵称.github.io</code>，输入描述（也可以不输），创建（记得选公开）：<br>
+<img loading="lazy" src="/images/%e4%bb%93%e5%ba%93%e9%80%89%e6%8b%a9.png" alt=" "  />
+<br>
+（因为不能重名，而且我已经有了，所以有红色感叹号，你们不会）</p>
+<h3 id="安装git部署插件">安装git部署插件</h3>
+<p>命令行下，ctrl+c，退出命令。还是在blog2目录下，安装git部署插件<br>
+<code>npm install hexo-deployer-git --save</code><br>
+<img loading="lazy" src="/images/%e5%ae%89%e8%a3%85git%e9%83%a8%e7%bd%b2%e6%8f%92%e4%bb%b6.png" alt=" "  />
+</p>
+<h3 id="更改配置">更改配置</h3>
+<p>更改blog2文件夹根目录下，_config.yml的配置：<br>
+<img loading="lazy" src="/images/%e8%a6%81%e6%9b%bf%e6%8d%a2%e7%9a%84%e8%ae%be%e7%bd%ae.png" alt="要被替换的设置"  />
+<br>
+把这些替换为：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Deployment</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Docs: https://hexo.io/docs/deployment.html</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">deploy</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">type</span>: <span style="color:#ae81ff">git</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">repo</span>: <span style="color:#ae81ff">git@github.com:yourname/yourname.github.io.git</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">branch</span>: <span style="color:#ae81ff">master</span>
+</span></span></code></pre></div><p>记得把yourname替换成你的昵称。</p>
+<h3 id="设置ssh密钥">设置SSH密钥：</h3>
+<h4 id="首先检测自己电脑是否存在-ssh-key">首先检测自己电脑是否存在 SSH key：</h4>
+<p>在生成SSH密钥之前，您可以检查是否有任何现有的SSH密钥。</p>
+<h5 id="打开终端">打开终端</h5>
+<h5 id="查看是否存在现有ssh密钥">查看是否存在现有SSH密钥</h5>
+<p>输入命令以查看是否存在现有SSH密钥⬇️：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ls -al ~/.ssh
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 列出.ssh目录中的文件(如果存在的话)</span>
+</span></span></code></pre></div><h5 id="检查目录列表以查看您是否已拥有公共ssh密钥">检查目录列表以查看您是否已拥有公共SSH密钥。</h5>
+<p>·如果你本地没有生成的话<br>
+终端上面会显示：No such file or directory</p>
+<p>·如果已经存在的话<br>
+则会显示 id_rsa 和 id_rsa.pub</p>
+<p>如果本地没有的话，我们要自己生成新的SSH秘钥（如果存在，请跳过4.4.1.）</p>
+<h6 id="创建一个新的ssh密钥">创建一个新的ssh密钥</h6>
+<p>在终端输入下面的命令，记得替换您的GitHub电子邮件地址,这将使用提供的电子邮件作为标签创建一个新的ssh密钥。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ssh-keygen -t rsa -b <span style="color:#ae81ff">4096</span> -C <span style="color:#e6db74">&#34;your_email@example.com&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&#34;your_email@example.com&#34;为示例邮箱，此处应填写为你在github上面注册的邮箱。</span>
+</span></span></code></pre></div><p>显示：</p>
+<pre tabindex="0"><code>Generating public/private rsa key pair.
+</code></pre><h6 id="系统提示您输入要保存密钥的文件时">系统提示您“输入要保存密钥的文件”时</h6>
+<p>当系统提示您“输入要保存密钥的文件”时，按Enter键使用默认文件位置。</p>
+<pre tabindex="0"><code>Enter a file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
+</code></pre><h6 id="键入安全密码">键入安全密码</h6>
+<p>在提示符下，键入安全密码（强烈不建议设置密码，否则你上传一次就要输一次，特别麻烦。。。）。可以连续Enter，不设置密码。</p>
+<pre tabindex="0"><code>Enter passphrase (empty for no passphrase): [Type a passphrase]
+Enter same passphrase again: [Type passphrase again]
+</code></pre><p>成功后，终端显示：</p>
+<pre tabindex="0"><code>Your identitification has been saved in /Users/xxx/.ssh/id_rsa.
+Your public key has been saved in /user/xxx/id_rsa.pub.
+the key fingerprint is xxxxxxxxxx…….xxxxxxxx your_email@example.com
+The key’s randomart image is:
+</code></pre><p><img loading="lazy" src="/images/ssh%e7%94%9f%e6%88%90.jpg" alt=" "  />
+</p>
+<h4 id="将ssh密钥添加到ssh-agent">将SSH密钥添加到ssh-agent</h4>
+<h5 id="在后台启动ssh-agent">在后台启动ssh-agent</h5>
+<h6 id="输入命令">输入命令：</h6>
+<p><code>eval &quot;$(ssh-agent -s)&quot;</code></p>
+<pre tabindex="0"><code>&gt; Agent pid xxxxx
+</code></pre><h6 id="终端输入命令">终端输入命令：</h6>
+<p><code>ssh-add -K ~/.ssh/id_rsa</code></p>
+<p>如果设置密码，此时会要求输入passphrase（输入步骤二中你当时设置的passphrase就好）<br>
+成功后，终端显示：</p>
+<pre tabindex="0"><code>Identity added: /Users/xxx/.ssh/id_rsa (your_email@example.com)
+</code></pre><h4 id="添加ssh-key-到github-上">添加SSH key 到Github 上</h4>
+<h5 id="将ssh密钥复制到剪贴板">将SSH密钥复制到剪贴板</h5>
+<p><code>pbcopy &lt; ~/.ssh/id_rsa.pub</code><br>
+复制id_rsa.pub的内容到剪贴板
+提示：如果pbcopy不起作用，您可以找到隐藏.ssh文件夹（路径~/.ssh/，在文本编辑器中打开id_rsa.pub文件，然后将文件内容复制到剪贴板。</p>
+<h5 id="找到settings">找到“Settings”</h5>
+<p>打开Github,在任意页面的右上角，单击您的个人资料照片，然后单击“Settings”。
+<img loading="lazy" src="/images/settings.jpg" alt=" "  />
+</p>
+<h5 id="找到ssh-and-gpg-keys">找到“SSH and GPG keys”</h5>
+<p>在用户设置侧栏中，单击“SSH and GPG keys”。<br>
+<img loading="lazy" src="/images/%e7%94%a8%e6%88%b7%e8%ae%be%e7%bd%ae.jpg" alt=" "  />
+</p>
+<h5 id="单击-new-ssh-key">单击“ New SSH key”</h5>
+<p><img loading="lazy" src="/images/New_SSH_key.jpg" alt=" "  />
+</p>
+<h5 id="添加密钥">添加密钥</h5>
+<p>在“Title”字段中添加描述性标签，Key字段中粘贴您复制的id_rsa.pub内容。最后点击“Add SSH key”<br>
+<img loading="lazy" src="/images/ssh.jpg" alt=" "  />
+</p>
+<h5 id="确认您的github密码">确认您的GitHub密码</h5>
+<p>最后请确认您的GitHub密码。<br>
+<img loading="lazy" src="/images/ssh_.jpg" alt=" "  />
+</p>
+<h3 id="如何检测ssh-key">如何检测SSH key</h3>
+<h4 id="终端输入命令-1">终端输入命令</h4>
+<p><code>ssh git@github.com</code></p>
+<p>验证SSH key是否有权限访问你的github，输入“yes”</p>
+<pre tabindex="0"><code>The authenticity of host ‘github.com (13.250.177.223)’ can’t be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+</code></pre><p>成功会显示为</p>
+<pre tabindex="0"><code>Hi you name! You’ve successfully authenticated, but GitHub does not provide shell access.
+</code></pre><br>
+<h2 id="push至github仓库">push至GitHub仓库</h2>
+<h3 id="在部署到github之前别忘了要先">在部署到github之前，别忘了要先</h3>
+<pre tabindex="0"><code>npx hexo clean
+# 删除之前编译的文件（public、database等）
+npx hexo g
+# 重新编译新文件等待被部署至github
+# 部署完了之后就可以运行npx hexo clean把编译的文件删掉了
+</code></pre><h3 id="现在就可以push至github远程仓库了">现在，就可以push至GitHub远程仓库了</h3>
+<pre tabindex="0"><code>npx hexo d
+#d就是deploy，即部署
+</code></pre><h3 id="与此文章相关的还有">与此文章相关的还有：</h3>
+<p><a href="/posts/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%9D%A5%E5%88%B0hugo%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87">第一次来到hugo的第一篇博文</a><br>
+<a href="/posts/%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%9C%A8hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%97%A7/">发布第一篇在Hexo个人博客（旧） </a><br>
+<a href="/posts/%E5%AF%B9%E4%BA%8Enext%E4%B8%BB%E9%A2%988-15-1%E7%9A%84%E6%89%80%E6%9C%89%E6%9D%BF%E5%9D%97%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BF%AE%E6%94%B9%E9%99%847-8-0%E7%9A%84%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95/">对于NexT主题8.15.1的所有板块透明度修改（附7.8.0的修改方法）</a></p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>
