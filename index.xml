@@ -1628,6 +1628,8 @@ npx hexo g
       <guid>/paperfile/other-and-tools/</guid>
       <description>&lt;!DOCTYPE html&gt;</description>
       <content:encoded><![CDATA[
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -1639,7 +1641,7 @@ npx hexo g
         }
         .box {
             width: 200px;
-            height: 100px;
+            height: 120px;
             border: 2px solid #555;
             border-radius: 10px;
             margin: 10px;
@@ -1648,14 +1650,26 @@ npx hexo g
             text-align: center;
             color: white;
             font-size: 16px;
-            padding-top: 40px;
-            transition: transform 0.3s, background-color 0.3s; /* 过渡效果 */
-            background-color: #555; /* 默认背景颜色，深灰色 */
+            padding: 10px;
+            transition: transform 0.3s, background-color 0.3s;
+            background-color: #555;
         }
-        /* 悬停时放大25%并改变背景颜色 */
         .box:hover {
             transform: scale(1.25);
-            background-color: #777; /* 深一点的灰色 */
+            background-color: #777;
+        }
+        h2, p {
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+        /* 单独设置主标题和副标题大小 */
+        .main-title {
+            font-size: 20px; /* 设置主标题字体大小 */
+        }
+        .sub-title {
+            font-size: 15px; /* 设置副标题字体大小 */
         }
     </style>
 </head>
@@ -1663,16 +1677,15 @@ npx hexo g
     <div class="container" id="boxContainer">
     </div>
     <script>
-        // 使用 JavaScript 动态创建40个框
         var container = document.getElementById('boxContainer');
-        // 定义40个文本和链接
         var textArray = [
-            "分类", "RSS订阅", "破网软件获取中心", "游戏", "base64编码/解码", "亲戚关系计算器by_passer-by", "亲戚关系计算器手机版by_passer-by", "加密js", "浏览器检查" /* ...继续定义40个文本... */
+            "分类|查看所有分类", "RSS订阅|获取最新文章更新", "破网软件获取中心|下载最新破网软件", "游戏|畅玩各种游戏", "base64编码/解码|加密和解密工具", "亲戚关系计算器|作者Passer-By", "亲戚关系计算器|手机版，作者Passer-By", "加密js|加密和解密JS代码", "浏览器检测|检测浏览器信息"
         ];
         var linkArray = [
-            "/categories/", "/index.xml", "/paperfile/get-network-breaking-software/", "/paperfile/games_about/", "/paperfile/tools/base64/", "/paperfile/tools/relationship/", "/paperfile/tools/relationship/vue", "/paperfile/tools/hiddencode/", "/paperfile/tools/browser/"/* ...继续定义40个链接... */
+            "/categories/", "/index.xml", "/paperfile/get-network-breaking-software/", "/paperfile/games_about/", "/paperfile/tools/base64/", "/paperfile/tools/relationship/", "/paperfile/tools/relationship/vue", "/paperfile/tools/hiddencode/", "/paperfile/tools/browser/"
         ];
-        for (var i = 0; i < 40; i++) {
+        for (var i = 0; i < 9; i++) {
+            var parts = textArray[i].split("|");
             var box = document.createElement('a');
             box.className = 'box';
             box.href = linkArray[i];
@@ -1680,12 +1693,23 @@ npx hexo g
                 this.style.backgroundColor = getRandomColor();
             };
             box.onmouseout = function() {
-                this.style.backgroundColor = '#777'; // 深一点的灰色
+                this.style.backgroundColor = '#777';
             };
-            box.innerText = textArray[i];
+            var title = document.createElement('div');
+            title.className = 'main-title';
+            title.innerText = parts[0];
+            var subtitle = document.createElement('div');
+            subtitle.className = 'sub-title';
+            subtitle.innerText = parts[1];
+            var flexContainer = document.createElement('div');
+            flexContainer.style.display = 'flex';
+            flexContainer.style.flexDirection = 'column';
+            flexContainer.style.alignItems = 'center';
+            flexContainer.appendChild(title);
+            flexContainer.appendChild(subtitle);
+            box.appendChild(flexContainer);
             container.appendChild(box);
         }
-        // 生成随机颜色
         function getRandomColor() {
             var letters = '0123456789ABCDEF';
             var color = '#';
@@ -1697,6 +1721,10 @@ npx hexo g
     </script>
 </body>
 </html>
+
+
+
+
 
 ]]></content:encoded>
     </item>
