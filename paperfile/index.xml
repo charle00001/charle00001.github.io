@@ -302,42 +302,46 @@
 <html>
 <head>
     <style>
+        /* 设置外部容器的样式，用于包含多个框 */
         .container {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
         }
+        /* 每个框的样式 */
         .box {
-            width: 200px;
-            height: 120px;
-            border: 2px solid #555;
-            border-radius: 10px;
-            margin: 10px;
+            width: 210px;
+            height: 150px;
+            border: 3px solid #555; /* 设置边框 */
+            border-radius: 20px; /* 设置圆角边框 */
+            margin: 8px;
             display: inline-block;
             cursor: pointer;
             text-align: center;
-            color: white;
-            font-size: 16px;
-            padding: 10px;
-            transition: transform 0.3s, background-color 0.3s;
-            background-color: #555;
+            color: ;
+            padding: 20px;
+            transition: transform 0.3s; /* 添加平滑的变换效果 */
+            background-color: transparent; /* 设置透明的背景颜色 */
         }
+        /* 鼠标悬停时的样式 */
         .box:hover {
-            transform: scale(1.25);
-            background-color: #777;
+            transform: scale(1.25); /* 缩放效果 */
         }
+        /* 清除标题和链接的默认间距 */
         h2, p {
             margin: 0;
         }
+        /* 链接样式，去除下划线 */
         a {
             text-decoration: none;
         }
-        /* 单独设置主标题和副标题大小 */
+        /* 设置主标题字体大小 */
         .main-title {
-            font-size: 20px; /* 设置主标题字体大小 */
+            font-size: 20px;
         }
+        /* 设置副标题字体大小 */
         .sub-title {
-            font-size: 15px; /* 设置副标题字体大小 */
+            font-size: 15px;
         }
     </style>
 </head>
@@ -347,37 +351,12 @@
     <script>
         var container = document.getElementById('boxContainer');
         var textArray = [
-            "分类|查看所有分类", "RSS订阅|获取最新文章更新", "破网软件获取中心|下载最新破网软件", "游戏|畅玩各种游戏", "base64编码/解码|加密和解密工具", "亲戚关系计算器|作者Passer-By", "亲戚关系计算器|手机版，作者Passer-By", "加密js|加密和解密JS代码", "浏览器检测|检测浏览器信息"
+            "分类|查看所有分类", "RSS订阅|获取最新文章更新", "破网软件获取中心|下载最新破网软件", "游戏|畅玩各种游戏", "base64编码/解码|加密和解密工具", "亲戚关系计算器|作者Passer-By", "亲戚关系计算器|手机版，作者Passer-By", "加密js|加密和解密JS代码", "浏览器检测|检测浏览器信息", "测试主标题|测试副标题"
         ];
         var linkArray = [
-            "/categories/", "/index.xml", "/paperfile/get-network-breaking-software/", "/paperfile/games_about/", "/paperfile/tools/base64/", "/paperfile/tools/relationship/", "/paperfile/tools/relationship/vue", "/paperfile/tools/hiddencode/", "/paperfile/tools/browser/"
+            "/categories/", "/index.xml", "/paperfile/get-network-breaking-software/", "/paperfile/games_about/", "/paperfile/tools/base64/", "/paperfile/tools/relationship/", "/paperfile/tools/relationship/vue", "/paperfile/tools/hiddencode/", "/paperfile/tools/browser/", "https://example.com/测试"
         ];
-        for (var i = 0; i < 9; i++) {
-            var parts = textArray[i].split("|");
-            var box = document.createElement('a');
-            box.className = 'box';
-            box.href = linkArray[i];
-            box.onmouseover = function() {
-                this.style.backgroundColor = getRandomColor();
-            };
-            box.onmouseout = function() {
-                this.style.backgroundColor = '#777';
-            };
-            var title = document.createElement('div');
-            title.className = 'main-title';
-            title.innerText = parts[0];
-            var subtitle = document.createElement('div');
-            subtitle.className = 'sub-title';
-            subtitle.innerText = parts[1];
-            var flexContainer = document.createElement('div');
-            flexContainer.style.display = 'flex';
-            flexContainer.style.flexDirection = 'column';
-            flexContainer.style.alignItems = 'center';
-            flexContainer.appendChild(title);
-            flexContainer.appendChild(subtitle);
-            box.appendChild(flexContainer);
-            container.appendChild(box);
-        }
+        // 生成随机颜色
         function getRandomColor() {
             var letters = '0123456789ABCDEF';
             var color = '#';
@@ -386,10 +365,43 @@
             }
             return color;
         }
+        // 遍历数组，生成框
+        for (var i = 0; i < 10; i++) {
+            var parts = textArray[i].split("|"); // 使用竖线分隔主标题和副标题
+            var box = document.createElement('a'); // 创建一个链接元素
+            box.className = 'box'; // 设置框的类名
+            box.href = linkArray[i]; // 设置链接的目标地址
+            // 创建主标题元素
+            var title = document.createElement('div');
+            title.className = 'main-title'; // 设置类名
+            title.innerText = parts[0]; // 设置文本内容
+            // 创建副标题元素
+            var subtitle = document.createElement('div');
+            subtitle.className = 'sub-title'; // 设置类名
+            subtitle.innerText = parts[1]; // 设置文本内容
+            // 创建包含标题和副标题的容器
+            var flexContainer = document.createElement('div');
+            flexContainer.style.display = 'flex'; // 使用弹性布局
+            flexContainer.style.flexDirection = 'column'; // 垂直排列
+            flexContainer.style.alignItems = 'center'; // 居中对齐
+            flexContainer.appendChild(title);
+            flexContainer.appendChild(subtitle);
+            // 将标题和副标题容器添加到框中
+            box.appendChild(flexContainer);
+            // 将框添加到外部容器
+            container.appendChild(box);
+            // 添加鼠标悬停事件监听器，以实现随机颜色效果
+            box.addEventListener('mouseenter', function() {
+                this.style.backgroundColor = getRandomColor();
+            });
+            // 添加鼠标离开事件监听器，以恢复透明背景
+            box.addEventListener('mouseleave', function() {
+                this.style.backgroundColor = 'transparent';
+            });
+        }
     </script>
 </body>
 </html>
-
 
 
 
