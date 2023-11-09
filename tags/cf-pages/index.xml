@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>CF Pages on Charle00001`s Blog</title>
-    <link>/tags/cf-pages/</link>
+    <link>https://charle00001.github.io/tags/cf-pages/</link>
     <description>Recent content in CF Pages on Charle00001`s Blog</description>
     <image>
       <title>Charle00001`s Blog</title>
-      <url>/47</url>
-      <link>/47</link>
+      <url>https://charle00001.github.io/47</url>
+      <link>https://charle00001.github.io/47</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 04 Jun 2022 14:46:00 +0000</lastBuildDate><atom:link href="/tags/cf-pages/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Jun 2022 14:46:00 +0000</lastBuildDate><atom:link href="https://charle00001.github.io/tags/cf-pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何用Hexo&#43;Github Page搭建免费博客</title>
-      <link>/posts/%E5%A6%82%E4%BD%95%E7%94%A8hexo&#43;github-page%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2/</link>
+      <link>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E7%94%A8hexo&#43;github-page%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Sat, 04 Jun 2022 14:46:00 +0000</pubDate>
       
-      <guid>/posts/%E5%A6%82%E4%BD%95%E7%94%A8hexo&#43;github-page%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E7%94%A8hexo&#43;github-page%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2/</guid>
       <description>详细介绍如何搭建免费的Hexo博客（多图），较长</description>
       <content:encoded><![CDATA[<h3 id="在2023-10-22修正"><em><strong>在2023-10-22修正</strong></em></h3>
 <h2 id="了解hexo">了解Hexo</h2>

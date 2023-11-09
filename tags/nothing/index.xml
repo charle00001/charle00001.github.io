@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Nothing on Charle00001`s Blog</title>
-    <link>/tags/nothing/</link>
+    <link>https://charle00001.github.io/tags/nothing/</link>
     <description>Recent content in Nothing on Charle00001`s Blog</description>
     <image>
       <title>Charle00001`s Blog</title>
-      <url>/47</url>
-      <link>/47</link>
+      <url>https://charle00001.github.io/47</url>
+      <link>https://charle00001.github.io/47</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="/tags/nothing/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language><atom:link href="https://charle00001.github.io/tags/nothing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>友情链接</title>
-      <link>/paperfile/friends/</link>
+      <link>https://charle00001.github.io/paperfile/friends/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/paperfile/friends/</guid>
+      <guid>https://charle00001.github.io/paperfile/friends/</guid>
       <description>如果你想与我交换友情链接的话，请发电邮至charle00001#proton.me（将#换成@）或者在评论区留言.</description>
       <content:encoded><![CDATA[<h3 id="如果你想与我交换友情链接的话请发电邮至charle00001protonme将换成或者在评论区留言">如果你想与我交换友情链接的话，请发电邮至charle00001#proton.me（将#换成@）或者在评论区留言.</h3>
 ]]></content:encoded>

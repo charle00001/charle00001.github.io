@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>备忘 on Charle00001`s Blog</title>
-    <link>/categories/%E5%A4%87%E5%BF%98/</link>
+    <link>https://charle00001.github.io/categories/%E5%A4%87%E5%BF%98/</link>
     <description>Recent content in 备忘 on Charle00001`s Blog</description>
     <image>
       <title>Charle00001`s Blog</title>
-      <url>/47</url>
-      <link>/47</link>
+      <url>https://charle00001.github.io/47</url>
+      <link>https://charle00001.github.io/47</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 31 Oct 2023 10:17:52 +0100</lastBuildDate><atom:link href="/categories/%E5%A4%87%E5%BF%98/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Oct 2023 10:17:52 +0100</lastBuildDate><atom:link href="https://charle00001.github.io/categories/%E5%A4%87%E5%BF%98/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何在使用Hugo模版框架时在文章中嵌入HTML代码</title>
-      <link>/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%BD%BF%E7%94%A8hugo%E6%A8%A1%E7%89%88%E6%A1%86%E6%9E%B6%E6%97%B6%E5%9C%A8%E6%96%87%E7%AB%A0%E4%B8%AD%E5%B5%8C%E5%85%A5html%E4%BB%A3%E7%A0%81/</link>
+      <link>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%BD%BF%E7%94%A8hugo%E6%A8%A1%E7%89%88%E6%A1%86%E6%9E%B6%E6%97%B6%E5%9C%A8%E6%96%87%E7%AB%A0%E4%B8%AD%E5%B5%8C%E5%85%A5html%E4%BB%A3%E7%A0%81/</link>
       <pubDate>Tue, 31 Oct 2023 10:17:52 +0100</pubDate>
       
-      <guid>/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%BD%BF%E7%94%A8hugo%E6%A8%A1%E7%89%88%E6%A1%86%E6%9E%B6%E6%97%B6%E5%9C%A8%E6%96%87%E7%AB%A0%E4%B8%AD%E5%B5%8C%E5%85%A5html%E4%BB%A3%E7%A0%81/</guid>
+      <guid>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%BD%BF%E7%94%A8hugo%E6%A8%A1%E7%89%88%E6%A1%86%E6%9E%B6%E6%97%B6%E5%9C%A8%E6%96%87%E7%AB%A0%E4%B8%AD%E5%B5%8C%E5%85%A5html%E4%BB%A3%E7%A0%81/</guid>
       <description>使用 Hugo 模板框架时，在文章中嵌入 HTML 代码（两种方法）</description>
       <content:encoded><![CDATA[<h2 id="起因">起因</h2>
 <p>由于昨天写了一篇关于如何翻墙的文章（我很纠结要不要继续写下去），所以为了自身以后的安全问题，我给它加了一个弹窗来保命（你们怎么选就不关我的事了）.<br>
@@ -57,10 +57,10 @@ Hugo就不这样. 因为Hugo的Markdown渲染器会自动忽略Html代码（<cod
     
     <item>
       <title>给博客的各种改动-记录以备忘</title>
-      <link>/posts/%E7%BB%99%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%90%84%E7%A7%8D%E6%94%B9%E5%8A%A8-%E8%AE%B0%E5%BD%95%E4%BB%A5%E5%A4%87%E5%BF%98/</link>
+      <link>https://charle00001.github.io/posts/%E7%BB%99%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%90%84%E7%A7%8D%E6%94%B9%E5%8A%A8-%E8%AE%B0%E5%BD%95%E4%BB%A5%E5%A4%87%E5%BF%98/</link>
       <pubDate>Sun, 29 Oct 2023 09:58:05 +0100</pubDate>
       
-      <guid>/posts/%E7%BB%99%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%90%84%E7%A7%8D%E6%94%B9%E5%8A%A8-%E8%AE%B0%E5%BD%95%E4%BB%A5%E5%A4%87%E5%BF%98/</guid>
+      <guid>https://charle00001.github.io/posts/%E7%BB%99%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%90%84%E7%A7%8D%E6%94%B9%E5%8A%A8-%E8%AE%B0%E5%BD%95%E4%BB%A5%E5%A4%87%E5%BF%98/</guid>
       <description>对Hugo博客的美化、添加新功能与魔改</description>
       <content:encoded><![CDATA[<h2 id="对博客的魔改">对博客的魔改</h2>
 <h3 id="这篇文章不仅仅是备忘录如果有人认为这些改动不错可以放到自己博客里">这篇文章不仅仅是备忘录，如果有人认为这些改动不错，可以放到自己博客里。</h3>

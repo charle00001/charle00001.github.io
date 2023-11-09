@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Charle00001`s Blog</title>
-    <link>/posts/</link>
+    <link>https://charle00001.github.io/posts/</link>
     <description>Recent content in Posts on Charle00001`s Blog</description>
     <image>
       <title>Charle00001`s Blog</title>
-      <url>/47</url>
-      <link>/47</link>
+      <url>https://charle00001.github.io/47</url>
+      <link>https://charle00001.github.io/47</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 04 Nov 2023 19:45:57 +0100</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Nov 2023 19:45:57 +0100</lastBuildDate><atom:link href="https://charle00001.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git的使用以及如何解决一些简单问题</title>
-      <link>/posts/git%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E4%B8%80%E4%BA%9B%E7%AE%80%E5%8D%95%E9%97%AE%E9%A2%98/</link>
+      <link>https://charle00001.github.io/posts/git%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E4%B8%80%E4%BA%9B%E7%AE%80%E5%8D%95%E9%97%AE%E9%A2%98/</link>
       <pubDate>Sat, 04 Nov 2023 19:45:57 +0100</pubDate>
       
-      <guid>/posts/git%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E4%B8%80%E4%BA%9B%E7%AE%80%E5%8D%95%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://charle00001.github.io/posts/git%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E4%B8%80%E4%BA%9B%E7%AE%80%E5%8D%95%E9%97%AE%E9%A2%98/</guid>
       <description>为什么需要学习Git？ 由于我们大家都要用GitHub这种普世产品，所以我们必须学会使用Git. Git是一个用来管理仓库的工具. （未写完）</description>
       <content:encoded><![CDATA[<h2 id="为什么需要学习git">为什么需要学习Git？</h2>
 <p>由于我们大家都要用GitHub这种普世产品，所以我们必须学会使用Git. Git是一个用来管理仓库的工具.<br>
@@ -27,10 +27,10 @@
     
     <item>
       <title>如何获取自由门、无界、自由浏览、迷雾通</title>
-      <link>/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E8%87%AA%E7%94%B1%E9%97%A8%E6%97%A0%E7%95%8C%E8%87%AA%E7%94%B1%E6%B5%8F%E8%A7%88%E8%BF%B7%E9%9B%BE%E9%80%9A/</link>
+      <link>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E8%87%AA%E7%94%B1%E9%97%A8%E6%97%A0%E7%95%8C%E8%87%AA%E7%94%B1%E6%B5%8F%E8%A7%88%E8%BF%B7%E9%9B%BE%E9%80%9A/</link>
       <pubDate>Fri, 03 Nov 2023 10:37:10 +0100</pubDate>
       
-      <guid>/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E8%87%AA%E7%94%B1%E9%97%A8%E6%97%A0%E7%95%8C%E8%87%AA%E7%94%B1%E6%B5%8F%E8%A7%88%E8%BF%B7%E9%9B%BE%E9%80%9A/</guid>
+      <guid>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E8%87%AA%E7%94%B1%E9%97%A8%E6%97%A0%E7%95%8C%E8%87%AA%E7%94%B1%E6%B5%8F%E8%A7%88%E8%BF%B7%E9%9B%BE%E9%80%9A/</guid>
       <description>下载自由门、无界、自由浏览、迷雾通破网软件</description>
       <content:encoded><![CDATA[
 
@@ -140,10 +140,10 @@
     
     <item>
       <title>Tor和I2P是什么以及如何获取Tor和I2P</title>
-      <link>/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96tor%E5%92%8Ci2p/</link>
+      <link>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96tor%E5%92%8Ci2p/</link>
       <pubDate>Thu, 02 Nov 2023 11:18:34 +0100</pubDate>
       
-      <guid>/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96tor%E5%92%8Ci2p/</guid>
+      <guid>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96tor%E5%92%8Ci2p/</guid>
       <description>下载Tor和I2P以及I2P补种</description>
       <content:encoded><![CDATA[
 
@@ -349,10 +349,10 @@ Android: <a href="/files/i2p/net.i2p.android.router_4745279.apk">Download</a></p
     
     <item>
       <title>如何在使用Hugo模版框架时在文章中嵌入HTML代码</title>
-      <link>/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%BD%BF%E7%94%A8hugo%E6%A8%A1%E7%89%88%E6%A1%86%E6%9E%B6%E6%97%B6%E5%9C%A8%E6%96%87%E7%AB%A0%E4%B8%AD%E5%B5%8C%E5%85%A5html%E4%BB%A3%E7%A0%81/</link>
+      <link>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%BD%BF%E7%94%A8hugo%E6%A8%A1%E7%89%88%E6%A1%86%E6%9E%B6%E6%97%B6%E5%9C%A8%E6%96%87%E7%AB%A0%E4%B8%AD%E5%B5%8C%E5%85%A5html%E4%BB%A3%E7%A0%81/</link>
       <pubDate>Tue, 31 Oct 2023 10:17:52 +0100</pubDate>
       
-      <guid>/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%BD%BF%E7%94%A8hugo%E6%A8%A1%E7%89%88%E6%A1%86%E6%9E%B6%E6%97%B6%E5%9C%A8%E6%96%87%E7%AB%A0%E4%B8%AD%E5%B5%8C%E5%85%A5html%E4%BB%A3%E7%A0%81/</guid>
+      <guid>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%BD%BF%E7%94%A8hugo%E6%A8%A1%E7%89%88%E6%A1%86%E6%9E%B6%E6%97%B6%E5%9C%A8%E6%96%87%E7%AB%A0%E4%B8%AD%E5%B5%8C%E5%85%A5html%E4%BB%A3%E7%A0%81/</guid>
       <description>使用 Hugo 模板框架时，在文章中嵌入 HTML 代码（两种方法）</description>
       <content:encoded><![CDATA[<h2 id="起因">起因</h2>
 <p>由于昨天写了一篇关于如何翻墙的文章（我很纠结要不要继续写下去），所以为了自身以后的安全问题，我给它加了一个弹窗来保命（你们怎么选就不关我的事了）.<br>
@@ -392,10 +392,10 @@ Hugo就不这样. 因为Hugo的Markdown渲染器会自动忽略Html代码（<cod
     
     <item>
       <title>给博客的各种改动-记录以备忘</title>
-      <link>/posts/%E7%BB%99%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%90%84%E7%A7%8D%E6%94%B9%E5%8A%A8-%E8%AE%B0%E5%BD%95%E4%BB%A5%E5%A4%87%E5%BF%98/</link>
+      <link>https://charle00001.github.io/posts/%E7%BB%99%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%90%84%E7%A7%8D%E6%94%B9%E5%8A%A8-%E8%AE%B0%E5%BD%95%E4%BB%A5%E5%A4%87%E5%BF%98/</link>
       <pubDate>Sun, 29 Oct 2023 09:58:05 +0100</pubDate>
       
-      <guid>/posts/%E7%BB%99%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%90%84%E7%A7%8D%E6%94%B9%E5%8A%A8-%E8%AE%B0%E5%BD%95%E4%BB%A5%E5%A4%87%E5%BF%98/</guid>
+      <guid>https://charle00001.github.io/posts/%E7%BB%99%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%90%84%E7%A7%8D%E6%94%B9%E5%8A%A8-%E8%AE%B0%E5%BD%95%E4%BB%A5%E5%A4%87%E5%BF%98/</guid>
       <description>对Hugo博客的美化、添加新功能与魔改</description>
       <content:encoded><![CDATA[<h2 id="对博客的魔改">对博客的魔改</h2>
 <h3 id="这篇文章不仅仅是备忘录如果有人认为这些改动不错可以放到自己博客里">这篇文章不仅仅是备忘录，如果有人认为这些改动不错，可以放到自己博客里。</h3>
@@ -611,10 +611,10 @@ Hugo就不这样. 因为Hugo的Markdown渲染器会自动忽略Html代码（<cod
     
     <item>
       <title>如何给hugo添加评论系统</title>
-      <link>/posts/%E5%A6%82%E4%BD%95%E7%BB%99hugo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</link>
+      <link>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E7%BB%99hugo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Sat, 28 Oct 2023 19:13:06 +0200</pubDate>
       
-      <guid>/posts/%E5%A6%82%E4%BD%95%E7%BB%99hugo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</guid>
+      <guid>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E7%BB%99hugo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</guid>
       <description>详细讲述如何给Hugo博客papermod主题添加评论系统</description>
       <content:encoded><![CDATA[<h2 id="给博客添加的各种改动---评论系统篇">给博客添加的各种改动&mdash;评论系统篇</h2>
 <h3 id="目标添加评论系统walinedisqus">目标：添加评论系统（waline/disqus）</h3>
@@ -684,10 +684,10 @@ Hugo就不这样. 因为Hugo的Markdown渲染器会自动忽略Html代码（<cod
     
     <item>
       <title>关于waline的那些事</title>
-      <link>/posts/%E5%85%B3%E4%BA%8Ewaline%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</link>
+      <link>https://charle00001.github.io/posts/%E5%85%B3%E4%BA%8Ewaline%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</link>
       <pubDate>Sat, 28 Oct 2023 12:38:44 +0200</pubDate>
       
-      <guid>/posts/%E5%85%B3%E4%BA%8Ewaline%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</guid>
+      <guid>https://charle00001.github.io/posts/%E5%85%B3%E4%BA%8Ewaline%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</guid>
       <description>waline的一些问题以及解决方法</description>
       <content:encoded><![CDATA[<h2 id="测试文章">测试文章</h2>
 <h3 id="啥也没有">啥也没有</h3>
@@ -719,10 +719,10 @@ Hugo就不这样. 因为Hugo的Markdown渲染器会自动忽略Html代码（<cod
     
     <item>
       <title>第一次来到Hugo的第一篇博文</title>
-      <link>/posts/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%9D%A5%E5%88%B0hugo%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/</link>
+      <link>https://charle00001.github.io/posts/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%9D%A5%E5%88%B0hugo%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/</link>
       <pubDate>Tue, 24 Oct 2023 20:30:51 +0200</pubDate>
       
-      <guid>/posts/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%9D%A5%E5%88%B0hugo%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/</guid>
+      <guid>https://charle00001.github.io/posts/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%9D%A5%E5%88%B0hugo%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/</guid>
       <description>博客迁移声明与《发牢骚》</description>
       <content:encoded><![CDATA[<h2 id="关于迁移博客的声明">关于迁移博客的声明</h2>
 <h4 id="经过了一番深思熟虑之后我将hexo的博客迁移到了hugo">经过了一番深思熟虑之后，我将Hexo的博客迁移到了Hugo.</h4>
@@ -779,10 +779,10 @@ Hugo就不这样. 因为Hugo的Markdown渲染器会自动忽略Html代码（<cod
     
     <item>
       <title>关于cookie的一个实践</title>
-      <link>/posts/cookie/</link>
+      <link>https://charle00001.github.io/posts/cookie/</link>
       <pubDate>Mon, 23 Oct 2023 20:44:32 +0000</pubDate>
       
-      <guid>/posts/cookie/</guid>
+      <guid>https://charle00001.github.io/posts/cookie/</guid>
       <description>在网页中使用 JavaScript 和 Cookie 来创建一个允许用户选择是否接受 Cookie 的弹窗 &#43; JavaScript 代码示例</description>
       <content:encoded><![CDATA[
 
@@ -1009,10 +1009,10 @@ Hugo就不这样. 因为Hugo的Markdown渲染器会自动忽略Html代码（<cod
     
     <item>
       <title>如何获取破网软件2023</title>
-      <link>/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E7%A0%B4%E7%BD%91%E8%BD%AF%E4%BB%B62023/</link>
+      <link>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E7%A0%B4%E7%BD%91%E8%BD%AF%E4%BB%B62023/</link>
       <pubDate>Mon, 23 Oct 2023 20:44:32 +0000</pubDate>
       
-      <guid>/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E7%A0%B4%E7%BD%91%E8%BD%AF%E4%BB%B62023/</guid>
+      <guid>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E7%A0%B4%E7%BD%91%E8%BD%AF%E4%BB%B62023/</guid>
       <description>如何获取Tor浏览器进行翻墙与破网</description>
       <content:encoded><![CDATA[
 
@@ -1105,10 +1105,10 @@ Hugo就不这样. 因为Hugo的Markdown渲染器会自动忽略Html代码（<cod
     
     <item>
       <title>对于NexT主题8.15.1的所有板块透明度修改（附7.8.0的修改方法）</title>
-      <link>/posts/%E5%AF%B9%E4%BA%8Enext%E4%B8%BB%E9%A2%988-15-1%E7%9A%84%E6%89%80%E6%9C%89%E6%9D%BF%E5%9D%97%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BF%AE%E6%94%B9%E9%99%847-8-0%E7%9A%84%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95/</link>
+      <link>https://charle00001.github.io/posts/%E5%AF%B9%E4%BA%8Enext%E4%B8%BB%E9%A2%988-15-1%E7%9A%84%E6%89%80%E6%9C%89%E6%9D%BF%E5%9D%97%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BF%AE%E6%94%B9%E9%99%847-8-0%E7%9A%84%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95/</link>
       <pubDate>Mon, 01 May 2023 14:28:07 +0000</pubDate>
       
-      <guid>/posts/%E5%AF%B9%E4%BA%8Enext%E4%B8%BB%E9%A2%988-15-1%E7%9A%84%E6%89%80%E6%9C%89%E6%9D%BF%E5%9D%97%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BF%AE%E6%94%B9%E9%99%847-8-0%E7%9A%84%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95/</guid>
+      <guid>https://charle00001.github.io/posts/%E5%AF%B9%E4%BA%8Enext%E4%B8%BB%E9%A2%988-15-1%E7%9A%84%E6%89%80%E6%9C%89%E6%9D%BF%E5%9D%97%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BF%AE%E6%94%B9%E9%99%847-8-0%E7%9A%84%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95/</guid>
       <description>这篇博文提供了关于如何修改NexT主题版本7.8.0和8.15.1的透明度设置的详细说明.</description>
       <content:encoded><![CDATA[<h2 id="更新于2023-05-05"><em><strong>更新于2023-05-05</strong></em></h2>
 <h2 id="更新于2023-08-08"><em><strong>更新于2023-08-08</strong></em></h2>
@@ -1231,10 +1231,10 @@ Hugo就不这样. 因为Hugo的Markdown渲染器会自动忽略Html代码（<cod
     
     <item>
       <title>发布第一篇在Hexo个人博客（旧）</title>
-      <link>/posts/%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%9C%A8hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%97%A7/</link>
+      <link>https://charle00001.github.io/posts/%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%9C%A8hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%97%A7/</link>
       <pubDate>Sat, 04 Jun 2022 14:46:00 +0000</pubDate>
       
-      <guid>/posts/%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%9C%A8hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%97%A7/</guid>
+      <guid>https://charle00001.github.io/posts/%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%9C%A8hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%97%A7/</guid>
       <description>如何使用Hexo和GitHub Pages搭建免费的博客</description>
       <content:encoded><![CDATA[<h2 id="终于做了一个博客">终于做了一个博客</h2>
 <h3 id="我感觉我应该不会有太多时间写博客">我感觉我应该不会有太多时间写博客</h3>
@@ -1253,10 +1253,10 @@ Hugo就不这样. 因为Hugo的Markdown渲染器会自动忽略Html代码（<cod
     
     <item>
       <title>如何用Hexo&#43;Github Page搭建免费博客</title>
-      <link>/posts/%E5%A6%82%E4%BD%95%E7%94%A8hexo&#43;github-page%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2/</link>
+      <link>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E7%94%A8hexo&#43;github-page%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Sat, 04 Jun 2022 14:46:00 +0000</pubDate>
       
-      <guid>/posts/%E5%A6%82%E4%BD%95%E7%94%A8hexo&#43;github-page%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E7%94%A8hexo&#43;github-page%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2/</guid>
       <description>详细介绍如何搭建免费的Hexo博客（多图），较长</description>
       <content:encoded><![CDATA[<h3 id="在2023-10-22修正"><em><strong>在2023-10-22修正</strong></em></h3>
 <h2 id="了解hexo">了解Hexo</h2>
