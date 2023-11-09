@@ -21,7 +21,7 @@
       <description>使用 Hugo 模板框架时，在文章中嵌入 HTML 代码（两种方法）</description>
       <content:encoded><![CDATA[<h2 id="起因">起因</h2>
 <p>由于昨天写了一篇关于如何翻墙的文章（我很纠结要不要继续写下去），所以为了自身以后的安全问题，我给它加了一个弹窗来保命（你们怎么选就不关我的事了）.<br>
-后来总算是把这个搞成了，但是真的是困难重重啊&hellip;&hellip;</p>
+这个JavaScript其实我不知道怎么加，不过后来总算是把这个搞成了，今天我来分享下.</p>
 <h2 id="so咋搞的呢">so，咋搞的呢？</h2>
 <p>我以前使用的博客系统是Hexo，要是想在markdown文章里加入html代码，那就直接加就行；运行的也嘎嘎流畅.<br>
 Hugo就不这样. 因为Hugo的Markdown渲染器会自动忽略Html代码（<code>&lt;br&gt;</code>什么的不算），我认为这个渲染器小心过头了（Html又咋样）.</p>
@@ -46,8 +46,8 @@ Hugo就不这样. 因为Hugo的Markdown渲染器会自动忽略Html代码（<cod
 <img loading="lazy" src="/images/shortcode.png" alt="代码图片"  />
 
 把上面的玩意嵌入文章，就能用了. 中间的html可以自由发挥.<br>
-<em><strong>（你们知道为什么要用图片吗，因为这玩意六亲不认，把它放在markdown代码块、html注释和Hugo短代码注释中居然还能执行html！！！）</strong></em></p>
-<p><em><strong>（你们知道我是怎么打出上面的{{&lt;raw&gt;}}和{{&lt;/raw&gt;}}的吗，使用转义代码！！！实际上我这边是这样的：<code>{{&amp;lt;raw&amp;gt;}}和{{&amp;lt;/raw&amp;gt;}}</code>）</strong></em></p>
+<em><strong>（Q：为什么要用图片？ A：因为这玩意六亲不认。把它放在markdown代码块、html注释和Hugo短代码注释中居然还能执行里面的html。。。）</strong></em></p>
+<p><em><strong>（Q：那你是怎么打出上面的{{&lt;raw&gt;}}和{{&lt;/raw&gt;}}的？ A：使用转义代码。实际上我这边是这样的：<code>{{&amp;lt;raw&amp;gt;}}和{{&amp;lt;/raw&amp;gt;}}</code>）</strong></em></p>
 <h3 id="与此文章相关的还有">与此文章相关的还有：</h3>
 <p><a href="/posts/%E5%A6%82%E4%BD%95%E7%BB%99hugo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/">如何给hugo添加评论系统</a><br>
 <a href="/posts/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%9D%A5%E5%88%B0hugo%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87">第一次来到hugo的第一篇博文</a><br>

@@ -202,8 +202,8 @@
 <h3 id="有人看吗">有人看吗？</h3>
 <h4 id="没有至少是现在-因为不会seo优化搜索引擎看不上俺破站">没有，至少是现在. 因为不会seo优化，搜索引擎看不上俺破站.</h4>
 <h3 id="为什么没有域名">为什么没有域名？</h3>
-<h4 id="u本人为学生身无分文u"><u>本人为学生，身无分文.</u></h4>
-<h4 id="正在申请euorg域名还没收到反馈u大家u为我祈祷吧">正在申请eu.org域名，还没收到反馈，<u>大家</u>为我祈祷吧</h4>
+<h4 id="本人为学生身无分文"><del>本人为学生，身无分文.</del></h4>
+<h4 id="正在申请euorg域名还没收到反馈大家为我祈祷吧">正在申请eu.org域名，还没收到反馈，<del>大家</del>为我祈祷吧</h4>
 <h3 id="最后">最后</h3>
 <h4 id="其实这个博客从以前到现在一个人都没来过">其实这个博客从以前到现在一个人都没来过=(</h4>
 <h4 id="但是我还是想坚持写毕竟自由时间free-time没个业余的爱好可闲的慌">但是我还是想坚持写，毕竟自由时间(free time)没个业余的爱好可闲的慌.</h4>
@@ -358,7 +358,7 @@
             "分类|查看所有分类", "RSS订阅|获取最新文章更新", "破网软件获取中心|下载最新破网软件", "游戏|畅玩各种游戏", "base64编码/解码|加密和解密工具", "亲戚关系计算器|作者Passer-By", "亲戚关系计算器|手机版，作者Passer-By", "加密js|加密和解密JS代码", "浏览器检测|检测浏览器信息", "测试主标题|测试副标题"
         ];
         var linkArray = [
-            "/categories/", "/index.xml", "/paperfile/get-network-breaking-software/", "/paperfile/games_about/", "/paperfile/tools/base64/", "/paperfile/tools/relationship/", "/paperfile/tools/relationship/vue", "/paperfile/tools/hiddencode/", "/paperfile/tools/browser/", "https://example.com/测试"
+            "/categories/", "/index.xml", "/paperfile/get-vpn/", "/paperfile/games_about/", "/paperfile/tools/base64/", "/paperfile/tools/relationship/", "/paperfile/tools/relationship/vue", "/paperfile/tools/hiddencode/", "/paperfile/tools/browser/", "https://example.com/测试"
         ];
         // 生成随机颜色
         function getRandomColor() {
@@ -437,10 +437,10 @@
     
     <item>
       <title>破网软件下载中心</title>
-      <link>https://charle00001.github.io/paperfile/get-network-breaking-software/</link>
+      <link>https://charle00001.github.io/paperfile/get-vpn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://charle00001.github.io/paperfile/get-network-breaking-software/</guid>
+      <guid>https://charle00001.github.io/paperfile/get-vpn/</guid>
       <description>破网软件下载中心，包括各类破网软件下载. 此页面不可评论，有问题的话请到【留言板】提问.</description>
       <content:encoded><![CDATA[
 
