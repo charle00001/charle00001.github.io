@@ -141,9 +141,9 @@ Git官方在Sourceforge上提供了Git安装包，适合新手安装.<br>
 </span></span></code></pre></div><hr>
 <ol start="3">
 <li><code>git add</code><br>
-这个命令很有用，是把当前本地仓库的所有更改（包括文件更改、删除文件、新建文件等等）都添加到“暂存区”.</li>
+这个命令很有用，是把当前本地仓库的所有更改（<strong>包括文件更改、删除文件、新建文件等等</strong>）都添加到“<em><strong>暂存区</strong></em>”（也叫<em><strong>索引</strong></em>，git官方网站解释）.</li>
 </ol>
-<p>你不用明白是干嘛用的，只需要知道没有这一步Git不会知道你把文件更改了，也不会把你更改的玩意推送到远程仓库.</p>
+<p>你不用明白是干嘛用的，只需要知道如果没有这一步Git就不会知道你把文件更改了，也不会把你更改的玩意推送到远程仓库.</p>
 <p>常用子命令：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git add .
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># 或者</span>
@@ -151,7 +151,8 @@ Git官方在Sourceforge上提供了Git安装包，适合新手安装.<br>
 </span></span></code></pre></div><p>把更改的文件记录进暂存区.  两条命令的区别在于<code>git add .</code>必须在本地仓库的根目录运行才能生效，<code>git add -A</code>在仓库的子目录也能生效.</p>
 <hr>
 <ol start="4">
-<li><code>git commit</code></li>
+<li><code>git commit</code><br>
+创建一个新的提交，包含索引（暂存区）的当前内容和描述变化的给定日志信息.  这个提交会更新仓库的代码，包括了你所有修改/添加过的文件（需要配合<code>git add</code>命令生效）</li>
 </ol>
 ]]></content:encoded>
     </item>
