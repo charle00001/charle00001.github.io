@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>无界 on Charle00001`s Blog</title>
+    <link>https://charle00001.github.io/tags/%E6%97%A0%E7%95%8C/</link>
+    <description>Recent content in 无界 on Charle00001`s Blog</description>
+    <image>
+      <title>Charle00001`s Blog</title>
+      <url>https://charle00001.github.io/47</url>
+      <link>https://charle00001.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 03 Nov 2023 10:37:10 +0100</lastBuildDate><atom:link href="https://charle00001.github.io/tags/%E6%97%A0%E7%95%8C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何获取自由门、无界、自由浏览、迷雾通</title>
+      <link>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E8%87%AA%E7%94%B1%E9%97%A8%E6%97%A0%E7%95%8C%E8%87%AA%E7%94%B1%E6%B5%8F%E8%A7%88%E8%BF%B7%E9%9B%BE%E9%80%9A/</link>
+      <pubDate>Fri, 03 Nov 2023 10:37:10 +0100</pubDate>
+      
+      <guid>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E8%87%AA%E7%94%B1%E9%97%A8%E6%97%A0%E7%95%8C%E8%87%AA%E7%94%B1%E6%B5%8F%E8%A7%88%E8%BF%B7%E9%9B%BE%E9%80%9A/</guid>
+      <description>下载自由门、无界、自由浏览、迷雾通破网软件</description>
+      <content:encoded><![CDATA[
+
+<script>
+    function showDisclaimer() {
+        // 检查是否存在名为 "disclaimer" 的 Cookie
+        var disclaimerCookie = getCookie("disclaimer");
+        if (disclaimerCookie === "同意") {
+            // 如果存在 "disclaimer" Cookie，并且值为 "同意"，则不显示免责声明
+            return;
+        }
+
+        // 显示免责声明
+        var disclaimer = "免责声明：请阅读本文不符合所在地区的法律的读者自行离开，阅读本文所造成的后果作者一概不负责.";
+        window.alert(disclaimer);
+
+        // 询问用户是否同意免责声明
+        var result = window.confirm("您是否同意免责声明？（本站使用cookie来记录您是否同意免责声明）");
+        if (result) {
+            // 如果用户点击确认，将 "disclaimer" Cookie 的值设置为 "同意"
+            setCookie("disclaimer", "同意");
+            // 显示已同意的提示消息
+            window.alert("您已同意免责声明.");
+        } else {
+            // 如果用户点击取消或关闭对话框，执行其他操作（可根据需求进行修改）
+            window.location.href = "about:blank";
+        }
+    }
+
+    // 获取指定名称的 Cookie 的值
+    function getCookie(name) {
+        var cookies = document.cookie.split("; ");
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i].split("=");
+            if (cookie[0] === name) {
+                return cookie[1];
+            }
+        }
+        return "";
+    }
+
+    // 设置 Cookie
+    function setCookie(name, value) {
+        var expires = new Date();
+        expires.setFullYear(expires.getFullYear() + 1); // 设置 Cookie 有效期为一年
+        document.cookie = name + "=" + value + "; expires=" + expires.toUTCString();
+    }
+
+    // 在适当的时候调用 showDisclaimer() 函数，例如在页面加载完成后或点击某个按钮时
+    showDisclaimer();
+</script>
+
+
+<h2 id="免责声明">免责声明</h2>
+<h3 id="请阅读本文不符合所在地区的法律的读者自行离开阅读本文所造成的后果作者一概不负责">请阅读本文不符合所在地区的法律的读者自行离开，阅读本文所造成的后果作者一概不负责.</h3>
+<hr>
+<h2 id="获取自由门无界自由浏览迷雾通">获取自由门、无界、自由浏览、迷雾通</h2>
+<p><a href="/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96tor%E5%92%8Ci2p/">上一篇文章</a>我们讲了如何获取Tor和I2P，但是这两个工具的速度太慢，如果仅仅是浏览youtube、tiktok、reddit这种【非敏感但封锁】的网站，【不需要】Tor和I2P.</p>
+<p>现在我们有了一些【比它们俩个】更快的翻墙工具&mdash;&mdash;自由门、无界、自由浏览、迷雾通，我将会和大家仔细说说怎么获取.</p>
+<h3 id="如果自己没有tor或者别的破网软件不能下载也可以去顶栏----别的工具----破网软件获取中心来从onedrivegithub获取">如果自己没有Tor或者别的破网软件不能下载，也可以去【顶栏&mdash;-&gt;别的&amp;工具&mdash;-&gt;破网软件获取中心】来从onedrive/GitHub获取.</h3>
+<hr>
+<h3 id="自由门">自由门</h3>
+<p>自由门是“<a href="https://zh.wikipedia.org/wiki/%E5%85%A8%E7%90%83%E7%BD%91%E7%BB%9C%E8%87%AA%E7%94%B1%E8%81%94%E7%9B%9F">全球网络自由联盟</a>”研发的破网工具，缺点是【不】开源. 不过有很多人使用，应该没有后门.</p>
+<p>官方下载地址：<a href="https://dongtaiwang.com/loc/download.php">在这里</a></p>
+<p>除了从官网和我的破网软件获取中心下载以外，自由门也可以这么获取：</p>
+<p>发一封【主题不为空】的邮件到<code>ziyoumen99@gmail.com</code>（不要用国内邮箱），十分钟内会收到回信，回信中包含下载地址.</p>
+<hr>
+<h3 id="无界">无界</h3>
+<p>无界也是一个翻墙软件，官网在&quot;<a href="http://www.wujieliulan.com/download.php">这里</a>&quot;</p>
+<p>无界浏览是美国无界网络公司建立在GIFT技术平台上的客户端软件，提供中国互联网用户绕过网络长城的方法。</p>
+<p>无界的另一种获取方法很像Tor浏览器的&quot;GetTor&quot;服务，甚至比GetTor的选项还【多】，我们就暂且称它为&quot;Get无界&quot;.</p>
+<p>如何使用&quot;Get无界&quot;呢？</p>
+<p><em><strong>电子邮件获取</strong></em></p>
+<p>给xiazai@upup.info发一封电子邮件，切忌使用【国内】的电邮服务.</p>
+<p><em><strong>Skype</strong></em></p>
+<p>使用<a href="https://www.skype.com/zh-Hans/get-skype/">正版Skype</a>搜索<code>wujieliulan.com</code>这个账号，打开它就可以获取无界下载网址. 另外给它发送任何消息也【可以】获取无界下载地址.</p>
+<p><em><strong><del>视窗即时传讯</del></strong></em></p>
+<p><del>用微软视窗即时传讯Windows Live Messenger给以下其中一个帐号发一个短信，就会收到几个有效IP地址：</del><br>
+<del><a href="mailto:wj2007001@hotmail.com">wj2007001@hotmail.com</a>， <a href="mailto:wj2007002@hotmail.com">wj2007002@hotmail.com</a>，wj2007003@hotmail.com， <a href="mailto:wj2007004@hotmail.com">wj2007004@hotmail.com</a>，wj2007005@hotmail.com， <a href="mailto:wj2007006@hotmail.com">wj2007006@hotmail.com</a></del></p>
+<p><em><strong><del>Google Talk</del></strong></em><br>
+<em><strong><del>Yahoo Messenger</del></strong></em></p>
+<p style="color: red">Windows Live Messenger/Google Talk/Yahoo Messenger的服务已关闭，此（些）项获取方法作废.</p>
+<hr>
+<h3 id="自由浏览">自由浏览</h3>
+<p>自由浏览是一款由GreatFire基于Chromium项目开发的安卓翻墙浏览器，仅支持安卓系统的手机.<br>
+官网：<a href="https://freebrowser.org/">在这里</a><br>
+下载1：<a href="https://chenghesheng.com/freebrowser.apk">在这里</a><br>
+下载2（备用）：<a href="https://bitbucket.org/greatfire/wiki/raw/master/FreeBrowser.apk">在这里</a></p>
+<hr>
+<h3 id="迷雾通">迷雾通</h3>
+<p>迷雾通是一款先进的VPN，提供免费和付费. 免费限速125KB每秒，比Tor和I2P快.<br>
+这里不能贴出维基百科，因为没有这个条目. 不过迷雾通作者在<a href="https://pincong.rocks/">品葱</a>发了一帖来介绍这个软件.</p>
+<p>具体帖子在“<a href="https://pincong.rocks/article/id-10365__sort_key-add_time__sort-ASC">这里</a>”</p>
+<p>官网：<a href="https://geph.io/zhs">在这里</a></p>
+<p>下载：</p>
+<ol>
+<li>从官网获取</li>
+<li>免翻墙镜像：backblaze是一个是美国的云存储和数据备份公司，居然没被墙. <a href="https://waa.ai/xiazaimiwutong">这个</a>或<a href="https://f001.backblazeb2.com/file/geph4-dl/geph-releases/dl.html">这个</a>是迷雾通【官方】免翻墙镜像.</li>
+<li>通过博客的翻墙中心下载.</li>
+</ol>
+<hr>
+<h3 id="与此文章相关的文章">与此文章相关的文章：</h3>
+<p><a href="/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E7%A0%B4%E7%BD%91%E8%BD%AF%E4%BB%B62023/">如何获取破网软件2023</a><br>
+<a href="/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96tor%E5%92%8Ci2p/">Tor和I2P是什么以及如何获取Tor和I2P</a></p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

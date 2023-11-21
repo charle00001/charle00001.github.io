@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>waline on Charle00001`s Blog</title>
+    <link>https://charle00001.github.io/tags/waline/</link>
+    <description>Recent content in waline on Charle00001`s Blog</description>
+    <image>
+      <title>Charle00001`s Blog</title>
+      <url>https://charle00001.github.io/47</url>
+      <link>https://charle00001.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 28 Oct 2023 19:13:06 +0200</lastBuildDate><atom:link href="https://charle00001.github.io/tags/waline/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何给hugo添加评论系统</title>
+      <link>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E7%BB%99hugo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Sat, 28 Oct 2023 19:13:06 +0200</pubDate>
+      
+      <guid>https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E7%BB%99hugo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</guid>
+      <description>详细讲述如何给Hugo博客papermod主题添加评论系统</description>
+      <content:encoded><![CDATA[<h2 id="给博客添加的各种改动---评论系统篇">给博客添加的各种改动&mdash;评论系统篇</h2>
+<h3 id="目标添加评论系统walinedisqus">目标：添加评论系统（waline/disqus）</h3>
+<p>尽管我们重点要说waline和disqus，但是只要看懂了这篇文章什么评论系统都可以加.
+大家搭建博客时应该经常希望添加一个评论系统吧.<br>
+本博客使用Hugo + Papermod，其他主题不知道能不能成功适配.</p>
+<hr>
+<h2 id="第一部分---配置">第一部分&mdash;配置</h2>
+<p>先将总配置文件的params下加一条<code>comments: true</code>.（其他格式toml、json可以去找配置文件转换器）</p>
+<p>在<code>博客根目录/layouts</code>下新建文件夹<code>partials/</code>，新建文件<code>comments.html</code>.<br>
+使用papermod主题的去<code>博客根目录/themes/PaperMod/layouts/partials/comments.html</code>找到此文件复制其内容.</p>
+<pre tabindex="0"><code class="language-hugo" data-lang="hugo">{{- /* Comments area start */ -}}
+{{- /* to add comments read =&gt; https://gohugo.io/content-management/comments/ */ -}}
+{{- /* Comments area end */ -}}
+</code></pre><hr>
+<p>别的主题应该也有这个文件，自己去找找吧（有可能里面的内容与papermod的不一样，但是总体配置方法应该很相似，稍微折腾一下吧）<br>
+我看了一下，许多主题集成了许多评论系统，Disqus、waline、gitalk应有尽有，故不需要看这篇文章.（比如stack、loveit等等）</p>
+<hr>
+<p>将复制的内容放到刚刚创建的<code>博客根目录/layouts/partials/comments.html</code>，删掉中间行<code>{{- /* to add comments read =&gt; https://gohugo.io/content-management/comments/ */ -}}</code>.</p>
+<p>然后将下面的代码复制到<code>{{- /* Comments area start */ -}}</code>和<code>{{- /* Comments area end */ -}}</code>的中间.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;XXX&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    {{ partial &#34;XXX.html&#34; . }}
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></div><hr>
+<h3 id="添加waline">添加waline</h3>
+<p>还是在<code>博客根目录/layouts/partials</code>下，创建<code>waline.html</code>.</p>
+<p>根据waline官方文档配置leancloud数据库和Vercel部署（我这里小小的偷个懒，毕竟我写的再详细也没有它的文档详细，而且我按照它的配置来也没有什么大坑）<br>
+<a href="https://waline.js.org/guide/get-started/">点此进入</a></p>
+<p>虽然这里不写详细教程了，但是我还要给大伙提个醒：不要用leancloud国内版，很麻烦（而且众所周知一些国外软件的中国特供版都不是什么好东西，比如tom-skype，北京谋智firefox等等）</p>
+<p>Vercel被墙了，所以我正在想解决方案.</p>
+<p>配置好leancloud和vercel之后下一步复制<a href="https://waline.js.org/guide/get-started/#html-%E5%BC%95%E5%85%A5-%E5%AE%A2%E6%88%B7%E7%AB%AF">点此进入</a>的html代码.
+将html代码写入刚刚创建的<code>waline.html</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">&lt;!-- ... --&gt;</span>
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">link</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://unpkg.com/@waline/client@v2/dist/waline.css&#34;</span>
+</span></span><span style="display:flex;"><span>  /&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">&lt;!-- ... --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">&lt;!-- ... --&gt;</span>
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;waline&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;module&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">init</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;https://unpkg.com/@waline/client@v2/dist/waline.mjs&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">init</span>({
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;#waline&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">serverURL</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;https://your-domain.vercel.app&#39;</span>,
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span></code></pre></div><p>将<code>serverURL</code>后面的链接改成你部署好的vercel网站的链接.<br>
+再在init下加一条<code>dark: 'body.dark',</code>，不要问我为什么. 如果你的网站有暗黑模式，你不加这一条不难看死你.</p>
+<p>对于网速不好的同学，可以把unpkg的css、mjs文件下载好放到<code>博客根目录/static</code>静态资源文件夹中再把链接改为本地文件链接.</p>
+<p>打开<code>博客根目录/layouts/partials/comments.html</code>，将XXX改为waline，XXX.html改为waline.html，引入刚刚写好的文件.</p>
+<h3 id="waline配置成功">waline配置成功</h3>
+<hr>
+<h3 id="添加disqus">添加Disqus</h3>
+<p>注册，复制disqus的html部署代码，像上面那样新建<code>disqus.html</code>，然后用<code>comments.html</code>引入.（小小的偷个懒，毕竟过程很简单，不可能有坑，除非是网络问题）</p>
+<h3 id="与此文章相关的还有">与此文章相关的还有：</h3>
+<p><a href="/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%BD%BF%E7%94%A8hugo%E6%A8%A1%E7%89%88%E6%A1%86%E6%9E%B6%E6%97%B6%E5%9C%A8%E6%96%87%E7%AB%A0%E4%B8%AD%E5%B5%8C%E5%85%A5html%E4%BB%A3%E7%A0%81/">如何在使用Hugo模版框架时在文章中嵌入HTML代码</a><br>
+<a href="/posts/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%9D%A5%E5%88%B0hugo%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87">第一次来到hugo的第一篇博文</a><br>
+<a href="/posts/%E7%BB%99%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%90%84%E7%A7%8D%E6%94%B9%E5%8A%A8-%E8%AE%B0%E5%BD%95%E4%BB%A5%E5%A4%87%E5%BF%98/">给博客的各种改动-记录以备忘</a></p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>关于waline的那些事</title>
+      <link>https://charle00001.github.io/posts/%E5%85%B3%E4%BA%8Ewaline%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</link>
+      <pubDate>Sat, 28 Oct 2023 12:38:44 +0200</pubDate>
+      
+      <guid>https://charle00001.github.io/posts/%E5%85%B3%E4%BA%8Ewaline%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</guid>
+      <description>waline的一些问题以及解决方法</description>
+      <content:encoded><![CDATA[<h2 id="测试文章">测试文章</h2>
+<h3 id="啥也没有">啥也没有</h3>
+<p>我本来要用Disqus的，但是换成了waline.<br>
+我认为他们两个各自有各自的好处，也不能说waline一定比disqus好.</p>
+<hr>
+<p>不知道为什么waline开始抽风<br>
+在暗色模式下评论框为刺眼白色评论而且文字与背景颜色相近，根本看不清<br>
+在浅色模式下正常工作</p>
+<hr>
+<p>2023/10/30 逛GitHub issue时发现了解决方法并且写了一篇博客，在
+<a href="https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E7%BB%99hugo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/">这里</a><br>
+如果懒得去在文章里找（那篇文章不仅仅是这个bug）.<br>
+把<code>dark: 'body.dark',</code>加入<code>博客根目录/layouts/partials/你的comments.html</code>或者看我上面那篇文章来配置waline.</p>
+<hr>
+<p>过了一会又提示报错，发不了评论.<br>
+这个报错时好时坏（我写的时候又测试了一下，发了两条评论，前两条成功发出，第三条又报错）.</p>
+<pre tabindex="0"><code>undefined [525 GET https://uqqkzsak.api.lncldglobal.com/1.1/classes/Users]
+</code></pre><p><img loading="lazy" src="/images/waline%e6%8a%a5%e9%94%99.png" alt="报错"  />
+<br>
+上面的报错问题我也不知道怎么回事.</p>
+<hr>
+<p>为了不用再加载一遍unpkg的css和mjs，我把这两个文件下载下来了<br>
+而且格式化了一下<br>
+<a href="https://charle00001.github.io/code/css/waline.css">https://charle00001.github.io/code/css/waline.css</a><br>
+<a href="https://charle00001.github.io/code/css/waline.mjs">https://charle00001.github.io/code/css/waline.mjs</a></p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

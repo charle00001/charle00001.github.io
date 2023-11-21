@@ -1,0 +1,2497 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Paperfiles on Charle00001`s Blog</title>
+    <link>https://charle00001.github.io/paperfile/</link>
+    <description>Recent content in Paperfiles on Charle00001`s Blog</description>
+    <image>
+      <title>Charle00001`s Blog</title>
+      <url>https://charle00001.github.io/47</url>
+      <link>https://charle00001.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language><atom:link href="https://charle00001.github.io/paperfile/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://charle00001.github.io/paperfile/styl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://charle00001.github.io/paperfile/styl/</guid>
+      <description>@import &amp;#39;../Pisces/_layout&amp;#39;; @import &amp;#39;../Pisces/_header&amp;#39;; @import &amp;#39;../Pisces/_menu&amp;#39;; @import &amp;#39;../Pisces/_sub-menu&amp;#39;; @import &amp;#39;../Pisces/_sidebar&amp;#39;; // ================================================== // Rewrite _layout.styl // ================================================== // Sidebar padding used as main desktop content padding for sidebar padding and post blocks padding too. // In `source/css/_variables/Pisces.styl` there are variable for main offset: // $sidebar-offset = 12px; // This value alse can be changed in main NexT config as `sidebar: offset: 12` option. // In `source/css/_variables/base.styl` there are variables for</description>
+      <content:encoded><![CDATA[<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-styl" data-lang="styl"><span style="display:flex;"><span><span style="color:#66d9ef">@import</span> <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">../</span><span style="color:#960050;background-color:#1e0010">Pisces</span><span style="color:#f92672">/</span><span style="color:#960050;background-color:#1e0010">_layout&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">@import</span> <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">../</span><span style="color:#960050;background-color:#1e0010">Pisces</span><span style="color:#f92672">/</span><span style="color:#960050;background-color:#1e0010">_header&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">@import</span> <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">../</span><span style="color:#960050;background-color:#1e0010">Pisces</span><span style="color:#f92672">/</span><span style="color:#960050;background-color:#1e0010">_menu&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">@import</span> <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">../</span><span style="color:#960050;background-color:#1e0010">Pisces</span><span style="color:#f92672">/</span><span style="color:#960050;background-color:#1e0010">_sub</span><span style="color:#f92672">-</span><span style="color:#960050;background-color:#1e0010">menu&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">@import</span> <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">../</span><span style="color:#960050;background-color:#1e0010">Pisces</span><span style="color:#f92672">/</span><span style="color:#960050;background-color:#1e0010">_sidebar&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#f92672">==================================================</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#960050;background-color:#1e0010">Rewrite</span> <span style="color:#960050;background-color:#1e0010">_layout</span>.<span style="color:#a6e22e">styl</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#f92672">==================================================</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#960050;background-color:#1e0010">Sidebar</span> padding <span style="color:#960050;background-color:#1e0010">used</span> <span style="color:#960050;background-color:#1e0010">as</span> <span style="color:#f92672">main</span> <span style="color:#960050;background-color:#1e0010">desktop</span> content padding <span style="color:#66d9ef">for</span> <span style="color:#960050;background-color:#1e0010">sidebar</span> padding <span style="color:#f92672">and</span> <span style="color:#960050;background-color:#1e0010">post</span> <span style="color:#960050;background-color:#1e0010">blocks</span> padding <span style="color:#960050;background-color:#1e0010">too</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#f92672">In</span> <span style="color:#960050;background-color:#1e0010">`</span><span style="color:#f92672">source</span><span style="color:#f92672">/</span><span style="color:#960050;background-color:#1e0010">css</span><span style="color:#f92672">/</span><span style="color:#960050;background-color:#1e0010">_variables</span><span style="color:#f92672">/</span><span style="color:#960050;background-color:#1e0010">Pisces</span>.<span style="color:#a6e22e">styl</span><span style="color:#960050;background-color:#1e0010">`</span> <span style="color:#960050;background-color:#1e0010">there</span> <span style="color:#960050;background-color:#1e0010">are</span> <span style="color:#960050;background-color:#1e0010">variable</span> <span style="color:#66d9ef">for</span> <span style="color:#f92672">main</span> <span style="color:#960050;background-color:#1e0010">offset</span>:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> $sidebar-offset                   <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">12px</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#960050;background-color:#1e0010">This</span> <span style="color:#960050;background-color:#1e0010">value</span> <span style="color:#960050;background-color:#1e0010">alse</span> <span style="color:#960050;background-color:#1e0010">can</span> <span style="color:#960050;background-color:#1e0010">be</span> <span style="color:#960050;background-color:#1e0010">changed</span> <span style="color:#f92672">in</span> <span style="color:#f92672">main</span> <span style="color:#960050;background-color:#1e0010">NexT</span> <span style="color:#960050;background-color:#1e0010">config</span> <span style="color:#960050;background-color:#1e0010">as</span> <span style="color:#960050;background-color:#1e0010">`sidebar</span>: <span style="color:#960050;background-color:#1e0010">offset</span>: <span style="color:#960050;background-color:#1e0010">12`</span> <span style="color:#f92672">option</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#f92672">In</span> <span style="color:#960050;background-color:#1e0010">`</span><span style="color:#f92672">source</span><span style="color:#f92672">/</span><span style="color:#960050;background-color:#1e0010">css</span><span style="color:#f92672">/</span><span style="color:#960050;background-color:#1e0010">_variables</span><span style="color:#f92672">/</span><span style="color:#f92672">base</span>.<span style="color:#a6e22e">styl</span><span style="color:#960050;background-color:#1e0010">`</span> <span style="color:#960050;background-color:#1e0010">there</span> <span style="color:#960050;background-color:#1e0010">are</span> <span style="color:#960050;background-color:#1e0010">variables</span> <span style="color:#66d9ef">for</span> <span style="color:#960050;background-color:#1e0010">other</span> <span style="color:#960050;background-color:#1e0010">resolutions</span>:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> $content-tablet-padding           <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">10px</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> $content-mobile-padding           <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">8px</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#f92672">P</span>.<span style="color:#a6e22e">S</span><span style="color:#f92672">.</span> <span style="color:#66d9ef">If</span> <span style="color:#f92672">u</span> <span style="color:#960050;background-color:#1e0010">want</span> <span style="color:#960050;background-color:#1e0010">to</span> <span style="color:#960050;background-color:#1e0010">change</span> <span style="color:#960050;background-color:#1e0010">this</span> <span style="color:#960050;background-color:#1e0010">paddings</span> <span style="color:#f92672">u</span> <span style="color:#960050;background-color:#1e0010">may</span> <span style="color:#960050;background-color:#1e0010">set</span> <span style="color:#960050;background-color:#1e0010">this</span> <span style="color:#960050;background-color:#1e0010">variables</span> <span style="color:#960050;background-color:#1e0010">into</span> <span style="color:#960050;background-color:#1e0010">`custom_file_path</span>.<span style="color:#a6e22e">variable</span><span style="color:#960050;background-color:#1e0010">`</span> (<span style="color:#f92672">in</span> <span style="color:#960050;background-color:#1e0010">theme</span> <span style="color:#960050;background-color:#1e0010">_config</span>.<span style="color:#a6e22e">yml</span>)<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#960050;background-color:#1e0010">So</span>, <span style="color:#960050;background-color:#1e0010">it</span> <span style="color:#960050;background-color:#1e0010">will</span> <span style="color:#960050;background-color:#1e0010">12px</span> <span style="color:#f92672">in</span> <span style="color:#960050;background-color:#1e0010">Desktop</span>, <span style="color:#960050;background-color:#1e0010">10px</span> <span style="color:#f92672">in</span> <span style="color:#960050;background-color:#1e0010">Tablets</span> <span style="color:#f92672">and</span> <span style="color:#960050;background-color:#1e0010">8px</span> <span style="color:#f92672">in</span> <span style="color:#960050;background-color:#1e0010">Mobiles</span> <span style="color:#66d9ef">for</span> all <span style="color:#960050;background-color:#1e0010">possible</span> <span style="color:#960050;background-color:#1e0010">paddings</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#f92672">==================================================</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#960050;background-color:#1e0010">Desktop</span> <span style="color:#960050;background-color:#1e0010">layout</span> <span style="color:#960050;background-color:#1e0010">styles</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#f92672">==================================================</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#960050;background-color:#1e0010">Post</span> <span style="color:#960050;background-color:#1e0010">blocks</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">main-inner</span> {
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">sub-menu</span>, .<span style="color:#a6e22e">post-block</span>, .<span style="color:#a6e22e">tabs-comment</span>, <span style="color:#66d9ef">&amp;</span> <span style="color:#f92672">&gt;</span> .<span style="color:#a6e22e">comments</span>, .<span style="color:#a6e22e">comment-position</span> .<span style="color:#a6e22e">comments</span>, .<span style="color:#a6e22e">pagination</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">gemini-block</span>();
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">post-block</span>:<span style="color:#a6e22e">not</span>(:<span style="color:#960050;background-color:#1e0010">first</span><span style="color:#f92672">-</span><span style="color:#960050;background-color:#1e0010">child</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">&amp;</span>:<span style="color:#a6e22e">not</span>(:<span style="color:#960050;background-color:#1e0010">first</span><span style="color:#f92672">-</span><span style="color:#960050;background-color:#1e0010">child</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">gemini-block-not-first</span>();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">tabs-comment</span>, <span style="color:#66d9ef">&amp;</span> <span style="color:#f92672">&gt;</span> .<span style="color:#a6e22e">comments</span>, .<span style="color:#a6e22e">comment-position</span> .<span style="color:#a6e22e">comments</span>, .<span style="color:#a6e22e">pagination</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">gemini-block-not-first</span>();
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#960050;background-color:#1e0010">Post</span> <span style="color:#66d9ef">&amp;</span> <span style="color:#960050;background-color:#1e0010">Comments</span> <span style="color:#960050;background-color:#1e0010">blocks</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">post-block</span>, .<span style="color:#a6e22e">comments</span> {
+</span></span><span style="display:flex;"><span>  padding: $content-desktop-padding;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#960050;background-color:#1e0010">Post</span> <span style="color:#960050;background-color:#1e0010">delimiters</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">post-eof</span> {
+</span></span><span style="display:flex;"><span>  display: <span style="color:#66d9ef">none</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#960050;background-color:#1e0010">Pagination</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">pagination</span> {
+</span></span><span style="display:flex;"><span>  border<span style="color:#f92672">-</span>top: <span style="color:#66d9ef">initial</span>;
+</span></span><span style="display:flex;"><span>  padding: <span style="color:#960050;background-color:#1e0010">10px</span> <span style="color:#960050;background-color:#1e0010">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#f92672">==================================================</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#960050;background-color:#1e0010">Headers</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#f92672">==================================================</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">post-body</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">h1</span>, <span style="color:#f92672">h2</span> {
+</span></span><span style="display:flex;"><span>    border<span style="color:#f92672">-</span>bottom: <span style="color:#960050;background-color:#1e0010">1px</span> <span style="color:#960050;background-color:#1e0010">solid</span> $body-bg-color;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">h3</span> {
+</span></span><span style="display:flex;"><span>    border<span style="color:#f92672">-</span>bottom: <span style="color:#960050;background-color:#1e0010">1px</span> <span style="color:#960050;background-color:#1e0010">dotted</span> $body-bg-color;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#f92672">==================================================</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#f92672">&gt;</span> <span style="color:#960050;background-color:#1e0010">768px</span> <span style="color:#66d9ef">&amp;</span> <span style="color:#f92672">&lt;</span> <span style="color:#960050;background-color:#1e0010">991px</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#f92672">==================================================</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">+</span><span style="color:#a6e22e">tablet</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">//</span> <span style="color:#960050;background-color:#1e0010">Posts</span> <span style="color:#f92672">in</span> <span style="color:#960050;background-color:#1e0010">blocks</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">main-inner</span> {
+</span></span><span style="display:flex;"><span>    padding: $content-tablet-padding;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">posts-expand</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">//</span> <span style="color:#960050;background-color:#1e0010">Components</span> <span style="color:#960050;background-color:#1e0010">inside</span> <span style="color:#960050;background-color:#1e0010">Posts</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">post-button</span> {
+</span></span><span style="display:flex;"><span>      margin<span style="color:#f92672">-</span>top: ($content-tablet-padding <span style="color:#f92672">*</span> <span style="color:#960050;background-color:#1e0010">2</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">post-block</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">//</span> <span style="color:#960050;background-color:#1e0010">Inside</span> <span style="color:#960050;background-color:#1e0010">posts</span> <span style="color:#960050;background-color:#1e0010">blocks</span> content padding (<span style="color:#960050;background-color:#1e0010">default</span> <span style="color:#960050;background-color:#1e0010">40px</span>)<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>    padding: ($content-tablet-padding <span style="color:#f92672">*</span> <span style="color:#960050;background-color:#1e0010">2</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">comments</span> {
+</span></span><span style="display:flex;"><span>    padding: $content-tablet-padding ($content-tablet-padding <span style="color:#f92672">*</span> <span style="color:#960050;background-color:#1e0010">2</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">//</span> padding: <span style="color:#66d9ef">initial</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">//</span> padding<span style="color:#f92672">-</span>top: $content-tablet-padding;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#f92672">==================================================</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#f92672">&lt;</span> <span style="color:#960050;background-color:#1e0010">767px</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#f92672">==================================================</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">+</span><span style="color:#a6e22e">mobile</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">//</span> <span style="color:#960050;background-color:#1e0010">Posts</span> <span style="color:#f92672">in</span> <span style="color:#960050;background-color:#1e0010">blocks</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">main-inner</span> {
+</span></span><span style="display:flex;"><span>    padding: $content-mobile-padding;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">posts-expand</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">//</span> <span style="color:#960050;background-color:#1e0010">Components</span> <span style="color:#960050;background-color:#1e0010">inside</span> <span style="color:#960050;background-color:#1e0010">Posts</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">post-button</span> {
+</span></span><span style="display:flex;"><span>      margin: $sidebar-offset <span style="color:#960050;background-color:#1e0010">0</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">post-block</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">//</span> <span style="color:#960050;background-color:#1e0010">Inside</span> <span style="color:#960050;background-color:#1e0010">posts</span> <span style="color:#960050;background-color:#1e0010">blocks</span> content padding (<span style="color:#960050;background-color:#1e0010">default</span> <span style="color:#960050;background-color:#1e0010">40px</span>)<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>    padding: $sidebar-offset;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">comments</span> {
+</span></span><span style="display:flex;"><span>    padding: <span style="color:#960050;background-color:#1e0010">10px</span> $sidebar-offset;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">////////////////////////////////////////////////////////////////</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span><span style="color:#960050;background-color:#1e0010">博客内容透明化（全局设置）</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">main</span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">//</span><span style="color:#960050;background-color:#1e0010">这个是博客内容全局透明设置，除了搜索框</span>
+</span></span><span style="display:flex;"><span>  opacity: <span style="color:#960050;background-color:#1e0010">0</span>.<span style="color:#a6e22e">85</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span><span style="color:#960050;background-color:#1e0010">搜索框（local</span><span style="color:#f92672">-</span><span style="color:#960050;background-color:#1e0010">search）的透明度设置</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">popup</span> {
+</span></span><span style="display:flex;"><span>  opacity: <span style="color:#960050;background-color:#1e0010">0</span>.<span style="color:#a6e22e">99</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//-------------------------------------------------</span><span style="color:#960050;background-color:#1e0010">我是使用的是上面的</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span><span style="color:#960050;background-color:#1e0010">博客内容透明化（单独设置）</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">/*</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">main-inner</span>{
+</span></span><span style="display:flex;"><span>  opacity: <span style="color:#960050;background-color:#1e0010">0</span>.<span style="color:#a6e22e">85</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span><span style="color:#960050;background-color:#1e0010">侧边框的透明度设置</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">sidebar</span> {
+</span></span><span style="display:flex;"><span>  opacity: <span style="color:#960050;background-color:#1e0010">0</span>.<span style="color:#a6e22e">85</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span><span style="color:#960050;background-color:#1e0010">菜单栏的透明度设置</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span><span style="color:#960050;background-color:#1e0010">下面这个虽然有用，但是会出现一个问题，具体见下面的链接</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span><span style="color:#960050;background-color:#1e0010">https</span>:<span style="color:#f92672">//</span><span style="color:#960050;background-color:#1e0010">github</span>.<span style="color:#a6e22e">com</span><span style="color:#f92672">/</span><span style="color:#960050;background-color:#1e0010">next</span><span style="color:#f92672">-</span><span style="color:#960050;background-color:#1e0010">theme</span><span style="color:#f92672">/</span><span style="color:#960050;background-color:#1e0010">hexo</span><span style="color:#f92672">-</span><span style="color:#960050;background-color:#1e0010">theme</span><span style="color:#f92672">-</span><span style="color:#960050;background-color:#1e0010">next</span><span style="color:#f92672">/</span><span style="color:#960050;background-color:#1e0010">discussions</span><span style="color:#f92672">/</span><span style="color:#960050;background-color:#1e0010">652</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span><span style="color:#960050;background-color:#1e0010">https</span>:<span style="color:#f92672">//</span><span style="color:#960050;background-color:#1e0010">github</span>.<span style="color:#a6e22e">com</span><span style="color:#f92672">/</span><span style="color:#960050;background-color:#1e0010">theme</span><span style="color:#f92672">-</span><span style="color:#960050;background-color:#1e0010">next</span><span style="color:#f92672">/</span><span style="color:#960050;background-color:#1e0010">hexo</span><span style="color:#f92672">-</span><span style="color:#960050;background-color:#1e0010">theme</span><span style="color:#f92672">-</span><span style="color:#960050;background-color:#1e0010">next</span><span style="color:#f92672">/</span><span style="color:#960050;background-color:#1e0010">issues</span><span style="color:#f92672">/</span><span style="color:#960050;background-color:#1e0010">914</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">header</span>.<span style="color:#a6e22e">header</span> {
+</span></span><span style="display:flex;"><span>  opacity: <span style="color:#960050;background-color:#1e0010">0</span>.<span style="color:#a6e22e">85</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">*/</span>
+</span></span></code></pre></div>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://charle00001.github.io/paperfile/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://charle00001.github.io/paperfile/about/</guid>
+      <description>自我介绍 本人姓名不详，年龄不详，现居于海外某地. 一天突发奇想写个博客，就开始写了. 动机 没有动机. 工作？ 无，学生. 会一直写吗？ 不清楚. 有空就写</description>
+      <content:encoded><![CDATA[<h2 id="自我介绍">自我介绍</h2>
+<h4 id="本人姓名不详年龄不详现居于海外某地-一天突发奇想写个博客就开始写了">本人姓名不详，年龄不详，现居于海外某地. 一天突发奇想写个博客，就开始写了.</h4>
+<hr>
+<h3 id="动机">动机</h3>
+<h4 id="没有动机">没有动机.</h4>
+<h3 id="工作">工作？</h3>
+<h4 id="无学生">无，学生.</h4>
+<h3 id="会一直写吗">会一直写吗？</h3>
+<h4 id="不清楚-有空就写-本人技术不佳也就写些这种东西而已">不清楚. 有空就写. 本人技术不佳，也就写些这种东西而已.</h4>
+<h3 id="有人看吗">有人看吗？</h3>
+<h4 id="没有至少是现在-因为不会seo优化搜索引擎看不上俺破站">没有，至少是现在. 因为不会seo优化，搜索引擎看不上俺破站.</h4>
+<h3 id="为什么没有域名">为什么没有域名？</h3>
+<h4 id="本人为学生身无分文"><del>本人为学生，身无分文.</del></h4>
+<h4 id="正在申请euorg域名还没收到反馈大家为我祈祷吧">正在申请eu.org域名，还没收到反馈，<del>大家</del>为我祈祷吧</h4>
+<h3 id="最后">最后</h3>
+<h4 id="其实这个博客从以前到现在一个人都没来过">其实这个博客从以前到现在一个人都没来过=(</h4>
+<h4 id="但是我还是想坚持写毕竟自由时间free-time没个业余的爱好可闲的慌">但是我还是想坚持写，毕竟自由时间(free time)没个业余的爱好可闲的慌.</h4>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>zsc，我有点想你<br>
+还有yy<br>
+不过我最近几年肯定回不来了<br>
+drama好难啊<br>
+我不太懂<br>
+我感觉&hellip;..<br>
+总之有点难过<br>
+刚刚没网络的时候顺便去玩了一会pvz<br>
+是html版的<br>
+我把代码下载下来了放在本地<br>
+玩完之后去研究了里面的结构<br>
+发现有一些制作者给他的朋友们的留言<br>
+有点泪目<br>
+不知道什么时候能回来<br>
+你那边应该也很辛苦<br>
+加油吧总之<br>
+没什么好说的了
+拜拜👋</p>
+]]></content:encoded>
+    </item>
+    
+    
+    <item>
+      <title>Games</title>
+      <link>https://charle00001.github.io/paperfile/games_about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://charle00001.github.io/paperfile/games_about/</guid>
+      <description>真的是好van的啊喂！！ 游戏名称 链接 扫雷/minesweeper 这里 2048 这里 俄罗斯方块/canvas tetris 这里 抓猫/catch cat 这里 甭鸟/clum</description>
+      <content:encoded><![CDATA[<h2 id="真的是好van的啊喂">真的是好van的啊喂！！</h2>
+<hr>
+<table>
+<thead>
+<tr>
+<th>游戏名称</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>扫雷/minesweeper</td>
+<td><a href="/paperfile/games/minesweeper">这里</a></td>
+</tr>
+<tr>
+<td>2048</td>
+<td><a href="/paperfile/games/2048">这里</a></td>
+</tr>
+<tr>
+<td>俄罗斯方块/canvas tetris</td>
+<td><a href="/paperfile/games/canvas-tetris">这里</a></td>
+</tr>
+<tr>
+<td>抓猫/catch cat</td>
+<td><a href="/paperfile/games/catch_cat">这里</a></td>
+</tr>
+<tr>
+<td>甭鸟/clumsy bird</td>
+<td><a href="/paperfile/games/clumsy-bird">这里</a></td>
+</tr>
+<tr>
+<td>五子棋/Gobang</td>
+<td><a href="/paperfile/games/Gobang-with-AI">这里</a></td>
+</tr>
+<tr>
+<td>HexGL</td>
+<td><a href="/paperfile/games/HexGL">这里</a></td>
+</tr>
+<tr>
+<td>Minecraft</td>
+<td><a href="/paperfile/games/Minecraft">这里</a></td>
+</tr>
+<tr>
+<td>pacman/吃豆人</td>
+<td><a href="/paperfile/games/pacman">这里</a></td>
+</tr>
+<tr>
+<td>t-rex/google恐龙</td>
+<td><a href="/paperfile/trex">这里</a></td>
+</tr>
+<tr>
+<td>Tic Tac Toe/九宫格</td>
+<td><a href="/paperfile/games/Tic_Tac_Toe">这里</a></td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>T-rex（谷歌小恐龙）</title>
+      <link>https://charle00001.github.io/paperfile/trex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://charle00001.github.io/paperfile/trex/</guid>
+      <description>太懒了. 我在这里发誓 要是有人发现了这里然后给我发了一封邮件提醒我+在评论区也发一条 我就补全这里的链接（游戏已经在网页上了，但是有好多变种，懒</description>
+      <content:encoded><![CDATA[<h3 id="太懒了">太懒了.</h3>
+<h3 id="我在这里发誓">我在这里发誓</h3>
+<h3 id="要是有人发现了这里然后给我发了一封h1bstrongu邮件提醒我在评论区也发一条ustrongbh1">要是有人发现了这里然后给我发了一封<h1><b><strong><u><em><strong>邮件提醒我+在评论区也发一条</strong></em></u></strong></b></h1></h3>
+<h3 id="我就补全这里的链接游戏已经在网页上了但是有好多变种懒得一条一条加">我就补全这里的链接（游戏已经在网页上了，但是有好多变种，懒得一条一条加）.</h3>
+<h3 id="邮件地址在友情链接里">邮件地址在友情链接里</h3>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>其他&amp;工具</title>
+      <link>https://charle00001.github.io/paperfile/other-and-tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://charle00001.github.io/paperfile/other-and-tools/</guid>
+      <description>&lt;!DOCTYPE html&gt;</description>
+      <content:encoded><![CDATA[
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 设置外部容器的样式，用于包含多个框 */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        /* 每个框的样式 */
+        .box {
+            width: 210px;
+            height: 150px;
+            border: 3px solid #555; /* 设置边框 */
+            border-radius: 20px; /* 设置圆角边框 */
+            margin: 8px;
+            display: inline-block;
+            cursor: pointer;
+            text-align: center;
+            color: ;
+            padding: 20px;
+            transition: transform 0.3s; /* 添加平滑的变换效果 */
+            background-color: transparent; /* 设置透明的背景颜色 */
+        }
+        /* 鼠标悬停时的样式 */
+        .box:hover {
+            transform: scale(1.25); /* 缩放效果 */
+        }
+        /* 清除标题和链接的默认间距 */
+        h2, p {
+            margin: 0;
+        }
+        /* 链接样式，去除下划线 */
+        a {
+            text-decoration: none;
+        }
+        /* 设置主标题字体大小 */
+        .main-title {
+            font-size: 20px;
+        }
+        /* 设置副标题字体大小 */
+        .sub-title {
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="boxContainer">
+    </div>
+    <script>
+        var container = document.getElementById('boxContainer');
+        var textArray = [
+            "分类|查看所有分类", "RSS订阅|获取最新文章更新", "破网软件获取中心|下载最新破网软件", "游戏|畅玩各种游戏", "base64编码/解码|加密和解密工具", "亲戚关系计算器|作者Passer-By", "亲戚关系计算器|手机版，作者Passer-By", "加密js|加密和解密JS代码", "浏览器检测|检测浏览器信息", "测试主标题|测试副标题"
+        ];
+        var linkArray = [
+            "/categories/", "/index.xml", "/paperfile/get-vpn/", "/paperfile/games_about/", "/paperfile/tools/base64/", "/paperfile/tools/relationship/", "/paperfile/tools/relationship/vue", "/paperfile/tools/hiddencode/", "/paperfile/tools/browser/", "https://example.com/测试"
+        ];
+        // 生成随机颜色
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+        // 遍历数组，生成框
+        for (var i = 0; i < 10; i++) {
+            var parts = textArray[i].split("|"); // 使用竖线分隔主标题和副标题
+            var box = document.createElement('a'); // 创建一个链接元素
+            box.className = 'box'; // 设置框的类名
+            box.href = linkArray[i]; // 设置链接的目标地址
+            // 创建主标题元素
+            var title = document.createElement('div');
+            title.className = 'main-title'; // 设置类名
+            title.innerText = parts[0]; // 设置文本内容
+            // 创建副标题元素
+            var subtitle = document.createElement('div');
+            subtitle.className = 'sub-title'; // 设置类名
+            subtitle.innerText = parts[1]; // 设置文本内容
+            // 创建包含标题和副标题的容器
+            var flexContainer = document.createElement('div');
+            flexContainer.style.display = 'flex'; // 使用弹性布局
+            flexContainer.style.flexDirection = 'column'; // 垂直排列
+            flexContainer.style.alignItems = 'center'; // 居中对齐
+            flexContainer.appendChild(title);
+            flexContainer.appendChild(subtitle);
+            // 将标题和副标题容器添加到框中
+            box.appendChild(flexContainer);
+            // 将框添加到外部容器
+            container.appendChild(box);
+            // 添加鼠标悬停事件监听器，以实现随机颜色效果
+            box.addEventListener('mouseenter', function() {
+                this.style.backgroundColor = getRandomColor();
+            });
+            // 添加鼠标离开事件监听器，以恢复透明背景
+            box.addEventListener('mouseleave', function() {
+                this.style.backgroundColor = 'transparent';
+            });
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>友情链接</title>
+      <link>https://charle00001.github.io/paperfile/friends/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://charle00001.github.io/paperfile/friends/</guid>
+      <description>如果你想与我交换友情链接的话，请发电邮至charle00001#proton.me（将#换成@）或者在评论区留言.</description>
+      <content:encoded><![CDATA[<h3 id="如果你想与我交换友情链接的话请发电邮至charle00001protonme将换成或者在评论区留言">如果你想与我交换友情链接的话，请发电邮至charle00001#proton.me（将#换成@）或者在评论区留言.</h3>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>留言板</title>
+      <link>https://charle00001.github.io/paperfile/lyb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://charle00001.github.io/paperfile/lyb/</guid>
+      <description>请随便留言吧，我感觉好无聊啊</description>
+      <content:encoded><![CDATA[<h3 id="请随便留言吧我感觉好无聊啊">请随便留言吧，我感觉好无聊啊</h3>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>破网软件下载中心</title>
+      <link>https://charle00001.github.io/paperfile/get-vpn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://charle00001.github.io/paperfile/get-vpn/</guid>
+      <description>破网软件下载中心，包括各类破网软件下载. 此页面不可评论，有问题的话请到【留言板】提问.</description>
+      <content:encoded><![CDATA[
+
+<script>
+    function showDisclaimer() {
+        // 检查是否存在名为 "disclaimer" 的 Cookie
+        var disclaimerCookie = getCookie("disclaimer");
+        if (disclaimerCookie === "同意") {
+            // 如果存在 "disclaimer" Cookie，并且值为 "同意"，则不显示免责声明
+            return;
+        }
+
+        // 显示免责声明
+        var disclaimer = "免责声明：请阅读本文不符合所在地区的法律的读者自行离开，阅读本文所造成的后果作者一概不负责.";
+        window.alert(disclaimer);
+
+        // 询问用户是否同意免责声明
+        var result = window.confirm("您是否同意免责声明？（本站使用cookie来记录您是否同意免责声明）");
+        if (result) {
+            // 如果用户点击确认，将 "disclaimer" Cookie 的值设置为 "同意"
+            setCookie("disclaimer", "同意");
+            // 显示已同意的提示消息
+            window.alert("您已同意免责声明.");
+        } else {
+            // 如果用户点击取消或关闭对话框，执行其他操作（可根据需求进行修改）
+            window.location.href = "about:blank";
+        }
+    }
+
+    // 获取指定名称的 Cookie 的值
+    function getCookie(name) {
+        var cookies = document.cookie.split("; ");
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i].split("=");
+            if (cookie[0] === name) {
+                return cookie[1];
+            }
+        }
+        return "";
+    }
+
+    // 设置 Cookie
+    function setCookie(name, value) {
+        var expires = new Date();
+        expires.setFullYear(expires.getFullYear() + 1); // 设置 Cookie 有效期为一年
+        document.cookie = name + "=" + value + "; expires=" + expires.toUTCString();
+    }
+
+    // 在适当的时候调用 showDisclaimer() 函数，例如在页面加载完成后或点击某个按钮时
+    showDisclaimer();
+</script>
+
+
+<h2 id="免责声明">免责声明</h2>
+<h3 id="请阅读本文不符合所在地区的法律的读者自行离开阅读本文所造成的后果作者一概不负责">请阅读本文不符合所在地区的法律的读者自行离开，阅读本文所造成的后果作者一概不负责.</h3>
+<hr>
+<h2 id="由于没有什么好方法分享翻墙软件所以说也只能这样了">由于没有什么好方法分享翻墙软件，所以说也只能这样了=(</h2>
+<h3 id="我将在下面放上各种破网软件的下载链接">我将在下面放上各种破网软件的下载链接.</h3>
+<hr>
+<h2 id="onedrive">onedrive</h2>
+<p>各大破网软件(onedrive)：<br>
+<a href="https://1drv.ms/f/s!AkLjKX_IXDbygdRsD6t0Q_ecYUd4aQ">在这里，但是获取成功率不大：onedrive应该也被杀了</a></p>
+<p>zip密码：gfwisveryverybad</p>
+<h2 id="github">GitHub</h2>
+<p>GitHub：<br>
+<a href="https://github.com/charle00001/sorry-but-i-have-to-do-this">https://github.com/charle00001/sorry-but-i-have-to-do-this</a></p>
+<p>可以运行这条命令获取翻墙软件：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/charle00001/sorry-but-i-have-to-do-this.git
+</span></span></code></pre></div><p>文件采用分卷保存，全部下载完后点击.zip.001来解压.<br>
+在GitHub上的破网软件没有密码，而且以后更新GitHub的频率会更高，onedrive会被弃用.</p>
+<h2 id="i2p">I2P</h2>
+<p>I2P我没有放在GitHub存储库和onedrive里，我直接放在这个博客里了：</p>
+<p>Linux: <a href="/files/i2p/i2pinstall_2.3.0_Linux/i2pinstall_2.3.0_Linux.zip.001">下载分卷1</a> | <a href="/files/i2p/i2pinstall_2.3.0_Linux/i2pinstall_2.3.0_Linux.zip.002">下载分卷2</a><br>
+Mac: <a href="/files/i2p/i2pinstall_2.3.0_Mac/i2pinstall_2.3.0_Mac.zip.001">下载分卷1</a> | <a href="/files/i2p/i2pinstall_2.3.0_Mac/i2pinstall_2.3.0_Mac.zip.002">下载分卷2</a><br>
+Windows: <a href="/files/i2p/i2pinstall_2.3.0_windows.exe">Download</a><br>
+Android: <a href="/files/i2p/net.i2p.android.router_4745279.apk">Download</a></p>
+<h3 id="i2p补种">I2P补种</h3>
+<p>I2P的种子文件我放在这里了. 哪一天失效了，请联系我 <em><strong>（用电子邮件）</strong></em> ，我会补上文件和种子链接.<br>
+种子文件：<a href="/files/i2p/i2preseed.zip">在这里</a><br>
+启动I2P打开<a href="http://127.0.0.1:7657/configreseed">http://127.0.0.1:7657/configreseed</a>，看到“从文件补种”，然后下载种子文件并导入（或者输入我给的种子文件url）<br>
+我的E-mail：在<a href="/paperfile/friends">友情链接页面</a>.</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

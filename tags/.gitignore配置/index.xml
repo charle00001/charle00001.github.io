@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>.gitignore配置 on Charle00001`s Blog</title>
+    <link>https://charle00001.github.io/tags/.gitignore%E9%85%8D%E7%BD%AE/</link>
+    <description>Recent content in .gitignore配置 on Charle00001`s Blog</description>
+    <image>
+      <title>Charle00001`s Blog</title>
+      <url>https://charle00001.github.io/47</url>
+      <link>https://charle00001.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 04 Nov 2023 19:45:57 +0100</lastBuildDate><atom:link href="https://charle00001.github.io/tags/.gitignore%E9%85%8D%E7%BD%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git的使用以及如何解决一些简单问题</title>
+      <link>https://charle00001.github.io/posts/git%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E4%B8%80%E4%BA%9B%E7%AE%80%E5%8D%95%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Sat, 04 Nov 2023 19:45:57 +0100</pubDate>
+      
+      <guid>https://charle00001.github.io/posts/git%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E4%B8%80%E4%BA%9B%E7%AE%80%E5%8D%95%E9%97%AE%E9%A2%98/</guid>
+      <description>为什么需要学习 Git ？ 由于我们大家都需要使用 GitHub 这种普世产品，所以我们必须学会使用Git. Git 是什么？ Git 是一种分布式开源版本控制系统，可以用它存储代</description>
+      <content:encoded><![CDATA[<h2 id="为什么需要学习-git-">为什么需要学习 Git ？</h2>
+<hr>
+<hr>
+<p>由于我们大家都需要使用 GitHub 这种普世产品，所以我们必须学会使用Git.</p>
+<h3 id="git-是什么">Git 是什么？</h3>
+<p>Git 是一种分布式开源版本控制系统，可以用它存储代码、跟踪修订历史记录、合并代码更改，并在需要时恢复为较早的代码版本.</p>
+<p>Git 将你的源代码及完整的开发历史记录存储在本地存储库中.  你可以创建称作分支的源代码副本，然后与主版本并行作业.</p>
+<p>上面那段话很长，可能听不太懂.  你只要记住：这玩意就是用来管理代码仓库的.</p>
+<hr>
+<hr>
+<hr>
+<h2 id="第一步安装">第一步：安装</h2>
+<p><strong>Git 官网：<a href="https://git-scm.com/">在这里</a></strong></p>
+<hr>
+<hr>
+<h4 id="windows"><em><strong>Windows</strong></em></h4>
+<p><strong>Git For Windows的官网在“<a href="https://gitforwindows.org/">这里</a>”</strong></p>
+<p>官方下载页面在“<a href="https://git-scm.com/download/win">这里</a>”</p>
+<p>Windows 下的 Git 被称作&quot;Git Bash&quot;.</p>
+<p>这是由于 Windows 不是 Unix 系统，通常系统中没有人们熟悉的 Shell 环境.</p>
+<p>但是当你安装了 Git 在 Windows 里打开之后，它会给你一个bash环境，让你使用 Shell 这个好东西.</p>
+<p>所以它也是 Git Bash.</p>
+<hr>
+<hr>
+<h4 id="mac"><em><strong>Mac</strong></em></h4>
+<p>Mac 相对于 Windows 的话安装比较简单（甚至根本不用安装，因为如果你安装了 Xcode 命令行工具的话，会自带 Git）</p>
+<p>有好几种安装方法：</p>
+<ol>
+<li>安装整个 Xcode<br>
+（及其【<strong>不</strong>】推荐.   如果你不是 Mac App/iOS App 的开发者的话，安装这个完全没必要，因为安装 Xcode 需要至少<strong>20GB</strong>的可用空间）</li>
+</ol>
+<p>AppStore 链接：<a href="https://apps.apple.com/us/app/xcode/id497799835">在这里</a><br>
+Apple 官网链接：<a href="https://developer.apple.com/cn/xcode/">在这里</a></p>
+<hr>
+<ol start="2">
+<li>安装 Xcode 命令行工具（推荐安装，因为这玩意很小，只有大约1GB多一点）<br>
+Mac 终端运行命令：</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>xcode-select --install
+</span></span></code></pre></div><hr>
+<ol start="3">
+<li>使用 Homebrew 或者 MacPorts 安装：<br>
+运行命令：</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>brew install git
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Homebrew安装</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sudo port install git
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># MacPorts安装</span>
+</span></span></code></pre></div><hr>
+<ol start="4">
+<li>Sourceforge 安装包<br>
+Git 官方在 Sourceforge 上提供了 Git 安装包，适合新手安装.</li>
+</ol>
+<p>下载：<a href="https://sourceforge.net/projects/git-osx-installer/">在这里</a><br>
+提示：Sourceforge 已被墙，建议破网.<br>
+关于如何破网请见我的这篇文章：<a href="/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E7%A0%B4%E7%BD%91%E8%BD%AF%E4%BB%B62023/">在这里</a></p>
+<hr>
+<ol start="5">
+<li>还有一些安装方法，比如从源代码构建.  本文不叙述这些进阶方法，请看“<a href="https://git-scm.com/download/mac">这个</a>”页面.</li>
+</ol>
+<hr>
+<hr>
+<h4 id="linux"><em><strong>Linux</strong></em></h4>
+<p>由于 Linux 发行版太多了，所以这里列出一些：</p>
+<p><strong>Debian/Ubuntu</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>apt-get install git
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 或者</span>
+</span></span><span style="display:flex;"><span>apt install git
+</span></span></code></pre></div><hr>
+<p><strong>Fedora</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>yum install git
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 或者</span>
+</span></span><span style="display:flex;"><span>dnf install git
+</span></span></code></pre></div><hr>
+<p><strong>Arch Linux</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>pacman -S git
+</span></span></code></pre></div><hr>
+<p><strong>FreeBSD</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>pkg install git
+</span></span></code></pre></div><hr>
+<p><strong>OpenBSD</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>pkg_add git
+</span></span></code></pre></div><hr>
+<p><strong>Alpine</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>apk add git
+</span></span></code></pre></div><hr>
+<p><strong>别的Linux</strong></p>
+<p>可以去<a href="https://www.kernel.org/pub/software/scm/git/">这里</a>获取源代码自己构建.</p>
+<hr>
+<hr>
+<hr>
+<h2 id="一些最有用的命令">一些最有用的命令</h2>
+<p>我们大家一般人不需要对仓库有太复杂的命令和更改，除非你在维护一个长期更新的代码库.<br>
+下面讲列出并讲解那些最常见、最有用的命令.</p>
+<hr>
+<hr>
+<h3 id="git-init"><code>git init</code></h3>
+<p>这个命令是初始化一个本地仓库.  这个操作通常会在当前文件夹中创建<code>.git</code>隐藏文件夹，请勿删除.</p>
+<p>什么是本地仓库？
+本地仓库就是一个仓库，<strong>但是在本地</strong>.  你如果要把一个更改推送到 GitHub 的<strong>远程仓库</strong>，你需要先在本地仓库提交一个更改，然后再推送.</p>
+<hr>
+<hr>
+<h3 id="git-remote"><code>git remote</code></h3>
+<h4 id="常用子命令">常用子命令：</h4>
+<hr>
+<p><strong>用法</strong>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git remote add
+</span></span></code></pre></div><p>这个命令是让本地仓库关联到远程仓库.  当你的本地仓库与一个远程仓库关联时，你可以把<strong>本地</strong>仓库的代码/文件<strong>推送</strong>到<strong>远程</strong>仓库（或者把远程仓库的更改拉取到本地）.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git remote add origin git@github.com:username/example.git
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 通常是origin，改成其他的也行</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 后面的是远程仓库的ssh地址</span>
+</span></span></code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git remote remove
+</span></span></code></pre></div><p>这个命令是删除本地仓库与远程仓库的关联.</p>
+<p><strong>用法</strong>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git remote remove origin
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 通常是origin，如果不对的话去看看上一条子命令你就明白了</span>
+</span></span></code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git remote -v
+</span></span></code></pre></div><p>使用这条命令查看当前<strong>本地仓库</strong>关联的<strong>远程仓库</strong>（或者没有关联）.</p>
+<hr>
+<hr>
+<ol start="3">
+<li><code>git add</code><br>
+这个命令很有用，是把当前本地仓库的所有更改（<strong>包括文件更改、删除文件、新建文件等等</strong>）都添加到“<em><strong>暂存区</strong></em>”（也叫<em><strong>索引</strong></em>，Git 官方网站解释）.</li>
+</ol>
+<p>如果没有这一步 Git 就不知道你把文件更改了，也不会把你更改的内容推送到远程仓库.</p>
+<hr>
+<p><strong>常用子命令</strong>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 或者</span>
+</span></span><span style="display:flex;"><span>git add -A
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 还有一个</span>
+</span></span><span style="display:flex;"><span>git add *
+</span></span></code></pre></div><p>把更改记录进暂存区.</p>
+<p>两条命令的区别在于<code>git add .</code>必须在本地仓库的根目录运行才能生效，<code>git add -A</code>在仓库的子目录也能生效.</p>
+<p>第三条命令后面的<code>*</code>是通配符，即忽略<code>.gitignore</code>文件强制将所有文件添加到索引（或暂存区）.</p>
+<hr>
+<hr>
+<ol start="4">
+<li><code>git commit</code><br>
+创建一个新的提交，包含索引（暂存区）的当前内容和描述变化的给定日志信息.</li>
+</ol>
+<p>这个提交会更新<strong>本地</strong>仓库的代码，包括了你所有修改/添加过的文件（需要配合<code>git add</code>命令生效）</p>
+<hr>
+<p><strong>常用子命令</strong>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;在这里填上你的备注&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 添加备注并提交代码（不是推送到远程仓库！！）</span>
+</span></span></code></pre></div><hr>
+<p>悄悄告诉你下面的这条命令：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git commit --allow-empty 
+</span></span></code></pre></div><p>这条命令允许你什么都不更改就创建一个提交.  只是为了刷仓库提交次数而已.</p>
+<p>你可以用<code>while true</code>写一个 Shell script，让它源源不断的提交，等个半分钟你就有几千个提交数了.</p>
+<p>当你把这个脚本挂在那半小时，我都想不到那提交数有多恐怖.</p>
+<p>然后再把它推送到远程仓库（像 GitHub、Gitlab），你就会发现你的仓库有超多 commit ，前提是 GitHub 不封你号（应该不会，因为这对 GitHub 没啥影响，除非 commit 数量能换钱）</p>
+<hr>
+<hr>
+<ol start="5">
+<li><code>git push</code><br>
+将本地仓库新的提交推送至远程仓库.</li>
+</ol>
+<p>当你在本地仓库创建了一个<strong>新的提交后</strong>，这条命令将这个提交中的<strong>所有更改</strong>推送至远程仓库.</p>
+<p>通常<strong>推送传输完成之后</strong>很快就能看到远端的代码已更新.</p>
+<p>注：这个操作通常需要网络，除非你的代码库就在 localhost 上.</p>
+<hr>
+<p><strong>常用子命令</strong>：</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

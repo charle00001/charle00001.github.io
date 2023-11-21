@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>发牢骚 on Charle00001`s Blog</title>
+    <link>https://charle00001.github.io/tags/%E5%8F%91%E7%89%A2%E9%AA%9A/</link>
+    <description>Recent content in 发牢骚 on Charle00001`s Blog</description>
+    <image>
+      <title>Charle00001`s Blog</title>
+      <url>https://charle00001.github.io/47</url>
+      <link>https://charle00001.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 24 Oct 2023 20:30:51 +0200</lastBuildDate><atom:link href="https://charle00001.github.io/tags/%E5%8F%91%E7%89%A2%E9%AA%9A/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第一次来到Hugo的第一篇博文</title>
+      <link>https://charle00001.github.io/posts/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%9D%A5%E5%88%B0hugo%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/</link>
+      <pubDate>Tue, 24 Oct 2023 20:30:51 +0200</pubDate>
+      
+      <guid>https://charle00001.github.io/posts/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%9D%A5%E5%88%B0hugo%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/</guid>
+      <description>博客迁移声明与《发牢骚》</description>
+      <content:encoded><![CDATA[<h2 id="关于迁移博客的声明">关于迁移博客的声明</h2>
+<h4 id="经过了一番深思熟虑之后我将hexo的博客迁移到了hugo">经过了一番深思熟虑之后，我将Hexo的博客迁移到了Hugo.</h4>
+<h4 id="真心希望hugo能简单好用毕竟我迁移的目标就是博客简单明了主题设置简洁">真心希望Hugo能简单好用，毕竟我迁移的目标就是博客简单明了，主题设置简洁.</h4>
+<h4 id="我折腾hexo-next主题正是折腾的够够的了这几年折腾那些乱七八糟的美化设置已经废了半条命">我折腾Hexo NexT主题正是折腾的够够的了，这几年折腾那些乱七八糟的美化设置已经废了半条命&hellip;&hellip;</h4>
+<h2 id="当然对于不喜欢折腾只想安心写文章的人来说下面的东西都是p话请忽略">当然，对于不喜欢折腾只想安心写文章的人来说，下面的东西都是p话，请忽略.</h2>
+<hr>
+<p><em><strong>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;华丽的分割线&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</strong></em></p>
+<hr>
+<h2 id="next主题的折腾点">NexT主题的折腾点：</h2>
+<h3 id="1-_configyml">1 _config.yml</h3>
+<h4 id="这个还算简单折腾起来不算难只要把那个长的要命的配置文件从头到尾耐心看一遍就能配置完成">这个还算简单，折腾起来不算难.只要把那个长的要命的配置文件从头到尾耐心看一遍，就能配置完成.</h4>
+<hr>
+<h3 id="2-暗色模式">2 暗色模式</h3>
+<h4 id="这个也算简单">这个也算简单</h4>
+<hr>
+<h3 id="3-stylestyl">3 style.styl</h3>
+<h4 id="博客透明化自定义滚动条等等等等">博客透明化，自定义滚动条等等等等。。。。</h4>
+<hr>
+<h3 id="4-cssjs">4 css、js</h3>
+<h4 id="自定义鼠标鼠标点击爆炸效果鼠标点击显示文字鼠标移动撒落效果满满的坑啊">自定义鼠标、鼠标点击爆炸效果、鼠标点击显示文字、鼠标移动撒落效果，满满的坑啊.</h4>
+<hr>
+<h3 id="5-其他的奇奇怪怪的玩意">5 其他的奇奇怪怪的玩意</h3>
+<h4 id="我只说了很小一部分还有live2d自定义版权声明自定义板块与边缘距离标签云">我只说了很小一部分.还有live2d，自定义版权声明、自定义板块与边缘距离，标签云&hellip;&hellip;..</h4>
+<br>
+<p><em><strong>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;华丽的分割线&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</strong></em></p>
+<br>
+<h3 id="我只能说没折腾过hexo的特别是没折腾过next的绝对不理解这些痛">我只能说，没折腾过hexo的，特别是没折腾过next的，绝对不理解这些痛.</h3>
+<h4 id="还有如果你要更新这个主题很多修改都失效">还有：如果你要更新这个主题，很多修改都失效.</h4>
+<h4 id="想象一下你好不容易搞完废了半条命看了一篇又一篇的博客一更新50都失效了无能狂怒">想象一下，你好不容易搞完，废了半条命看了一篇又一篇的博客.一更新，50%都失效了.无能狂怒&hellip;</h4>
+<h4 id="如果你希望把博客搞的花里胡哨一点的就不要用next当你开始用的时候你就掉进一个无底洞里了">如果你希望把博客搞的花里胡哨一点的，就不要用next.当你开始用的时候，你就掉进一个无底洞里了.</h4>
+<h4 id="我不知道butterfly怎么样">我不知道Butterfly怎么样.</h4>
+<br>
+<p><em><strong>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;华丽的分割线&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</strong></em></p>
+<br>
+<h2 id="更新问题">更新问题</h2>
+<h3 id="许多次我提到了上面的更新以为打一条npm命令就行了">许多次我提到了上面的&quot;更新&quot;，以为打一条npm命令就行了？</h3>
+<h3 id="步骤">步骤：</h3>
+<h4 id="clone新版本">clone新版本</h4>
+<h4 id="打开任意编辑器的文件对比功能对比新_configyml和旧_configyml的区别一条一条配置新文件">打开任意编辑器的文件对比功能，对比新_config.yml和旧_config.yml的区别，一条一条配置新文件</h4>
+<h4 id="自定义的cssjs以及上面提到的乱七八糟的玩意都有几率失效">自定义的css、js、以及上面提到的乱七八糟的玩意都有几率失效</h4>
+<h4 id="那怎么办上网找吧这个博客是两年前的文章抬走什么你说没了用谷歌搜索也找不到">那怎么办，上网找吧！这个博客是两年前的文章，抬走！！什么，你说没了？用谷歌搜索也找不到？？？？？？</h4>
+<h3 id="整套东西搞完已经四个小时过去了">整套东西搞完已经四个小时过去了.</h3>
+<h4 id="上网找找不到好好好不折腾了我走我走好了吧hugo我来啦">上网找，找不到；好好好，不折腾了！！！我走，我走好了吧！！！hugo，我来啦！！</h4>
+<h2 id="总结费时费命">总结：费时费命</h2>
+<hr>
+<h3 id="与此文章相关的还有">与此文章相关的还有：</h3>
+<p><a href="/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%BD%BF%E7%94%A8hugo%E6%A8%A1%E7%89%88%E6%A1%86%E6%9E%B6%E6%97%B6%E5%9C%A8%E6%96%87%E7%AB%A0%E4%B8%AD%E5%B5%8C%E5%85%A5html%E4%BB%A3%E7%A0%81/">如何在使用Hugo模版框架时在文章中嵌入HTML代码</a><br>
+<a href="/posts/%E7%BB%99%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%90%84%E7%A7%8D%E6%94%B9%E5%8A%A8-%E8%AE%B0%E5%BD%95%E4%BB%A5%E5%A4%87%E5%BF%98/">给博客的各种改动-记录以备忘</a><br>
+<a href="/posts/%E5%A6%82%E4%BD%95%E7%BB%99hugo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/">如何给hugo添加评论系统</a><br>
+<a href="/posts/%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%9C%A8hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%97%A7/">发布第一篇在Hexo个人博客（旧） </a></p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>
