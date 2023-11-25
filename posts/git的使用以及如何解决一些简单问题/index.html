@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Git的使用以及如何解决一些简单问题 | Charle00001`s Blog</title>
-<meta name="keywords" content="git, github, 原创, .gitignore配置, .DS_Store安全性, cf workers, 搭建github镜像">
+<title>Git的使用以及如何解决一些简单问题（未写完，懒） | Charle00001`s Blog</title>
+<meta name="keywords" content="Git使用教程, 解决Git问题, Git基础命令, Git安装步骤, .gitignore配置, GitHub镜像搭建, Git分支操作, Git远程仓库关联, Git提交与推送, Git初始化, Git Bash环境, Xcode命令行工具安装, Homebrew安装Git, Sourceforge安装Git, Git远程仓库删除, Git远程仓库查看, Git add命令, Git commit命令, Git push命令">
 <meta name="description" content="为什么需要学习 Git ？ 由于我们大家都需要使用 GitHub 这种普世产品，所以我们必须学会使用Git. Git 是什么？ Git 是一种分布式开源版本控制系统，可以用它存储代">
 <meta name="author" content="Charle00001">
 <link rel="canonical" href="https://charle00001.github.io/posts/git%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E4%B8%80%E4%BA%9B%E7%AE%80%E5%8D%95%E9%97%AE%E9%A2%98/">
@@ -28,7 +28,7 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="Git的使用以及如何解决一些简单问题" />
+</noscript><meta property="og:title" content="Git的使用以及如何解决一些简单问题（未写完，懒）" />
 <meta property="og:description" content="为什么需要学习 Git ？ 由于我们大家都需要使用 GitHub 这种普世产品，所以我们必须学会使用Git. Git 是什么？ Git 是一种分布式开源版本控制系统，可以用它存储代" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://charle00001.github.io/posts/git%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E4%B8%80%E4%BA%9B%E7%AE%80%E5%8D%95%E9%97%AE%E9%A2%98/" /><meta property="og:image" content="https://charle00001.github.io/47"/><meta property="article:section" content="posts" />
@@ -38,7 +38,7 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://charle00001.github.io/47"/>
 
-<meta name="twitter:title" content="Git的使用以及如何解决一些简单问题"/>
+<meta name="twitter:title" content="Git的使用以及如何解决一些简单问题（未写完，懒）"/>
 <meta name="twitter:description" content="为什么需要学习 Git ？ 由于我们大家都需要使用 GitHub 这种普世产品，所以我们必须学会使用Git. Git 是什么？ Git 是一种分布式开源版本控制系统，可以用它存储代"/>
 
 
@@ -56,7 +56,7 @@
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "Git的使用以及如何解决一些简单问题",
+      "name": "Git的使用以及如何解决一些简单问题（未写完，懒）",
       "item": "https://charle00001.github.io/posts/git%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E4%B8%80%E4%BA%9B%E7%AE%80%E5%8D%95%E9%97%AE%E9%A2%98/"
     }
   ]
@@ -66,11 +66,11 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Git的使用以及如何解决一些简单问题",
-  "name": "Git的使用以及如何解决一些简单问题",
+  "headline": "Git的使用以及如何解决一些简单问题（未写完，懒）",
+  "name": "Git的使用以及如何解决一些简单问题（未写完，懒）",
   "description": "为什么需要学习 Git ？ 由于我们大家都需要使用 GitHub 这种普世产品，所以我们必须学会使用Git. Git 是什么？ Git 是一种分布式开源版本控制系统，可以用它存储代",
   "keywords": [
-    "git", "github", "原创", ".gitignore配置", ".DS_Store安全性", "cf workers", "搭建github镜像"
+    "Git使用教程", "解决Git问题", "Git基础命令", "Git安装步骤", ".gitignore配置", "GitHub镜像搭建", "Git分支操作", "Git远程仓库关联", "Git提交与推送", "Git初始化", "Git Bash环境", "Xcode命令行工具安装", "Homebrew安装Git", "Sourceforge安装Git", "Git远程仓库删除", "Git远程仓库查看", "Git add命令", "Git commit命令", "Git push命令"
   ],
   "articleBody": "为什么需要学习 Git ？ 由于我们大家都需要使用 GitHub 这种普世产品，所以我们必须学会使用Git.\nGit 是什么？ Git 是一种分布式开源版本控制系统，可以用它存储代码、跟踪修订历史记录、合并代码更改，并在需要时恢复为较早的代码版本.\nGit 将你的源代码及完整的开发历史记录存储在本地存储库中. 你可以创建称作分支的源代码副本，然后与主版本并行作业.\n上面那段话很长，可能听不太懂. 你只要记住：这玩意就是用来管理代码仓库的.\n第一步：安装 Git 官网：在这里\nWindows Git For Windows的官网在“这里”\n官方下载页面在“这里”\nWindows 下的 Git 被称作\"Git Bash\".\n这是由于 Windows 不是 Unix 系统，通常系统中没有人们熟悉的 Shell 环境.\n但是当你安装了 Git 在 Windows 里打开之后，它会给你一个bash环境，让你使用 Shell 这个好东西.\n所以它也是 Git Bash.\nMac Mac 相对于 Windows 的话安装比较简单（甚至根本不用安装，因为如果你安装了 Xcode 命令行工具的话，会自带 Git）\n有好几种安装方法：\n安装整个 Xcode\n（及其【不】推荐. 如果你不是 Mac App/iOS App 的开发者的话，安装这个完全没必要，因为安装 Xcode 需要至少20GB的可用空间） AppStore 链接：在这里\nApple 官网链接：在这里\n安装 Xcode 命令行工具（推荐安装，因为这玩意很小，只有大约1GB多一点）\nMac 终端运行命令： xcode-select --install 使用 Homebrew 或者 MacPorts 安装：\n运行命令： brew install git # Homebrew安装 sudo port install git # MacPorts安装 Sourceforge 安装包\nGit 官方在 Sourceforge 上提供了 Git 安装包，适合新手安装. 下载：在这里\n提示：Sourceforge 已被墙，建议破网.\n关于如何破网请见我的这篇文章：在这里\n还有一些安装方法，比如从源代码构建. 本文不叙述这些进阶方法，请看“这个”页面. Linux 由于 Linux 发行版太多了，所以这里列出一些：\nDebian/Ubuntu\napt-get install git # 或者 apt install git Fedora\nyum install git # 或者 dnf install git Arch Linux\npacman -S git FreeBSD\npkg install git OpenBSD\npkg_add git Alpine\napk add git 别的Linux\n可以去这里获取源代码自己构建.\n一些最有用的命令 我们大家一般人不需要对仓库有太复杂的命令和更改，除非你在维护一个长期更新的代码库.\n下面讲列出并讲解那些最常见、最有用的命令.\ngit init 这个命令是初始化一个本地仓库. 这个操作通常会在当前文件夹中创建.git隐藏文件夹，请勿删除.\n什么是本地仓库？ 本地仓库就是一个仓库，但是在本地. 你如果要把一个更改推送到 GitHub 的远程仓库，你需要先在本地仓库提交一个更改，然后再推送.\ngit remote 常用子命令： 用法：\ngit remote add 这个命令是让本地仓库关联到远程仓库. 当你的本地仓库与一个远程仓库关联时，你可以把本地仓库的代码/文件推送到远程仓库（或者把远程仓库的更改拉取到本地）.\ngit remote add origin git@github.com:username/example.git # 通常是origin，改成其他的也行 # 后面的是远程仓库的ssh地址 git remote remove 这个命令是删除本地仓库与远程仓库的关联.\n用法：\ngit remote remove origin # 通常是origin，如果不对的话去看看上一条子命令你就明白了 git remote -v 使用这条命令查看当前本地仓库关联的远程仓库（或者没有关联）.\ngit add\n这个命令很有用，是把当前本地仓库的所有更改（包括文件更改、删除文件、新建文件等等）都添加到“暂存区”（也叫索引，Git 官方网站解释）. 如果没有这一步 Git 就不知道你把文件更改了，也不会把你更改的内容推送到远程仓库.\n常用子命令：\ngit add . # 或者 git add -A # 还有一个 git add * 把更改记录进暂存区.\n两条命令的区别在于git add .必须在本地仓库的根目录运行才能生效，git add -A在仓库的子目录也能生效.\n第三条命令后面的*是通配符，即忽略.gitignore文件强制将所有文件添加到索引（或暂存区）.\ngit commit\n创建一个新的提交，包含索引（暂存区）的当前内容和描述变化的给定日志信息. 这个提交会更新本地仓库的代码，包括了你所有修改/添加过的文件（需要配合git add命令生效）\n常用子命令：\ngit commit -m \"在这里填上你的备注\" # 添加备注并提交代码（不是推送到远程仓库！！） 悄悄告诉你下面的这条命令：\ngit commit --allow-empty 这条命令允许你什么都不更改就创建一个提交. 只是为了刷仓库提交次数而已.\n你可以用while true写一个 Shell script，让它源源不断的提交，等个半分钟你就有几千个提交数了.\n当你把这个脚本挂在那半小时，我都想不到那提交数有多恐怖.\n然后再把它推送到远程仓库（像 GitHub、Gitlab），你就会发现你的仓库有超多 commit ，前提是 GitHub 不封你号（应该不会，因为这对 GitHub 没啥影响，除非 commit 数量能换钱）\ngit push\n将本地仓库新的提交推送至远程仓库. 当你在本地仓库创建了一个新的提交后，这条命令将这个提交中的所有更改推送至远程仓库.\n通常推送传输完成之后很快就能看到远端的代码已更新.\n注：这个操作通常需要网络，除非你的代码库就在 localhost 上.\n常用子命令：\n",
   "wordCount" : "1832",
@@ -177,7 +177,7 @@
   <header class="post-header">
     <div class="breadcrumbs"><a href="https://charle00001.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://charle00001.github.io/posts/">Posts</a></div>
     <h1 class="post-title">
-      Git的使用以及如何解决一些简单问题
+      Git的使用以及如何解决一些简单问题（未写完，懒）
     </h1>
     <div class="post-meta"><span title='2023-11-04 19:45:57 +0100 CET'>November 4, 2023</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;1832 words&nbsp;·&nbsp;Charle00001
 
@@ -404,9 +404,7 @@ Git 官方在 Sourceforge 上提供了 Git 安装包，适合新手安装.</li>
       <li><a href="https://charle00001.github.io/tags/github/">github</a></li>
       <li><a href="https://charle00001.github.io/tags/%E5%8E%9F%E5%88%9B/">原创</a></li>
       <li><a href="https://charle00001.github.io/tags/.gitignore%E9%85%8D%E7%BD%AE/">.gitignore配置</a></li>
-      <li><a href="https://charle00001.github.io/tags/.ds_store%E5%AE%89%E5%85%A8%E6%80%A7/">.DS_Store安全性</a></li>
-      <li><a href="https://charle00001.github.io/tags/cf-workers/">cf workers</a></li>
-      <li><a href="https://charle00001.github.io/tags/%E6%90%AD%E5%BB%BAgithub%E9%95%9C%E5%83%8F/">搭建github镜像</a></li>
+      <li><a href="https://charle00001.github.io/tags/git%E6%95%99%E7%A8%8B/">git教程</a></li>
     </ul>
 <nav class="paginav">
   <a class="next" href="https://charle00001.github.io/posts/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E8%87%AA%E7%94%B1%E9%97%A8%E6%97%A0%E7%95%8C%E8%87%AA%E7%94%B1%E6%B5%8F%E8%A7%88%E8%BF%B7%E9%9B%BE%E9%80%9A/">
@@ -418,36 +416,36 @@ Git 官方在 Sourceforge 上提供了 Git 安装包，适合新手安装.</li>
 
 
 <div class="share-buttons">
-    <a target="_blank" rel="noopener noreferrer" aria-label="share Git的使用以及如何解决一些简单问题 on twitter"
-        href="https://twitter.com/intent/tweet/?text=Git%e7%9a%84%e4%bd%bf%e7%94%a8%e4%bb%a5%e5%8f%8a%e5%a6%82%e4%bd%95%e8%a7%a3%e5%86%b3%e4%b8%80%e4%ba%9b%e7%ae%80%e5%8d%95%e9%97%ae%e9%a2%98&amp;url=https%3a%2f%2fcharle00001.github.io%2fposts%2fgit%25E7%259A%2584%25E4%25BD%25BF%25E7%2594%25A8%25E4%25BB%25A5%25E5%258F%258A%25E5%25A6%2582%25E4%25BD%2595%25E8%25A7%25A3%25E5%2586%25B3%25E4%25B8%2580%25E4%25BA%259B%25E7%25AE%2580%25E5%258D%2595%25E9%2597%25AE%25E9%25A2%2598%2f&amp;hashtags=git%2cgithub%2c%e5%8e%9f%e5%88%9b%2c.gitignore%e9%85%8d%e7%bd%ae%2c.DS_Store%e5%ae%89%e5%85%a8%e6%80%a7%2ccfworkers%2c%e6%90%ad%e5%bb%bagithub%e9%95%9c%e5%83%8f">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Git的使用以及如何解决一些简单问题（未写完，懒） on twitter"
+        href="https://twitter.com/intent/tweet/?text=Git%e7%9a%84%e4%bd%bf%e7%94%a8%e4%bb%a5%e5%8f%8a%e5%a6%82%e4%bd%95%e8%a7%a3%e5%86%b3%e4%b8%80%e4%ba%9b%e7%ae%80%e5%8d%95%e9%97%ae%e9%a2%98%ef%bc%88%e6%9c%aa%e5%86%99%e5%ae%8c%ef%bc%8c%e6%87%92%ef%bc%89&amp;url=https%3a%2f%2fcharle00001.github.io%2fposts%2fgit%25E7%259A%2584%25E4%25BD%25BF%25E7%2594%25A8%25E4%25BB%25A5%25E5%258F%258A%25E5%25A6%2582%25E4%25BD%2595%25E8%25A7%25A3%25E5%2586%25B3%25E4%25B8%2580%25E4%25BA%259B%25E7%25AE%2580%25E5%258D%2595%25E9%2597%25AE%25E9%25A2%2598%2f&amp;hashtags=git%2cgithub%2c%e5%8e%9f%e5%88%9b%2c.gitignore%e9%85%8d%e7%bd%ae%2cgit%e6%95%99%e7%a8%8b">
         <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
             <path
                 d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
         </svg>
     </a>
-    <a target="_blank" rel="noopener noreferrer" aria-label="share Git的使用以及如何解决一些简单问题 on reddit"
-        href="https://reddit.com/submit?url=https%3a%2f%2fcharle00001.github.io%2fposts%2fgit%25E7%259A%2584%25E4%25BD%25BF%25E7%2594%25A8%25E4%25BB%25A5%25E5%258F%258A%25E5%25A6%2582%25E4%25BD%2595%25E8%25A7%25A3%25E5%2586%25B3%25E4%25B8%2580%25E4%25BA%259B%25E7%25AE%2580%25E5%258D%2595%25E9%2597%25AE%25E9%25A2%2598%2f&title=Git%e7%9a%84%e4%bd%bf%e7%94%a8%e4%bb%a5%e5%8f%8a%e5%a6%82%e4%bd%95%e8%a7%a3%e5%86%b3%e4%b8%80%e4%ba%9b%e7%ae%80%e5%8d%95%e9%97%ae%e9%a2%98">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Git的使用以及如何解决一些简单问题（未写完，懒） on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2fcharle00001.github.io%2fposts%2fgit%25E7%259A%2584%25E4%25BD%25BF%25E7%2594%25A8%25E4%25BB%25A5%25E5%258F%258A%25E5%25A6%2582%25E4%25BD%2595%25E8%25A7%25A3%25E5%2586%25B3%25E4%25B8%2580%25E4%25BA%259B%25E7%25AE%2580%25E5%258D%2595%25E9%2597%25AE%25E9%25A2%2598%2f&title=Git%e7%9a%84%e4%bd%bf%e7%94%a8%e4%bb%a5%e5%8f%8a%e5%a6%82%e4%bd%95%e8%a7%a3%e5%86%b3%e4%b8%80%e4%ba%9b%e7%ae%80%e5%8d%95%e9%97%ae%e9%a2%98%ef%bc%88%e6%9c%aa%e5%86%99%e5%ae%8c%ef%bc%8c%e6%87%92%ef%bc%89">
         <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
             <path
                 d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
         </svg>
     </a>
-    <a target="_blank" rel="noopener noreferrer" aria-label="share Git的使用以及如何解决一些简单问题 on facebook"
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Git的使用以及如何解决一些简单问题（未写完，懒） on facebook"
         href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fcharle00001.github.io%2fposts%2fgit%25E7%259A%2584%25E4%25BD%25BF%25E7%2594%25A8%25E4%25BB%25A5%25E5%258F%258A%25E5%25A6%2582%25E4%25BD%2595%25E8%25A7%25A3%25E5%2586%25B3%25E4%25B8%2580%25E4%25BA%259B%25E7%25AE%2580%25E5%258D%2595%25E9%2597%25AE%25E9%25A2%2598%2f">
         <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
             <path
                 d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
         </svg>
     </a>
-    <a target="_blank" rel="noopener noreferrer" aria-label="share Git的使用以及如何解决一些简单问题 on whatsapp"
-        href="https://api.whatsapp.com/send?text=Git%e7%9a%84%e4%bd%bf%e7%94%a8%e4%bb%a5%e5%8f%8a%e5%a6%82%e4%bd%95%e8%a7%a3%e5%86%b3%e4%b8%80%e4%ba%9b%e7%ae%80%e5%8d%95%e9%97%ae%e9%a2%98%20-%20https%3a%2f%2fcharle00001.github.io%2fposts%2fgit%25E7%259A%2584%25E4%25BD%25BF%25E7%2594%25A8%25E4%25BB%25A5%25E5%258F%258A%25E5%25A6%2582%25E4%25BD%2595%25E8%25A7%25A3%25E5%2586%25B3%25E4%25B8%2580%25E4%25BA%259B%25E7%25AE%2580%25E5%258D%2595%25E9%2597%25AE%25E9%25A2%2598%2f">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Git的使用以及如何解决一些简单问题（未写完，懒） on whatsapp"
+        href="https://api.whatsapp.com/send?text=Git%e7%9a%84%e4%bd%bf%e7%94%a8%e4%bb%a5%e5%8f%8a%e5%a6%82%e4%bd%95%e8%a7%a3%e5%86%b3%e4%b8%80%e4%ba%9b%e7%ae%80%e5%8d%95%e9%97%ae%e9%a2%98%ef%bc%88%e6%9c%aa%e5%86%99%e5%ae%8c%ef%bc%8c%e6%87%92%ef%bc%89%20-%20https%3a%2f%2fcharle00001.github.io%2fposts%2fgit%25E7%259A%2584%25E4%25BD%25BF%25E7%2594%25A8%25E4%25BB%25A5%25E5%258F%258A%25E5%25A6%2582%25E4%25BD%2595%25E8%25A7%25A3%25E5%2586%25B3%25E4%25B8%2580%25E4%25BA%259B%25E7%25AE%2580%25E5%258D%2595%25E9%2597%25AE%25E9%25A2%2598%2f">
         <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
             <path
                 d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
         </svg>
     </a>
-    <a target="_blank" rel="noopener noreferrer" aria-label="share Git的使用以及如何解决一些简单问题 on telegram"
-        href="https://telegram.me/share/url?text=Git%e7%9a%84%e4%bd%bf%e7%94%a8%e4%bb%a5%e5%8f%8a%e5%a6%82%e4%bd%95%e8%a7%a3%e5%86%b3%e4%b8%80%e4%ba%9b%e7%ae%80%e5%8d%95%e9%97%ae%e9%a2%98&amp;url=https%3a%2f%2fcharle00001.github.io%2fposts%2fgit%25E7%259A%2584%25E4%25BD%25BF%25E7%2594%25A8%25E4%25BB%25A5%25E5%258F%258A%25E5%25A6%2582%25E4%25BD%2595%25E8%25A7%25A3%25E5%2586%25B3%25E4%25B8%2580%25E4%25BA%259B%25E7%25AE%2580%25E5%258D%2595%25E9%2597%25AE%25E9%25A2%2598%2f">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Git的使用以及如何解决一些简单问题（未写完，懒） on telegram"
+        href="https://telegram.me/share/url?text=Git%e7%9a%84%e4%bd%bf%e7%94%a8%e4%bb%a5%e5%8f%8a%e5%a6%82%e4%bd%95%e8%a7%a3%e5%86%b3%e4%b8%80%e4%ba%9b%e7%ae%80%e5%8d%95%e9%97%ae%e9%a2%98%ef%bc%88%e6%9c%aa%e5%86%99%e5%ae%8c%ef%bc%8c%e6%87%92%ef%bc%89&amp;url=https%3a%2f%2fcharle00001.github.io%2fposts%2fgit%25E7%259A%2584%25E4%25BD%25BF%25E7%2594%25A8%25E4%25BB%25A5%25E5%258F%258A%25E5%25A6%2582%25E4%25BD%2595%25E8%25A7%25A3%25E5%2586%25B3%25E4%25B8%2580%25E4%25BA%259B%25E7%25AE%2580%25E5%258D%2595%25E9%2597%25AE%25E9%25A2%2598%2f">
         <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
             <path
                 d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
