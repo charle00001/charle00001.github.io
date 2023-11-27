@@ -11,14 +11,78 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 04 Nov 2023 19:45:57 +0100</lastBuildDate><atom:link href="https://charle00001.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Nov 2023 17:05:48 +0100</lastBuildDate><atom:link href="https://charle00001.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A</title>
+      <link>https://charle00001.github.io/posts/vscode%E7%9A%84%E4%B8%80%E4%BA%9B%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Mon, 27 Nov 2023 17:05:48 +0100</pubDate>
+      
+      <guid>https://charle00001.github.io/posts/vscode%E7%9A%84%E4%B8%80%E4%BA%9B%E6%8A%80%E5%B7%A7/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Although, Even though, In spite of, Despite 都有啥区别？</title>
+      <link>https://charle00001.github.io/posts/although-even-though-in-spite-of-despite-%E9%83%BD%E6%9C%89%E5%95%A5%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Sat, 25 Nov 2023 11:46:01 +0100</pubDate>
+      
+      <guid>https://charle00001.github.io/posts/although-even-though-in-spite-of-despite-%E9%83%BD%E6%9C%89%E5%95%A5%E5%8C%BA%E5%88%AB/</guid>
+      <description>Although / Even though / In spite of / Despite 的区别和用法.</description>
+      <content:encoded><![CDATA[<h2 id="这篇文章不算文章请略过">这篇文章不算文章，请略过.</h2>
+<h3 id="想看的话也行不过我知道我的英语肯定不好请多多包涵">想看的话也行，不过我知道我的英语肯定不好，请多多包涵.</h3>
+<hr>
+<h3 id="although--even-though--in-spite-of--despite">Although / Even though / In spite of / Despite</h3>
+<p>这四个词中<code>Although</code>和<code>Even though</code>是一伙的（光看这个词就知道），<code>In spite of</code> 和<code>Despite</code>是一伙的.</p>
+<p>从用法上来看，刚刚以“光看这个词来分组”的方法也是对的，下面说一下区别：</p>
+<hr>
+<ol>
+<li>
+<p>Although<br>
+用法：用于引导一个<strong>从句</strong>，该从句与主句形成<strong>对比</strong>.<br>
+例句：Although it was raining, they decided to go for a walk.</p>
+</li>
+<li>
+<p>Even though<br>
+用法：同上，但是<strong>更强烈</strong>的对比.<br>
+例句：Even though it was raining, they decided to go for a walk.</p>
+</li>
+</ol>
+<p><strong>总的来说，&ldquo;Although&rdquo; 和 &ldquo;Even though&rdquo; 都是用来引导让步状语从句，表示尽管条件存在，但主句情况仍然成立.</strong></p>
+<hr>
+<p>那什么是一个“从句”呢？</p>
+<p>以 <strong>Although</strong> 的例句来举例，这时的<strong>从句</strong>就是<code>Although it was raining</code>，但是光一个从句并【不】是一个完整的句子，它必须和“主句”合并【才能】形成完整的句子.</p>
+<p>这时，主句就是<code>they decided to go for a walk</code>.</p>
+<hr>
+<ol start="3">
+<li>
+<p>In spite of<br>
+用法：后面通常接<strong>名词</strong>或<strong>代词</strong>或<strong>动名词短语</strong>，形成一个介词短语.<br>
+例句：In spite of the rain, the picnic was a success.</p>
+</li>
+<li>
+<p>Despite<br>
+用法：同上，但是比上面的<strong>更正式</strong>一点.<br>
+例句：Despite the rain, the picnic was a success.</p>
+</li>
+</ol>
+<hr>
+<p><em><strong>最重要的一点</strong></em>：<br>
+&ldquo;In spite of&rdquo; 和 &ldquo;despite&rdquo; 后面通常接<strong>名词或动名词短语</strong>，而 &ldquo;although&rdquo; 和 &ldquo;even though&rdquo; 后面通常接<strong>主语和动词</strong>.</p>
+<p>比如 &ldquo;Although it was raining, they decided to go for a walk&rdquo; 这句句子里的“从句”里面包含的 &ldquo;it was raining&rdquo; 就是<strong>主语</strong> + <strong>动词</strong>.</p>
+<p>而 &ldquo;In spite of the rain, the picnic was a success&rdquo; 这句句子里的“从句”里面包含的 &ldquo;the rain&rdquo; 就是<strong>名词</strong>.</p>
+<hr>
+<p>不明白什么是「从句」的，请往回看   :)</p>
+]]></content:encoded>
+    </item>
+    
     <item>
       <title>Git的使用以及如何解决一些简单问题（未写完，懒）</title>
       <link>https://charle00001.github.io/posts/git%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E4%B8%80%E4%BA%9B%E7%AE%80%E5%8D%95%E9%97%AE%E9%A2%98/</link>
       <pubDate>Sat, 04 Nov 2023 19:45:57 +0100</pubDate>
       
       <guid>https://charle00001.github.io/posts/git%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E4%B8%80%E4%BA%9B%E7%AE%80%E5%8D%95%E9%97%AE%E9%A2%98/</guid>
-      <description>为什么需要学习 Git ？ 由于我们大家都需要使用 GitHub 这种普世产品，所以我们必须学会使用Git. Git 是什么？ Git 是一种分布式开源版本控制系统，可以用它存储代</description>
+      <description>还没写完，好懒｜反正没人看，也没人催我｜:(</description>
       <content:encoded><![CDATA[<h2 id="为什么需要学习-git-">为什么需要学习 Git ？</h2>
 <hr>
 <hr>
@@ -4010,6 +4074,25 @@ drama好难啊<br>
       <guid>https://charle00001.github.io/paperfile/lyb/</guid>
       <description>请随便留言吧，我感觉好无聊啊</description>
       <content:encoded><![CDATA[<h3 id="请随便留言吧我感觉好无聊啊">请随便留言吧，我感觉好无聊啊</h3>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>破网软件下载中心</title>
+      <link>https://charle00001.github.io/paperfile/get-network-breaking-software/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://charle00001.github.io/paperfile/get-network-breaking-software/</guid>
+      <description>重定向到新的地方</description>
+      <content:encoded><![CDATA[<h2 id="重定向到新的地方说明">重定向到新的地方说明</h2>
+<h3 id="当时把破网软件获取中心的目录路径名写错了写成了get-network-breaking-software变成了获取破坏网络的软件">当时把“破网软件获取中心”的目录路径名写错了，写成了&quot;get-network-breaking-software&quot;，变成了“获取破坏网络的软件”</h3>
+<h3 id="英语不太好当时直接在谷歌翻译里中翻英了都是谷歌翻译的锅不关我的事_tat_">英语不太好，当时直接在谷歌翻译里【中翻英】了（都是谷歌翻译的锅，不关我的事_TAT_）</h3>
+<h3 id="看来谷歌翻译不太智能啊到时候看看-deepl-的表现如何官网写着deepl翻译全世界最准确的翻译">看来谷歌翻译不太智能啊，到时候看看 DeepL 的表现如何（官网写着–––––DeepL翻译：全世界最准确的翻译）</h3>
+<h3 id="说了这么多开始重定向吧">说了这么多，开始重定向吧：</h3>
+<p>链接：<a href="/paperfile/get-vpn">在这里</a><br>
+link：<a href="/paperfile/get-vpn">Here</a></p>
+<h3 id="我就不使用http-301-or-302了懒">我就不使用&quot;Http 301 or 302&quot;了，懒</h3>
+<h3 id="也不使用javascript来重定向了更懒">也不使用JavaScript来重定向了，更懒</h3>
 ]]></content:encoded>
     </item>
     
