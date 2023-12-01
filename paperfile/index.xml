@@ -2169,8 +2169,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://charle00001.github.io/paperfile/games_about/</guid>
-      <description>真的是好van的啊喂！！ 游戏名称 链接 扫雷/minesweeper 这里 2048 这里 俄罗斯方块/canvas tetris 这里 抓猫/catch cat 这里 甭鸟/clum</description>
-      <content:encoded><![CDATA[<h2 id="真的是好van的啊喂">真的是好van的啊喂！！</h2>
+      <description>有一些小游戏 想要玩一个这里没有的游戏可以联系我然后告诉我这个游戏的名字 联系方式：在友情链接页面 或者到留言板留言（可以都发一遍） 游戏名称 链接 扫</description>
+      <content:encoded><![CDATA[<h2 id="有一些小游戏">有一些小游戏</h2>
+<h3 id="想要玩一个这里没有的游戏可以联系我然后告诉我这个游戏的名字">想要玩一个这里没有的游戏可以联系我然后告诉我这个游戏的名字</h3>
+<p>联系方式：<a href="/paperfile/friends/">在友情链接页面</a><br>
+或者到留言板留言（可以都发一遍）</p>
 <hr>
 <table>
 <thead>
@@ -2260,25 +2263,31 @@
     <style>
         /* 设置外部容器的样式，用于包含多个框 */
         .container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+            display: flex; /* 使用弹性布局 */
+            flex-wrap: wrap; /* 允许换行 */
+            gap: 10px; /* 设置框之间的间距 */
         }
         /* 每个框的样式 */
         .box {
-            width: 210px;
-            height: 150px;
-            /* border: 3px solid #555; */ /* 设置边框 */
+            width: 220px; /* 设置框的宽度 */
+            height: 175px; /* 设置框的高度 */
+            /**/
+            position: relative; /* 设置相对定位 */
+            box-shadow: 
+                0 0 0 1.5px #000, 
+                0 0 0 3px #fff, 
+                0 0 0 4.5px #000, 
+                0 0 0 6px #fff;
+            /**/
             border-radius: 20px; /* 设置圆角边框 */
-            margin: 8px;
-            display: inline-block;
-            cursor: pointer;
-            text-align: center;
-            color: ;
-            padding: 20px;
+            margin: 6px; /* 设置框的外边距 */
+            display: inline-block; /* 设置框为内联块元素 */
+            cursor: pointer; /* 设置鼠标指针为手形 */
+            text-align: center; /* 设置文本居中对齐 */
+            color: ; /* 设置文本颜色 */
+            padding: 15px; /* 设置框的内边距 */
             transition: transform 0.3s; /* 添加平滑的变换效果 */
             background-color: transparent; /* 设置透明的背景颜色 */
-            box-shadow: 0 0 0 1.5px #000, 0 0 0 3px #fff, 0 0 0 4.5px #000, 0 0 0 6px #fff; /* 设置黑白黑白四层边框 */
         }
         /* 鼠标悬停时的样式 */
         .box:hover {
@@ -2308,10 +2317,10 @@
     <script>
         var container = document.getElementById('boxContainer');
         var textArray = [
-            "分类|查看所有分类", "RSS订阅|获取最新文章更新", "破网软件获取中心|下载最新破网软件", "游戏|畅玩各种游戏", "base64编码/解码|加密和解密工具", "亲戚关系计算器|作者Passer-By", "亲戚关系计算器|手机版，作者Passer-By", "加密js|加密和解密JS代码", "浏览器检测|检测浏览器信息", "测试主标题|测试副标题", "下载“破坏网络的软件”|开玩笑的，不过可以去看看"
+            "分类|查看所有分类", "RSS订阅|获取最新文章更新", "破网软件获取中心|下载最新破网软件", "游戏|畅玩各种游戏", "base64编码/解码|加密和解密工具", "亲戚关系计算器|作者Passer-By", "亲戚关系计算器|手机版，作者Passer-By", "加密js|加密和解密JS代码", "浏览器检测|检测浏览器信息", "测试主标题|测试副标题", "下载“破坏网络的软件”|开玩笑的，不过可以去看看", "HTML、JavaScript、CSS代码注释去除器|一键批量去除所有注释，肥肠好用"
         ];
         var linkArray = [
-            "/categories/", "/index.xml", "/paperfile/get-vpn/", "/paperfile/games_about/", "/paperfile/tools/base64/", "/paperfile/tools/relationship/", "/paperfile/tools/relationship/vue", "/paperfile/tools/hiddencode/", "/paperfile/tools/browser/", "https://example.com/测试", "/paperfile/get-network-breaking-software/"
+            "/categories/", "/index.xml", "/paperfile/get-vpn/", "/paperfile/games_about/", "/paperfile/tools/base64/", "/paperfile/tools/relationship/", "/paperfile/tools/relationship/vue", "/paperfile/tools/hiddencode/", "/paperfile/tools/browser/", "https://example.com/测试", "/paperfile/get-network-breaking-software/", "/paperfile/delete-html-zs/"
         ];
         // 生成随机颜色
         function getRandomColor() {
@@ -2323,7 +2332,7 @@
             return color;
         }
         // 遍历数组，生成框（如果要增加框的数量，就必须添加上面的标题和链接，然后更改下面for语句里要生成框的数量）
-        for (var i = 0; i < 11; i++) {
+        for (var i = 0; i < 12; i++) {
             var parts = textArray[i].split("|"); // 使用竖线分隔主标题和副标题
             var box = document.createElement('a'); // 创建一个链接元素
             box.className = 'box'; // 设置框的类名
