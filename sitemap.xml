@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://charle00001.github.io/posts/vscode%E7%9A%84%E4%B8%80%E4%BA%9B%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2023-11-27T17:05:48+01:00</lastmod>
-  </url><url>
     <loc>https://charle00001.github.io/</loc>
     <lastmod>2023-11-27T17:05:48+01:00</lastmod>
   </url><url>
     <loc>https://charle00001.github.io/posts/</loc>
+    <lastmod>2023-11-27T17:05:48+01:00</lastmod>
+  </url><url>
+    <loc>https://charle00001.github.io/posts/vscode%E7%9A%84%E4%B8%80%E4%BA%9B%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2023-11-27T17:05:48+01:00</lastmod>
   </url><url>
     <loc>https://charle00001.github.io/posts/although-even-though-in-spite-of-despite-%E9%83%BD%E6%9C%89%E5%95%A5%E5%8C%BA%E5%88%AB/</loc>
@@ -240,8 +240,6 @@
     <loc>https://charle00001.github.io/paperfile/archives/</loc>
   </url><url>
     <loc>https://charle00001.github.io/paperfile/games_about/</loc>
-  </url><url>
-    <loc>https://charle00001.github.io/tags/nothing/</loc>
   </url><url>
     <loc>https://charle00001.github.io/paperfile/</loc>
   </url><url>

@@ -201,7 +201,7 @@
         .box {
             width: 210px;
             height: 150px;
-            border: 3px solid #555; /* 设置边框 */
+            /* border: 3px solid #555; */ /* 设置边框 */
             border-radius: 20px; /* 设置圆角边框 */
             margin: 8px;
             display: inline-block;
@@ -211,6 +211,7 @@
             padding: 20px;
             transition: transform 0.3s; /* 添加平滑的变换效果 */
             background-color: transparent; /* 设置透明的背景颜色 */
+            box-shadow: 0 0 0 1.5px #000, 0 0 0 3px #fff, 0 0 0 4.5px #000, 0 0 0 6px #fff; /* 设置黑白黑白四层边框 */
         }
         /* 鼠标悬停时的样式 */
         .box:hover {
@@ -240,10 +241,10 @@
     <script>
         var container = document.getElementById('boxContainer');
         var textArray = [
-            "分类|查看所有分类", "RSS订阅|获取最新文章更新", "破网软件获取中心|下载最新破网软件", "游戏|畅玩各种游戏", "base64编码/解码|加密和解密工具", "亲戚关系计算器|作者Passer-By", "亲戚关系计算器|手机版，作者Passer-By", "加密js|加密和解密JS代码", "浏览器检测|检测浏览器信息", "测试主标题|测试副标题"
+            "分类|查看所有分类", "RSS订阅|获取最新文章更新", "破网软件获取中心|下载最新破网软件", "游戏|畅玩各种游戏", "base64编码/解码|加密和解密工具", "亲戚关系计算器|作者Passer-By", "亲戚关系计算器|手机版，作者Passer-By", "加密js|加密和解密JS代码", "浏览器检测|检测浏览器信息", "测试主标题|测试副标题", "下载“破坏网络的软件”|开玩笑的，不过可以去看看"
         ];
         var linkArray = [
-            "/categories/", "/index.xml", "/paperfile/get-vpn/", "/paperfile/games_about/", "/paperfile/tools/base64/", "/paperfile/tools/relationship/", "/paperfile/tools/relationship/vue", "/paperfile/tools/hiddencode/", "/paperfile/tools/browser/", "https://example.com/测试"
+            "/categories/", "/index.xml", "/paperfile/get-vpn/", "/paperfile/games_about/", "/paperfile/tools/base64/", "/paperfile/tools/relationship/", "/paperfile/tools/relationship/vue", "/paperfile/tools/hiddencode/", "/paperfile/tools/browser/", "https://example.com/测试", "/paperfile/get-network-breaking-software/"
         ];
         // 生成随机颜色
         function getRandomColor() {
@@ -254,8 +255,8 @@
             }
             return color;
         }
-        // 遍历数组，生成框
-        for (var i = 0; i < 10; i++) {
+        // 遍历数组，生成框（如果要增加框的数量，就必须添加上面的标题和链接，然后更改下面for语句里要生成框的数量）
+        for (var i = 0; i < 11; i++) {
             var parts = textArray[i].split("|"); // 使用竖线分隔主标题和副标题
             var box = document.createElement('a'); // 创建一个链接元素
             box.className = 'box'; // 设置框的类名

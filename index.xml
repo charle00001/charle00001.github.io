@@ -13,7 +13,7 @@
     <language>zh-cn</language>
     <lastBuildDate>Mon, 27 Nov 2023 17:05:48 +0100</lastBuildDate><atom:link href="https://charle00001.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>A</title>
+      <title>Vscode的一些技巧</title>
       <link>https://charle00001.github.io/posts/vscode%E7%9A%84%E4%B8%80%E4%BA%9B%E6%8A%80%E5%B7%A7/</link>
       <pubDate>Mon, 27 Nov 2023 17:05:48 +0100</pubDate>
       
@@ -3830,24 +3830,8 @@ npx hexo g
 <br>
 <br>
 <br>
-<p>zsc，我有点想你<br>
-还有yy<br>
-不过我最近几年肯定回不来了<br>
-drama好难啊<br>
-我不太懂<br>
-我感觉&hellip;..<br>
-总之有点难过<br>
-刚刚没网络的时候顺便去玩了一会pvz<br>
-是html版的<br>
-我把代码下载下来了放在本地<br>
-玩完之后去研究了里面的结构<br>
-发现有一些制作者给他的朋友们的留言<br>
-有点泪目<br>
-不知道什么时候能回来<br>
-你那边应该也很辛苦<br>
-加油吧总之<br>
-没什么好说的了
-拜拜👋</p>
+<p>本来这里要说点什么的，现在算了吧 :(<br>
+不过划到这里应该挺累的吧，嘿嘿___哈哈哈</p>
 ]]></content:encoded>
     </item>
     
@@ -3958,7 +3942,7 @@ drama好难啊<br>
         .box {
             width: 210px;
             height: 150px;
-            border: 3px solid #555; /* 设置边框 */
+            /* border: 3px solid #555; */ /* 设置边框 */
             border-radius: 20px; /* 设置圆角边框 */
             margin: 8px;
             display: inline-block;
@@ -3968,6 +3952,7 @@ drama好难啊<br>
             padding: 20px;
             transition: transform 0.3s; /* 添加平滑的变换效果 */
             background-color: transparent; /* 设置透明的背景颜色 */
+            box-shadow: 0 0 0 1.5px #000, 0 0 0 3px #fff, 0 0 0 4.5px #000, 0 0 0 6px #fff; /* 设置黑白黑白四层边框 */
         }
         /* 鼠标悬停时的样式 */
         .box:hover {
@@ -3997,10 +3982,10 @@ drama好难啊<br>
     <script>
         var container = document.getElementById('boxContainer');
         var textArray = [
-            "分类|查看所有分类", "RSS订阅|获取最新文章更新", "破网软件获取中心|下载最新破网软件", "游戏|畅玩各种游戏", "base64编码/解码|加密和解密工具", "亲戚关系计算器|作者Passer-By", "亲戚关系计算器|手机版，作者Passer-By", "加密js|加密和解密JS代码", "浏览器检测|检测浏览器信息", "测试主标题|测试副标题"
+            "分类|查看所有分类", "RSS订阅|获取最新文章更新", "破网软件获取中心|下载最新破网软件", "游戏|畅玩各种游戏", "base64编码/解码|加密和解密工具", "亲戚关系计算器|作者Passer-By", "亲戚关系计算器|手机版，作者Passer-By", "加密js|加密和解密JS代码", "浏览器检测|检测浏览器信息", "测试主标题|测试副标题", "下载“破坏网络的软件”|开玩笑的，不过可以去看看"
         ];
         var linkArray = [
-            "/categories/", "/index.xml", "/paperfile/get-vpn/", "/paperfile/games_about/", "/paperfile/tools/base64/", "/paperfile/tools/relationship/", "/paperfile/tools/relationship/vue", "/paperfile/tools/hiddencode/", "/paperfile/tools/browser/", "https://example.com/测试"
+            "/categories/", "/index.xml", "/paperfile/get-vpn/", "/paperfile/games_about/", "/paperfile/tools/base64/", "/paperfile/tools/relationship/", "/paperfile/tools/relationship/vue", "/paperfile/tools/hiddencode/", "/paperfile/tools/browser/", "https://example.com/测试", "/paperfile/get-network-breaking-software/"
         ];
         // 生成随机颜色
         function getRandomColor() {
@@ -4011,8 +3996,8 @@ drama好难啊<br>
             }
             return color;
         }
-        // 遍历数组，生成框
-        for (var i = 0; i < 10; i++) {
+        // 遍历数组，生成框（如果要增加框的数量，就必须添加上面的标题和链接，然后更改下面for语句里要生成框的数量）
+        for (var i = 0; i < 11; i++) {
             var parts = textArray[i].split("|"); // 使用竖线分隔主标题和副标题
             var box = document.createElement('a'); // 创建一个链接元素
             box.className = 'box'; // 设置框的类名
@@ -4061,8 +4046,18 @@ drama好难啊<br>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://charle00001.github.io/paperfile/friends/</guid>
-      <description>如果你想与我交换友情链接的话，请发电邮至charle00001#proton.me（将#换成@）或者在评论区留言.</description>
-      <content:encoded><![CDATA[<h3 id="如果你想与我交换友情链接的话请发电邮至charle00001protonme将换成或者在评论区留言">如果你想与我交换友情链接的话，请发电邮至charle00001#proton.me（将#换成@）或者在评论区留言.</h3>
+      <description>交换友情链接</description>
+      <content:encoded><![CDATA[<h3 id="如果你想与我交换友情链接的话请发电邮至charle00001protonme请将换成或者在评论区留言">如果你想与我交换友情链接的话，请发电邮至<code>charle00001#proton.me</code>（【请】将#换成@）或者在评论区留言.</h3>
+<h3 id="与我交换友情链接什么要求都没有因为实在没朋友了">与我交换友情链接什么要求都没有，因为实在没朋友了</h3>
+<br>
+<h3 id="但是我要开始说但是了">【但是】（我要开始说但是了）</h3>
+<h4 id="以下网站绝不交换this-is-my-deadline">以下网站绝不交换（this is my deadline）：</h4>
+<ol>
+<li>内容农场</li>
+<li>病毒、钓鱼、恶意站点与被列入各大【恶意网站清单】的网站.<br>
+比如：<br>
+CloudFlare安全DNS、Easylist、等等.</li>
+</ol>
 ]]></content:encoded>
     </item>
     
@@ -4072,8 +4067,9 @@ drama好难啊<br>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://charle00001.github.io/paperfile/lyb/</guid>
-      <description>请随便留言吧，我感觉好无聊啊</description>
-      <content:encoded><![CDATA[<h3 id="请随便留言吧我感觉好无聊啊">请随便留言吧，我感觉好无聊啊</h3>
+      <description>路过的在这里留两句呗，别让这里显得太冷清啊 :( 想说啥的都可以</description>
+      <content:encoded><![CDATA[<h3 id="路过的在这里留两句呗别让这里显得太冷清啊-">路过的在这里留两句呗，别让这里显得太冷清啊 :(</h3>
+<h3 id="想说啥的都可以">想说啥的都可以</h3>
 ]]></content:encoded>
     </item>
     
@@ -4163,15 +4159,15 @@ link：<a href="/paperfile/get-vpn">Here</a></p>
 <hr>
 <h2 id="onedrive">onedrive</h2>
 <p>各大破网软件(onedrive)：<br>
-<a href="https://1drv.ms/f/s!AkLjKX_IXDbygdRsD6t0Q_ecYUd4aQ">在这里，但是获取成功率不大：onedrive应该也被杀了</a></p>
-<p>zip密码：gfwisveryverybad</p>
+<a href="https://1drv.ms/f/s!AkLjKX_IXDbygdRsD6t0Q_ecYUd4aQ">在这里，但是获取成功率不大：onedrive应该被封了，不过听说客户端还能用</a></p>
+<p>zip密码：没有</p>
 <h2 id="github">GitHub</h2>
 <p>GitHub：<br>
 <a href="https://github.com/charle00001/sorry-but-i-have-to-do-this">https://github.com/charle00001/sorry-but-i-have-to-do-this</a></p>
 <p>可以运行这条命令获取翻墙软件：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/charle00001/sorry-but-i-have-to-do-this.git
 </span></span></code></pre></div><p>文件采用分卷保存，全部下载完后点击.zip.001来解压.<br>
-在GitHub上的破网软件没有密码，而且以后更新GitHub的频率会更高，onedrive会被弃用.</p>
+以后更新GitHub的频率会更高，onedrive将会被弃用.</p>
 <h2 id="i2p">I2P</h2>
 <p>I2P我没有放在GitHub存储库和onedrive里，我直接放在这个博客里了：</p>
 <p>Linux: <a href="/files/i2p/i2pinstall_2.3.0_Linux/i2pinstall_2.3.0_Linux.zip.001">下载分卷1</a> | <a href="/files/i2p/i2pinstall_2.3.0_Linux/i2pinstall_2.3.0_Linux.zip.002">下载分卷2</a><br>
