@@ -3927,13 +3927,21 @@ npx hexo g
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://charle00001.github.io/paperfile/other-and-tools/</guid>
-      <description>&lt;!DOCTYPE html&gt;</description>
-      <content:encoded><![CDATA[
+      <description>博客中的一些工具和游戏 还有破网软件的获取也在下面 对不起，本页面必须启用JavaScript. 如果怀疑本站有“网页挂马”或者“其他安全问题”，</description>
+      <content:encoded><![CDATA[<h2 id="博客中的一些工具和游戏">博客中的一些工具和游戏</h2>
+<h3 id="还有破网软件的获取也在下面">还有破网软件的获取也在下面</h3>
+<p><em><strong>对不起，本页面必须启用JavaScript.</strong></em><br>
+<em><strong>如果怀疑本站有“网页挂马”或者“其他安全问题”，请去VirusTotal扫描本站.</strong></em></p>
+<p><strong>VirusTotal扫描URL网址：</strong><em><a href="https://www.virustotal.com/gui/home/url">在这里</a></em></p>
 
 
-<!DOCTYPE html>
+
 <html>
 <head>
+    <!-- Noscript部分 -->
+    <noscript>
+        <div class="alert">你的浏览器不支持或禁用了JavaScript，请开启JavaScript功能。</div>
+    </noscript>
     <style>
         /* 设置外部容器的样式，用于包含多个框 */
         .container {
@@ -3992,6 +4000,22 @@ npx hexo g
         /* 设置副标题字体大小 */
         #boxContainer .sub-title {
             font-size: 15px;
+        }
+        /* 定义一个类名为alert的样式，用来设置框的位置，大小，颜色，边框等属性 */
+        /* 为noscript准备的样式 */
+        .alert {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background-color: yellow;
+            border: 2px solid red;
+            text-align: center;
+            color: blue;
+            line-height: 50px;
+            font-size: 20px;
+            font-weight: bold;
         }
     </style>
 </head>
