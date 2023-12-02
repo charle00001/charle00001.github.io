@@ -195,48 +195,58 @@
         .container {
             display: flex; /* 使用弹性布局 */
             flex-wrap: wrap; /* 允许换行 */
-            gap: 10px; /* 设置框之间的间距 */
+            gap: 11px; /* 设置框之间的间距 */
         }
         /* 每个框的样式 */
-        .box {
+        /* 在.box前加了更具体的指定 */
+        #boxContainer .box {
             width: 220px; /* 设置框的宽度 */
             height: 175px; /* 设置框的高度 */
             /**/
-            position: relative; /* 设置相对定位 */
+            position: static; /* 设置定位 */
+            /* 设置四层边框，黑白黑白 */
+            /*
             box-shadow: 
                 0 0 0 1.5px #000, 
                 0 0 0 3px #fff, 
                 0 0 0 4.5px #000, 
                 0 0 0 6px #fff;
+            */
+            /*添加了两条边框，颜色是随机的*/
+            border: 2.5px solid var(--border-color); 
+            box-sizing: border-box; 
+            outline: 2.5px solid var(--outline-color); 
+            outline-offset: -5.5px; 
             /**/
-            border-radius: 20px; /* 设置圆角边框 */
+            border-radius: 25px; /* 设置圆角边框 */
             margin: 6px; /* 设置框的外边距 */
             display: inline-block; /* 设置框为内联块元素 */
             cursor: pointer; /* 设置鼠标指针为手形 */
             text-align: center; /* 设置文本居中对齐 */
-            color: ; /* 设置文本颜色 */
+            color: none; /* 设置文本颜色 */
             padding: 15px; /* 设置框的内边距 */
-            transition: transform 0.3s; /* 添加平滑的变换效果 */
+            transition: transform 0.3s, background-color 0.3s, border-color 0.3s, outline-color 0.3s; /* 添加平滑的变换效果 */
             background-color: transparent; /* 设置透明的背景颜色 */
         }
         /* 鼠标悬停时的样式 */
-        .box:hover {
+        #boxContainer .box:hover {
             transform: scale(1.25); /* 缩放效果 */
         }
         /* 清除标题和链接的默认间距 */
-        h2, p {
+        #boxContainer h2, p {
             margin: 0;
         }
         /* 链接样式，去除下划线 */
-        a {
+        #boxContainer a {
             text-decoration: none;
+            color: none;
         }
         /* 设置主标题字体大小 */
-        .main-title {
+        #boxContainer .main-title {
             font-size: 20px;
         }
         /* 设置副标题字体大小 */
-        .sub-title {
+        #boxContainer .sub-title {
             font-size: 15px;
         }
     </style>
@@ -257,10 +267,17 @@
             var letters = '0123456789ABCDEF';
             var color = '#';
             for (var i = 0; i < 6; i++) {
-                color += letters[Math.floor(Math.random() * 16)];
+                // 限制随机数的范围，只取8到F之间的字符，这样颜色的亮度会更高
+                color += letters[Math.floor(Math.random() * 10) + 6]; 
             }
             return color;
         }
+        /*添加了两个变量，用来存储边框的颜色*/
+        var borderColor = getRandomColor(); 
+        var outlineColor = getRandomColor(); 
+        /*给根元素设置了两个CSS变量，用来传递边框的颜色*/
+        document.documentElement.style.setProperty('--border-color', borderColor); 
+        document.documentElement.style.setProperty('--outline-color', outlineColor); 
         // 遍历数组，生成框（如果要增加框的数量，就必须添加上面的标题和链接，然后更改下面for语句里要生成框的数量）
         for (var i = 0; i < 12; i++) {
             var parts = textArray[i].split("|"); // 使用竖线分隔主标题和副标题
@@ -288,10 +305,19 @@
             container.appendChild(box);
             // 添加鼠标悬停事件监听器，以实现随机颜色效果
             box.addEventListener('mouseenter', function() {
-                this.style.backgroundColor = getRandomColor();
+                var newBorderColor = getRandomColor(); 
+                var newOutlineColor = getRandomColor(); 
+                var newBackgroundColor = getRandomColor(); 
+                this.style.borderColor = newBorderColor; 
+                this.style.outlineColor = newOutlineColor; 
+                this.style.backgroundColor = newBackgroundColor;
             });
             // 添加鼠标离开事件监听器，以恢复透明背景
             box.addEventListener('mouseleave', function() {
+                /*
+                this.style.borderColor = borderColor; 
+                this.style.outlineColor = outlineColor; 
+                */
                 this.style.backgroundColor = 'transparent';
             });
         }
