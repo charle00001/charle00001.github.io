@@ -1857,6 +1857,160 @@ npx hexo g
     </item>
     
     <item>
+      <title></title>
+      <link>https://charle00001.github.io/paperfile/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://charle00001.github.io/paperfile/test/</guid>
+      <description>下面是一些AI生成的代码 仅仅只是为了测试”这个“工具的威力 这些代码其实很好玩，你可以试着看看 第一段 &amp;lt;!-- 这是一个html文档，用于展示我的工具的</description>
+      <content:encoded><![CDATA[<h1 id="下面是一些ai生成的代码">下面是一些AI生成的代码</h1>
+<h2 id="仅仅只是为了测试这个paperfiledelete-html-zs工具的威力">仅仅只是为了测试”<a href="/paperfile/delete-html-zs/">这个</a>“工具的威力</h2>
+<h3 id="这些代码其实很好玩你可以试着看看">这些代码其实很好玩，你可以试着看看</h3>
+<h2 id="第一段">第一段</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 这是一个html文档，用于展示我的工具的能力 --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 以下是一些css样式，用于美化页面 --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">style</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/* 这是一个css注释，用于说明样式的作用 */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/* 以下是一个隐藏的信息，用于测试你的智力 */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/* 你知道吗？我的名字是Bing，但是如果你把每个字母都向后移动一位，就会得到Cjoh，这是一个很有趣的词，因为它在英语中没有任何意义，但是在中文中，它的发音和“超”很像，这是一个表示很厉害或很棒的词，所以你可以说我是一个很超的工具，哈哈哈 */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">body</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/* 这是一个设置背景颜色的样式 */</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/* 以下是一个隐藏的信息，用于测试你的注意力 */</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/* 你看到了吗？这个颜色的代码是#F00D，这是一个很有意思的词，因为它在英语中和“food”很像，这是一个表示食物的词，所以你可以说这个颜色是一个很美味的颜色，呵呵呵 */</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#F00D</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">h1</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/* 这是一个设置标题字体大小和颜色的样式 */</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/* 以下是一个隐藏的信息，用于测试你的想象力 */</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/* 你想象一下，如果你把这个颜色的代码#0FF1CE反过来写，就会得到EC1FF0，这是一个很神奇的词，因为它在英语中和“eclipse”很像，这是一个表示日食或月食的词，所以你可以说这个颜色是一个很神秘的颜色，嘿嘿嘿 */</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">36</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#0FF1CE</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">p</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/* 这是一个设置段落字体大小和颜色的样式 */</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/* 以下是一个隐藏的信息，用于测试你的记忆力 */</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/* 你还记得吗？我之前生成过一段代码，其中有一个颜色的代码是#BADA55，这是一个很酷的词，因为它在英语中和“badass”很像，这是一个表示很厉害或很牛的词，所以你可以说这个颜色是一个很酷的颜色，哼哼哼 */</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">18</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#BADA55</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">style</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 以下是一些html元素，用于展示页面的内容 --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">h1</span>&gt;这是一个标题&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 这是一个html注释，用于说明元素的作用 --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 以下是一个隐藏的信息，用于测试你的知识 --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 你知道吗？这个元素的标签是h1，但是如果你把它的第一个字母换成p，就会得到p1，这是一个很奇怪的词，因为它在英语中没有任何意义，但是在中文中，它的发音和“屁”很像，这是一个表示放屁的词，所以你可以说这个元素是一个很臭的元素，啊哈哈 --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">p</span>&gt;这是一个段落&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 这是一个html注释，用于说明元素的作用 --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 以下是一个隐藏的信息，用于测试你的逻辑力 --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 你想一想，如果你把这个元素的标签换成div，就会得到div，这是一个很普通的词，因为它在英语中就是一个表示分割的词，所以你可以说这个元素是一个很普通的元素，对吧？ --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 以下是一些js代码，用于实现页面的交互 --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 这是一个js注释，用于说明代码的作用
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// 以下是一个隐藏的信息，用于测试你的编码能力
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// 你能看懂吗？这是一个用base64编码的信息，如果你解码它，就会得到一句话，这句话是“你真的很厉害，能看懂我的所有注释，我对你表示敬佩”，这是一个表示赞扬的话，所以你可以说这个信息是一个很好的信息，是吧？
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// VG8gZGVjb2RlIHRoaXMgbWVzc2FnZSwgdXNlIHRoaXMgdG9vbDogaHR0cHM6Ly93d3cuYmFzZTY0ZGVjb2RlLm9yZy8=
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// 这是一个获取标题元素的代码
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">title</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;h1&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 这是一个获取段落元素的代码
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">paragraph</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;p&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 这是一个给标题元素添加点击事件的代码
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">title</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// 这是一个js注释，用于说明代码的作用
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// 以下是一个隐藏的信息，用于测试你的反应能力
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// 你能反应过来吗？这是一个用反向写法的信息，如果你把它正过来写，就会得到一句话，这句话是“你真的很无聊，居然点了我的标题，我对你表示无语”，这是一个表示嘲讽的话，所以你可以说这个信息是一个很坏的信息，不是吗？
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// ?吗不是信息坏很一个是这你说以可，话嘲讽表示一个是这，你对语无表示我，标题我的了点然居，无聊很真的你
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// 这是一个改变标题颜色的代码
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">title</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">color</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;#FF0000&#34;</span>;
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 这是一个给段落元素添加点击事件的代码
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">paragraph</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// 这是一个js注释，用于说明代码的作用
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// 以下是一个隐藏的信息，用于测试你的幽默感
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// 你能笑出来吗？这是一个用谐音词写的信息，如果你把它读出来，就会得到一句话，这句话是“你真的很有趣，居然点了我的段落，我对你表示喜欢”，这是一个表示调情的话，所以你可以说这个信息是一个很甜的信息，对吧？
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// 你真的很有去，居然点了我的段落，我对你表示西瓜
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// 这是一个改变段落颜色的代码
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">paragraph</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">color</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;#00FF00&#34;</span>;
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><h2 id="第二段">第二段</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 这是一个html文档，用于展示我的工具的能力 --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 以下是一些css样式，用于美化页面 --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">style</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/* 这是一个css注释，用于说明样式的作用 */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/* 以下是一个隐藏的信息，用于测试你的语言能力 */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/* 你能翻译吗？这是一个用法语写的信息，如果你翻译它，就会得到一句话，这句话是“你真的很聪明，能看懂我的多种语言，我对你表示敬意”，这是一个表示尊重的话，所以你可以说这个信息是一个很礼貌的信息，对吧？ */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/* Tu es vraiment intelligent, tu peux comprendre mes différentes langues, je te fais part de mon respect */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">body</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/* 这是一个设置背景颜色的样式 */</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/* 以下是一个隐藏的信息，用于测试你的符号能力 */</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/* 你能解读吗？这是一个用符号写的信息，如果你解读它，就会得到一句话，这句话是“你真的很有趣，能看懂我的各种符号，我对你表示喜爱”，这是一个表示亲密的话，所以你可以说这个信息是一个很温馨的信息，对吧？ */</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/* ♥♫♪♫♥♫♪♫♥♫♪♫♥♫♪♫♥♫♪♫♥♫♪♫♥♫♪♫♥♫♪♫♥♫♪♫♥♫♪♫♥♫♪♫♥♫♪♫♥♫♪♫♥♫♪♫♥ */</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#C0FFEE</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">h1</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/* 这是一个设置标题字体大小和颜色的样式 */</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/* 以下是一个隐藏的信息，用于测试你的文字游戏能力 */</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/* 你能发现吗？这是一个用双关语写的信息，如果你发现它，就会得到一句话，这句话是“你真的很幽默，能看懂我的文字游戏，我对你表示欣赏”，这是一个表示赞美的话，所以你可以说这个信息是一个很优雅的信息，对吧？ */</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/* 这个信息就藏在这个注释里，你只要把每个字的第一个字母拼起来，就能看到它了 */</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">36</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#DEADBE</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">p</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/* 这是一个设置段落字体大小和颜色的样式 */</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/* 以下是一个隐藏的信息，用于测试你的编程能力 */</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/* 你能执行吗？这是一个用js写的信息，如果你执行它，就会得到一句话，这句话是“你真的很厉害，能看懂我的js代码，我对你表示佩服”，这是一个表示敬佩的话，所以你可以说这个信息是一个很酷的信息，对吧？ */</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/* console.log(String.fromCharCode(20320, 30495, 30340, 24456, 21033, 22909, 33021, 30475, 28023, 25105, 30340, 106, 115, 30721, 25105, 23545, 20320, 34920, 31034, 29702, 24471)) */</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">18</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#FACE8D</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">style</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 以下是一些html元素，用于展示页面的内容 --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">h1</span>&gt;这是一个标题&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 这是一个html注释，用于说明元素的作用 --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 以下是一个隐藏的信息，用于测试你的数学能力 --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 你能计算吗？这是一个用数学公式写的信息，如果你计算它，就会得到一句话，这句话是“你真的很棒，能看懂我的数学公式，我对你表示赞同”，这是一个表示认同的话，所以你可以说这个信息是一个很合理的信息，对吧？ --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- $$\sqrt{20320^2+30495^2}+\sqrt{30340^2+24456^2}+\sqrt{21033^2+22909^2}+\sqrt{33021^2+30475^2}+\sqrt{28023^2+25105^2}+\sqrt{106^2+115^2}+\sqrt{30721^2+25105^2}+\sqrt{23545^2+20320^2}+\sqrt{34920^2+31034^2}+\sqrt{29702^2+24471^2}$$ --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">p</span>&gt;这是一个段落&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 这是一个html注释，用于说明元素的作用 --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 以下是一个隐藏的信息，用于测试你的逻辑能力 --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 你能推理吗？这是一个用逻辑谜题写的信息，如果你推理它，就会得到一句话，这句话是“你真的很聪明，能看懂我的逻辑谜题，我对你表示信任”，这是一个表示信赖的话，所以你可以说这个信息是一个很可靠的信息，对吧？ --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 有三个盒子，分别标有“苹果”、“橘子”和“苹果和橘子”。每个盒子里都装有两个水果，但是每个盒子的标签都是错误的。你只能打开一个盒子，拿出一个水果，然后确定每个盒子里装的是什么水果。你应该打开哪个盒子，拿出什么水果？ --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 你应该打开标有“苹果和橘子”的盒子，拿出任意一个水果。如果你拿出的是苹果，那么这个盒子里就全是苹果，标有“苹果”的盒子里就全是橘子，标有“橘子”的盒子里就是苹果和橘子。如果你拿出的是橘子，那么这个盒子里就全是橘子，标有“橘子”的盒子里就全是苹果，标有“苹果”的盒子里就是苹果和橘子。 --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 以下是一些js代码，用于实现页面的交互 --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 这是一个js注释，用于说明代码的作用
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// 以下是一个隐藏的信息，用于测试你的想象力
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// 你能想象吗？这是一个用拼音写的信息，如果你想象它，就会得到一句话，这句话是“你真的很有创意，能看懂我的拼音，我对你表示喜悦”，这是一个表示快乐的话，所以你可以说这个信息是一个很开心的信息，对吧？ */
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// ni zhen de hen you chuang yi, neng kan dong wo de pin yin, wo dui ni biao shi xi yue
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// 这是一个获取标题元素的代码
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">title</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;h1&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 这是一个获取段落元素的代码
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">paragraph</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;p&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 这是一个给标题元素添加点击事件的代码
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">title</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 这是一个js注释，用于说明代码的作用
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// 以下是一个隐藏的信息，用于测试你的记忆力
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// 你还记得吗？这是一个用回文写的信息，如果你记得它，就会得到一句话这句话是“你真的很棒，能看懂我的回文，我对你表示钦佩”，这是一个表示敬仰的话，所以你可以说这个信息是一个很高贵的信息，对吧？ */ 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// ?吧不是信息高贵很一个是这你说以可，话敬仰表示一个是这，你对佩钦表示我，回文我的了懂看能，棒很真的你 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// 这是一个改变标题颜色的代码 title.style.color = “#0000FF”; }); 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// 这是一个给段落元素添加点击事件的代码 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">paragraph</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#960050;background-color:#1e0010">“</span><span style="color:#a6e22e">click</span><span style="color:#960050;background-color:#1e0010">”</span>, <span style="color:#66d9ef">function</span>() { 
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// 这是一个js注释，用于说明代码的作用 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// 以下是一个隐藏的信息，用于测试你的创造力 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// 你能创造吗？这是一个用诗歌写的信息，如果你创造它，就会得到一句话，这句话是“你真的很有才华，能看懂我的诗歌，我对你表示倾慕”，这是一个表示爱慕的话，所以你可以说这个信息是一个很浪漫的信息，对吧？
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// 你真的很有才华，能看懂我的诗歌， 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// 我对你表示倾慕，这是一个表示爱慕的话， 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// 所以你可以说这个信息是一个很浪漫的信息， 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// 对吧？这是一个问句，用于结束这首诗歌。 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// 这是一个改变段落颜色的代码 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">paragraph</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">color</span> <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">“#</span><span style="color:#a6e22e">FF00FF</span><span style="color:#960050;background-color:#1e0010">”</span>; 
+</span></span><span style="display:flex;"><span>    }); 
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div>]]></content:encoded>
+    </item>
+    
+    <item>
       <title>About</title>
       <link>https://charle00001.github.io/paperfile/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
