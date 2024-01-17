@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #f0f0f0;
+    /* overflow: hidden; */
+    /* 隐藏超出部分，防止滚动 */
+    margin: 0;
+    /* 移除默认边距 */
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70vh; /* 根据需要调整宽度 */
+    height: auto; /* 自适应高度，根据内容自动调整 */
+    /* 移除或调整 max-height */
+    /* max-height: 100vh; 可以移除或调整这个值 */
+    margin: 20px auto; /* 增加上下边距 */
+}
+
+textarea {
+    width: 85%;
+    height: 100px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    resize: none;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#dropZone {
+    border: 2px dashed #007bff;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+#dropZone:hover {
+    background-color: #f0f0f0;
+}
+
+.button-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-section button {
+    margin: 5px;
+}
+
+.reset-button {
+    background-color: #ff0000;
+    /* 红色 */
+}
+
+.reset-button:hover {
+    background-color: #cc0000;
+    /* 深红色 */
+}
