@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base64 全能编解码器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Base64 <b>全能</b>编解码器</h1>
+        <div id="dropZone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+            拖拽文件到这里或 <button onclick="document.getElementById('fileInput').click()">选择文件</button>
+            <input type="file" id="fileInput" onchange="handleFileSelect(this.files)" style="display:none;">
+        </div>
+        <div id="selectedFile" style="margin-top: 10px;"></div> <!-- 这里添加用于显示文件名的元素 -->
+
+        <!-- 输入区域 -->
+        <div class="input-section">
+            <textarea id="inputText" placeholder="输入文本或粘贴文件内容...&#10;（可以用来解码文件，输入已编码的文件的dataURL即可）"></textarea>
+        </div>
+
+        <!-- 输出区域 -->
+        <div class="output-section">
+            <textarea id="outputText" placeholder="输出结果..." readonly></textarea>
+        </div>
+
+        <!-- 结果显示区域 -->
+        <div id="result"></div>
+
+        <!-- 按钮区域 -->
+        <div class="button-section">
+            <button onclick="encodeText()">编码</button>
+            <button onclick="decodeText()">解码</button>
+            <button onclick="resetFields()" class="reset-button">重置</button>
+            <button onclick="copyResult()">复制</button>
+        </div>
+        <hr>
+        <div class="button-section">
+            <button onclick="encodeFile()">编码已选文件</button>
+            <button onclick="decodeFile()">解码已选文件（兼容TXT文件和输入框，请看帮助）</button>
+            <hr>
+            <button onclick="downloadResult()">下载结果</button>
+            <button onclick="showHelp()">显示帮助</button>
+            <a href="/">
+                <button>
+                    回到首页
+                </button>
+            </a>
+        </div>
+    </div>
+    <script src="base64.js"></script>
+    <script src="help.js"></script>
+</body>
+
+</html>

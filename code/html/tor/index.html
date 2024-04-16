@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class=" svg svgfilters svgclippaths svgforeignobject smil inlinesvg svgasimg" lang="zh-CN"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="保护自己免受追踪和监视，突翻墙络审查。 | 我该如何验证 Tor 浏览器的签名？">
+<link rel="stylesheet" href="%E6%88%91%E8%AF%A5%E5%A6%82%E4%BD%95%E9%AA%8C%E8%AF%81%20Tor%20%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E7%AD%BE%E5%90%8D%EF%BC%9F%20Tor%20Project%20%E6%94%AF%E6%8C%81_files/bootstrap.css">
+<link rel="stylesheet" href="%E6%88%91%E8%AF%A5%E5%A6%82%E4%BD%95%E9%AA%8C%E8%AF%81%20Tor%20%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E7%AD%BE%E5%90%8D%EF%BC%9F%20Tor%20Project%20%E6%94%AF%E6%8C%81_files/all.min.css">
+<script src="%E6%88%91%E8%AF%A5%E5%A6%82%E4%BD%95%E9%AA%8C%E8%AF%81%20Tor%20%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E7%AD%BE%E5%90%8D%EF%BC%9F%20Tor%20Project%20%E6%94%AF%E6%8C%81_files/support.js" defer="defer"></script>
+<!-- Standard favicon -->
+<link rel="icon" type="image/x-icon" href="https://support.torproject.org/static/images/favicon.ico?h=4e4ad2ce">
+<!-- Recommended favicon format -->
+<link rel="icon" type="image/png" href="https://support.torproject.org/static/images/favicon.png?h=7aa0e2a3">
+<script>
+  function change(event) {
+    let btn = event.currentTarget;
+    if (btn.innerHTML == "展开") {
+      btn.innerHTML = "折叠";
+    } else {
+      btn.innerHTML = "展开";
+    }
+  }
+  function handleCollapse() {
+    if (document.querySelectorAll('.show').length === 1) {
+      document.querySelector('#expand-btn').innerHTML = "折叠";
+    }
+  }
+</script>
+
+<title>我该如何验证 Tor 浏览器的签名？ | Tor Project | 支持</title>
+
+</head><body class="no-gutters" data-spy="scroll" data-target="#sidenav-topics" id="topics" data-children=".item">
+  <div class="banner">
+  <input id="trigger" type="checkbox" title="关闭横幅">
+  <label for="trigger" class="banner-close text-white">
+      <div class="d-flex h-100">
+        <img src="%E6%88%91%E8%AF%A5%E5%A6%82%E4%BD%95%E9%AA%8C%E8%AF%81%20Tor%20%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E7%AD%BE%E5%90%8D%EF%BC%9F%20Tor%20Project%20%E6%94%AF%E6%8C%81_files/x.svg" class="m-auto h-100 w-100 p-1 img-svg">
+      </div>
+  </label>
+  <span class="eoy-sr-only text-white">关闭横幅</span>
+  
+  <div id="banner-header">
+    <div class="banner-content">
+      <div class="banner-content-spacer py-5 h-100">
+        <div class="banner-content-container d-flex">
+          <div class="banner-main-graphics h-100">
+            <img class="yec-illo img-svg" src="%E6%88%91%E8%AF%A5%E5%A6%82%E4%BD%95%E9%AA%8C%E8%AF%81%20Tor%20%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E7%AD%BE%E5%90%8D%EF%BC%9F%20Tor%20Project%20%E6%94%AF%E6%8C%81_files/main-illo.svg">
+          </div>
+          <div id="banner-text-container" class="d-flex flex-column text-left">
+            <div id="banner-text" class="d-flex flex-column">
+              <h1>Right now, Tor is protecting the privacy of millions of people like you!</h1>
+              <p>
+              <strong>This is possible because of donations from our community.</strong>
+ If you value the privacy that Tor offers yourself and others, please 
+make a donation today. You’ll ensure Tor continues to provide online 
+privacy to everyone who needs it.
+              </p>
+            </div>
+            <div id="yec-donate-button-container">
+              <a class="btn" id="yec-donate-button" href="https://donate.torproject.org/">
+                <span>立即捐赠</span>
+                <img src="%E6%88%91%E8%AF%A5%E5%A6%82%E4%BD%95%E9%AA%8C%E8%AF%81%20Tor%20%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E7%AD%BE%E5%90%8D%EF%BC%9F%20Tor%20Project%20%E6%94%AF%E6%8C%81_files/heart.svg" class="donate-heart img-svg">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <header>
+    
+<div class="container-fluid bg-primary">
+  <nav class="navbar no-background navbar-expand-lg navbar-dark bg-primary p-4">
+
+    <a class="navbar-brand" href="https://torproject.org/zh-CN/">
+      <img alt="The Tor Project" src="%E6%88%91%E8%AF%A5%E5%A6%82%E4%BD%95%E9%AA%8C%E8%AF%81%20Tor%20%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E7%AD%BE%E5%90%8D%EF%BC%9F%20Tor%20Project%20%E6%94%AF%E6%8C%81_files/tor-logo@2x.png">
+      <span class="sr-only">Tor Logo</span>
+    </a>
+
+    
+    
+      <h4 class="pl-2 pr-2"><a href="https://donate.torproject.org/" title="捐赠"><span class="badge badge-warning p-2">立即捐赠</span></a></h4>
+    
+
+    <label for="nav-toggle">
+      <a class="btn btn-lg btn-primary navbar-toggler text-white p-3" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        Menu <span class="navbar-toggler-icon ml-1"></span>
+      </a>
+    </label>
+    <input type="checkbox" id="nav-toggle">
+    <div class="collapse navbar-collapse hamburger-menu" id="navbarSupportedContent">
+      <div class="mx-auto">
+        <ul class="navbar-nav">
+        	
+        	
+        	<li class="nav-item">
+            
+            
+              
+              
+                <a class="nav-link" href="https://www.torproject.org/zh-CN/about/history/">
+              
+            
+            关于
+              
+            </a>
+        	</li>
+  	
+        	<li class="nav-item">
+            
+            
+              
+              
+                <a class="nav-link" href="https://support.torproject.org/zh-CN/">
+              
+            
+            支持
+              
+            </a>
+        	</li>
+  	
+        	<li class="nav-item">
+            
+            
+              
+              
+                <a class="nav-link" href="https://community.torproject.org/">
+              
+            
+            社区
+              
+            </a>
+        	</li>
+  	
+        	<li class="nav-item">
+            
+            
+              
+              
+                <a class="nav-link" href="https://blog.torproject.org/">
+              
+            
+            博客
+              
+            </a>
+        	</li>
+  	
+        	<li class="nav-item">
+            
+            
+              
+              
+                <a class="nav-link" href="https://donate.torproject.org/">
+              
+            
+            捐赠
+              
+            </a>
+        	</li>
+  	
+    <!--
+            I add some strings here because the i18n plugin does not pick them up from the Databags
+            关于
+            文档
+            支持
+            社区
+            博客
+            PrivChat
+            工作
+            联系我们
+            媒体评论
+            捐赠
+    -->
+        </ul>
+      </div>
+      
+      
+        <div class="btn-group dropdown pull-right">
+          
+            <button type="button" class="btn btn-primary bg-primary dropdown-toggle btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          
+          简体中文 (zh-CN)
+          </button>
+          <div class="dropdown-menu">
+            
+              
+                <a class="dropdown-item" href="https://support.torproject.org/tbb/how-to-verify-signature/">English (en)</a>
+              
+            
+              
+                <a class="dropdown-item" href="https://support.torproject.org/ar/tbb/how-to-verify-signature/">ﻉﺮﺒﻳﺓ (ar)</a>
+              
+            
+              
+                <a class="dropdown-item" href="https://support.torproject.org/de/tbb/how-to-verify-signature/">Deutsch (de)</a>
+              
+            
+              
+                <a class="dropdown-item" href="https://support.torproject.org/es/tbb/how-to-verify-signature/">Español (es)</a>
+              
+            
+              
+                <a class="dropdown-item" href="https://support.torproject.org/fa/tbb/how-to-verify-signature/">فارسی (fa)</a>
+              
+            
+              
+                <a class="dropdown-item" href="https://support.torproject.org/fr/tbb/how-to-verify-signature/">Français (fr)</a>
+              
+            
+              
+                <a class="dropdown-item" href="https://support.torproject.org/id/tbb/how-to-verify-signature/">Indonesia (id)</a>
+              
+            
+              
+                <a class="dropdown-item" href="https://support.torproject.org/it/tbb/how-to-verify-signature/">Italiano (it)</a>
+              
+            
+              
+                <a class="dropdown-item" href="https://support.torproject.org/ko/tbb/how-to-verify-signature/">한국어(ko)</a>
+              
+            
+              
+                <a class="dropdown-item" href="https://support.torproject.org/pt-BR/tbb/how-to-verify-signature/">Português Br. (pt-BR)</a>
+              
+            
+              
+                <a class="dropdown-item" href="https://support.torproject.org/ro/tbb/how-to-verify-signature/">Română (ro)</a>
+              
+            
+              
+                <a class="dropdown-item" href="https://support.torproject.org/ru/tbb/how-to-verify-signature/">Русский (ru)</a>
+              
+            
+              
+                <a class="dropdown-item" href="https://support.torproject.org/sw/tbb/how-to-verify-signature/">Kiswahili (sw)</a>
+              
+            
+              
+                <a class="dropdown-item" href="https://support.torproject.org/tr/tbb/how-to-verify-signature/">Türkçe (tr)</a>
+              
+            
+              
+                <a class="dropdown-item" href="https://support.torproject.org/uk/tbb/how-to-verify-signature/">українська (uk)</a>
+              
+            
+              
+                <a class="dropdown-item" href="https://support.torproject.org/vi/tbb/how-to-verify-signature/">Tiếng Việt (vi)</a>
+              
+            
+              
+            
+              
+                <a class="dropdown-item" href="https://support.torproject.org/zh-TW/tbb/how-to-verify-signature/">正體中文 (zh-TW)</a>
+              
+            
+          </div>
+        </div>
+      
+      
+      <div class="pull-right">
+        
+          <a class="btn btn-outline-light pull-right" href="https://www.torproject.org/download/">
+        
+          下载 Tor 浏览器<i class="ml-2 pt-1 fas fa-arrow-down"></i>
+        </a>
+      </div>
+    </div></nav>
+</div>
+  </header>
+  <div class="page">
+    <div class="jumbotron jumbotron-fluid bg-primary text-white mb-md-5">
+      <div class="container-fluid text-center">
+        
+        <h1 class="display-4 no-border font-weight-light pt-5 pb-4">我该如何验证 Tor 浏览器的签名？</h1>
+        
+        <div class="row">
+  <form class="form-inline form-wide justify-content-md-center" id="searchForm" action="https://duckduckgo.com/" method="GET">
+    <div class="col-md-5">
+      <div class="col-12 input-group p-0">
+	      <input id="q" class="form-control form-wide rounded-left border-0" type="text" name="q" placeholder="使用 DuckDuckGo 搜索 ..." aria-label="搜索">
+        <input type="hidden" name="sites" value="support.torproject.org">
+        <span class="input-group-btn">
+          <button class="btn btn-light" type="submit"><span class="fa fa-magnifying-glass text-secondary"></span></button>
+        </span>
+      </div>
+    </div>
+  </form>
+</div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="container-fluid sidebar col-xs-12 col-sm-12 col-md-3 col-lg-3">
+  <nav class="smalltopics no-background navbar navbar-expand-lg navbar-light bg-white p-0 fixed">
+    <a class="text-primary bg-white font-weight-bold navbar-brand" href="#collapseTopicsNav">
+	主题
+    </a>
+    <label class="side-toggler" for="menu-toggle">
+      <a class="btn btn-lg outline-primary text-primary navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarSupportedTopicsContent" aria-controls="navbarSupportedTopicsContent" aria-expanded="false" aria-label="Toggle navigation">
+      	<i class="fas"></i>
+      </a>
+    </label>
+    <input type="checkbox" id="menu-toggle">
+
+    <div class="collapse navbar-collapse burger-menu" id="navbarSupportedTopicsContent">
+      <ul class="nav nav-pills flex-column">
+	
+	
+	<li class="toc-entry toc-h2 nav-item">
+    
+    
+    
+    <a role="button" class="side-nav" href="https://support.torproject.org/zh-CN/faq">最常见问题 </a>
+	</li>
+
+	
+	<li class="toc-entry toc-h2 nav-item">
+    
+    
+    
+    <a role="button" class="side-nav" href="https://support.torproject.org/zh-CN/about">关于 Tor </a>
+	</li>
+
+	
+	<li class="toc-entry toc-h2 active nav-item">
+    
+    
+    
+    <a role="button" class="side-nav active" href="https://support.torproject.org/zh-CN/tbb/">Tor 浏览器 </a>
+	</li>
+
+	
+	<li class="toc-entry toc-h2 nav-item">
+    
+    
+    
+    <a role="button" class="side-nav" href="https://support.torproject.org/zh-CN/tormobile">移动版 Tor </a>
+	</li>
+
+	
+	<li class="toc-entry toc-h2 nav-item">
+    
+    
+    
+    <a role="button" class="side-nav" href="https://support.torproject.org/zh-CN/connecting">连接 Tor </a>
+	</li>
+
+	
+	<li class="toc-entry toc-h2 nav-item">
+    
+    
+    
+    <a role="button" class="side-nav" href="https://support.torproject.org/zh-CN/censorship">审查 </a>
+	</li>
+
+	
+	<li class="toc-entry toc-h2 nav-item">
+    
+    
+    
+    <a role="button" class="side-nav" href="https://support.torproject.org/zh-CN/https">HTTPS </a>
+	</li>
+
+	
+	<li class="toc-entry toc-h2 nav-item">
+    
+    
+    
+    <a role="button" class="side-nav" href="https://support.torproject.org/zh-CN/relay-operators">中继运营者 </a>
+	</li>
+
+	
+	<li class="toc-entry toc-h2 nav-item">
+    
+    
+    
+    <a role="button" class="side-nav" href="https://support.torproject.org/zh-CN/onionservices">洋葱服务 </a>
+	</li>
+
+	
+	<li class="toc-entry toc-h2 nav-item">
+    
+    
+    
+    <a role="button" class="side-nav" href="https://support.torproject.org/zh-CN/metrics">Tor Metrics </a>
+	</li>
+
+	
+	<li class="toc-entry toc-h2 nav-item">
+    
+    
+    
+    <a role="button" class="side-nav" href="https://support.torproject.org/zh-CN/apt">Debian 仓库 </a>
+	</li>
+
+	
+	<li class="toc-entry toc-h2 nav-item">
+    
+    
+    
+    <a role="button" class="side-nav" href="https://support.torproject.org/zh-CN/rpm">RPM 仓库 </a>
+	</li>
+
+	
+	<li class="toc-entry toc-h2 nav-item">
+    
+    
+    
+    <a role="button" class="side-nav" href="https://support.torproject.org/zh-CN/misc">其他 </a>
+	</li>
+
+	
+	<li class="toc-entry toc-h2 nav-item">
+    
+    
+    
+    <a role="button" class="side-nav" href="https://support.torproject.org/zh-CN/abuse">滥用的常见问题 </a>
+	</li>
+
+	
+	<li class="toc-entry toc-h2 nav-item">
+    
+    
+    
+    <a role="button" class="side-nav" href="https://support.torproject.org/zh-CN/get-in-touch">保持联系 </a>
+	</li>
+
+	
+	<li class="toc-entry toc-h2 nav-item">
+    
+    
+    
+    <a role="button" class="side-nav" href="https://support.torproject.org/zh-CN/glossary">术语表 </a>
+	</li>
+
+	
+	<li class="toc-entry toc-h2 nav-item">
+    
+    
+    
+    <a role="button" class="side-nav" href="https://support.torproject.org/zh-CN/alternate-designs">其他设计 </a>
+	</li>
+
+	
+	<li class="toc-entry toc-h2 nav-item">
+    
+    
+    
+    <a role="button" class="side-nav" href="https://support.torproject.org/zh-CN/little-t-tor">Little-t-tor </a>
+	</li>
+
+	
+	<li class="toc-entry toc-h2 nav-item">
+    
+    
+    
+    <a role="button" class="side-nav" href="https://support.torproject.org/zh-CN/mullvad-browser">Mullvad 浏览器 </a>
+	</li>
+
+	
+    </ul>
+    </div>
+    <hr class="mb-0">
+  </nav>
+
+
+  <nav class="d-none d-sm-block section-nav bg-white sidetopics sticky text-left" id="sidenav-topics">
+          <h4 class="text-primary pl-4">主题</h4>
+    <ul class="nav nav-pills flex-column">
+      
+      
+      <li class="toc-entry toc-h2 nav-item">
+      
+      
+      
+        <a role="button" class="nav-link" href="https://support.torproject.org/zh-CN/faq">最常见问题</a>
+      </li>
+
+      
+      <li class="toc-entry toc-h2 nav-item">
+      
+      
+      
+        <a role="button" class="nav-link" href="https://support.torproject.org/zh-CN/about">关于 Tor</a>
+      </li>
+
+      
+      <li class="toc-entry toc-h2 active nav-item">
+      
+      
+      
+        <a role="button" class="nav-link active" href="https://support.torproject.org/zh-CN/tbb/">Tor 浏览器</a>
+      </li>
+
+      
+      <li class="toc-entry toc-h2 nav-item">
+      
+      
+      
+        <a role="button" class="nav-link" href="https://support.torproject.org/zh-CN/tormobile">移动版 Tor</a>
+      </li>
+
+      
+      <li class="toc-entry toc-h2 nav-item">
+      
+      
+      
+        <a role="button" class="nav-link" href="https://support.torproject.org/zh-CN/connecting">连接 Tor</a>
+      </li>
+
+      
+      <li class="toc-entry toc-h2 nav-item">
+      
+      
+      
+        <a role="button" class="nav-link" href="https://support.torproject.org/zh-CN/censorship">审查</a>
+      </li>
+
+      
+      <li class="toc-entry toc-h2 nav-item">
+      
+      
+      
+        <a role="button" class="nav-link" href="https://support.torproject.org/zh-CN/https">HTTPS</a>
+      </li>
+
+      
+      <li class="toc-entry toc-h2 nav-item">
+      
+      
+      
+        <a role="button" class="nav-link" href="https://support.torproject.org/zh-CN/relay-operators">中继运营者</a>
+      </li>
+
+      
+      <li class="toc-entry toc-h2 nav-item">
+      
+      
+      
+        <a role="button" class="nav-link" href="https://support.torproject.org/zh-CN/onionservices">洋葱服务</a>
+      </li>
+
+      
+      <li class="toc-entry toc-h2 nav-item">
+      
+      
+      
+        <a role="button" class="nav-link" href="https://support.torproject.org/zh-CN/metrics">Tor Metrics</a>
+      </li>
+
+      
+      <li class="toc-entry toc-h2 nav-item">
+      
+      
+      
+        <a role="button" class="nav-link" href="https://support.torproject.org/zh-CN/apt">Debian 仓库</a>
+      </li>
+
+      
+      <li class="toc-entry toc-h2 nav-item">
+      
+      
+      
+        <a role="button" class="nav-link" href="https://support.torproject.org/zh-CN/rpm">RPM 仓库</a>
+      </li>
+
+      
+      <li class="toc-entry toc-h2 nav-item">
+      
+      
+      
+        <a role="button" class="nav-link" href="https://support.torproject.org/zh-CN/misc">其他</a>
+      </li>
+
+      
+      <li class="toc-entry toc-h2 nav-item">
+      
+      
+      
+        <a role="button" class="nav-link" href="https://support.torproject.org/zh-CN/abuse">滥用的常见问题</a>
+      </li>
+
+      
+      <li class="toc-entry toc-h2 nav-item">
+      
+      
+      
+        <a role="button" class="nav-link" href="https://support.torproject.org/zh-CN/get-in-touch">保持联系</a>
+      </li>
+
+      
+      <li class="toc-entry toc-h2 nav-item">
+      
+      
+      
+        <a role="button" class="nav-link" href="https://support.torproject.org/zh-CN/glossary">术语表</a>
+      </li>
+
+      
+      <li class="toc-entry toc-h2 nav-item">
+      
+      
+      
+        <a role="button" class="nav-link" href="https://support.torproject.org/zh-CN/alternate-designs">其他设计</a>
+      </li>
+
+      
+      <li class="toc-entry toc-h2 nav-item">
+      
+      
+      
+        <a role="button" class="nav-link" href="https://support.torproject.org/zh-CN/little-t-tor">Little-t-tor</a>
+      </li>
+
+      
+      <li class="toc-entry toc-h2 nav-item">
+      
+      
+      
+        <a role="button" class="nav-link" href="https://support.torproject.org/zh-CN/mullvad-browser">Mullvad 浏览器</a>
+      </li>
+
+      
+    </ul>
+
+
+    <div class="card-body text-center border w-50 ml-4">
+        <h4 class="text-primary">保持联系</h4>
+        <i class="fas fa-comments h1 text-primary mx-auto"></i>
+        <div class=" pt-2" style="text-align: center;">
+          <p class="toc-entry toc-h2 nav-item mb-0">来和我们现场交流！</p>
+          <a href="https://webchat.oftc.net/?channels=tor" target="_blank" class="pt-1">加入我们的 IRC 频道</a>
+        </div>
+    </div>
+
+  </nav>
+
+
+
+</div>
+        
+        <main role="main" class="col-sm-12 col-xs-12  ml-sm-auto col-md-9 col-lg-9  order-last text-left">
+          <div class="d-flex justify-content-end" style="gap: 0.5em;">
+            
+	    <button class="btn btn-primary" id="expand-btn" data-toggle="collapse" data-target=".expand" aria-expanded="false" onclick="change(event)">折叠</button>
+          </div>
+          
+  
+<div class="question text-left">
+  <h4 class="text-primary">
+    <a data-toggle="collapse" href="#topic_how-to-verify-signature" data-target="#topic_how-to-verify-signature" role="button" aria-expanded="false" aria-controls="topic_how-to-verify-signature">
+      我该如何验证 Tor 浏览器的签名？
+    </a>
+  </h4>
+  <div id="topic_how-to-verify-signature" class="collapse show anchor-spacer expand" role="tabpanel">
+    <p>数字签名用于确保某个程序包有其开发者生产并且没有被篡改。
+下面我们将解释为什么这十分重要，以及如何验证你所下载的 Tor 浏览器是由我们创建的，而不是被某些攻击者所修改过的。</p>
+<p>我们的<a href="https://www.torproject.org/download/">下载页面</a>上的每个文件都附有一个标有 “签名”的文件，其名称与软件包相同，扩展名为".asc"。这些 .asc 文件是它们的 OpenPGP 签名。
+这些数字签名文件用于验证下载文件是否为我们希望你获取的文件。
+这将由浏览器决定，但一般来说，你可以通过右键单击“签名”链接并选择“文件另存为”选项来下载该文件。</p>
+<p>例如，“torbrowser-install-win64-12.5_ALL.exe”对应的是“torbrowser-install-win64-12.5_ALL.exe.asc”。
+这些是示例文件名，并下载文件不会完全相同。</p>
+<p>下面将解释如何在不同的操作系统上验证下载文件的数字签名。
+请注意，数字签名的日期指对程序包进行签名的时间。
+因此，每次新文件上传时，将生产新的签名，并且日期不同。
+只要你验证了签名，不必担心报告的日期可能有所不同。</p>
+<h3>安装 GnuPG</h3>
+<p>首先，验证签名之前，你需要安装 GnuPG。</p>
+<h4>对于 Windows 的用户：</h4>
+<p>如果使用 Windows，请<a href="https://gpg4win.org/download.html">下载 Gpg4win</a> 并运行安装包。</p>
+<p>为了验证签名，你需要在 Windows 命令行（<code>cmd.exe</code>）中输入一些命令。</p>
+<h4>对于 macOS 的用户：</h4>
+<p>如果使用 macOS，你可以<a href="https://gpgtools.org/">安装 GPGTools</a>。</p>
+<p>为了验证签名，你需要在终端（位于“应用程序”下）中输入一些命令。</p>
+<h4>对于 GNU/Linux 的用户：</h4>
+<p>如果使用 GNU/Linux，那么系统大概已安装 GnuPG，因为大多数 Linux 发行版都预装了该软件。</p>
+<p>为了验证签名，你需要在终端窗口中输入一些命令。如何进行此操作将取决于你的发行版。</p>
+<h3>提取 Tor 开发者密钥</h3>
+<p>Tor 浏览器团队已经为 Tor 浏览器发行版签名。
+导入 Tor 浏览器开发者的签名密钥（0xEF6E286DDA85EA2A4BA7DE684E2C6E8793298290）：</p>
+<pre><code>gpg --auto-key-locate nodefault,wkd --locate-keys torbrowser@torproject.org
+</code></pre>
+<p>这将显示如下类似内容：</p>
+<pre><code>gpg: key 4E2C6E8793298290: public key "Tor Browser Developers (signing key) &lt;torbrowser@torproject.org&gt;" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+pub   rsa4096 2014-12-15 [C] [expires: 2025-07-21]
+      EF6E286DDA85EA2A4BA7DE684E2C6E8793298290
+uid           [ unknown] Tor Browser Developers (signing key) &lt;torbrowser@torproject.org&gt;
+sub   rsa4096 2018-05-26 [S] [expires: 2020-12-19]
+</code></pre>
+<p>如果你收到了一个错误信息，就说明出了问题，你不能继续操作，直到你弄清楚为什么会出现错误。也许你可以参照<strong>解决方法（使用公钥）</strong>部分来导入密钥。</p>
+<p>导入密钥后，你可以将其保存到文件中（此处提供其指纹来指定）：</p>
+<pre><code>gpg --output ./tor.keyring --export 0xEF6E286DDA85EA2A4BA7DE684E2C6E8793298290
+</code></pre>
+<p>该命令将密钥保存在路径为<code>./tor.keyring</code>的文件中，即当前目录。 
+如果运行这个命令后 <code>./tor.keyring</code>不存在，就说明出了问题，不能继续操作，直到你弄清楚为什么出现错误。</p>
+<h3>验证签名</h3>
+<p>为了验证下载的软件包签名，除了下载安装程序文件本身，还需要下载相应的“.asc”签名文件，并使用 GnuPG 命令来验证下载的文件。</p>
+<p>以下示例假设已在“Downloads”文件中下载这两个文件。
+请注意，这些命令使用示例文件名，而实际文件名是不同的：你下载的版本与 9.0 不同，并且没有选择英文（en-US）版本。</p>
+<h4>对于 Windows 的用户：</h4>
+<pre><code>gpgv --keyring .\tor.keyring Downloads\torbrowser-install-win64-12.5_ALL.exe.asc Downloads\torbrowser-install-win64-12.5_ALL.exe
+</code></pre>
+<h4>对于 macOS 的用户：</h4>
+<pre><code>gpgv --keyring ./tor.keyring ~/Downloads/TorBrowser-12.5-macos_ALL.dmg.asc ~/Downloads/TorBrowser-12.5-macos_ALL.dmg.dmg
+</code></pre>
+<h4>对于 GNU/Linux 的用户（如果使用 32-bit 软件包，请将 64 改为 32）：</h4>
+<pre><code>gpgv --keyring ./tor.keyring ~/Downloads/tor-browser-linux64-12.5_ALL.tar.xz.asc ~/Downloads/tor-browser-linux64-12.0.7_ALL.tar.xz
+</code></pre>
+<p>命令的结果应该包含：</p>
+<pre><code>gpgv: Good signature from "Tor Browser Developers (signing key) &lt;torbrowser@torproject.org&gt;"
+</code></pre>
+<p>如果错误消息含有“No such file or directory”，上述某个步骤出错，或者未更改命令中的示例文件名。</p>
+<h4>刷新 PGP 密钥</h4>
+<p>运行以下的命令，可从密钥服务器上刷新本地密钥环中 Tor 浏览器开发者的签名密钥。同时将获取新的子密钥。</p>
+<pre><code>gpg --refresh-keys EF6E286DDA85EA2A4BA7DE684E2C6E8793298290
+</code></pre>
+<h4>解决方法（使用公钥）</h4>
+<p>如果你遇到了无法解决的问题，不妨<a href="https://openpgpkey.torproject.org/.well-known/openpgpkey/torproject.org/hu/kounek7zrdx745qydx6p59t9mqjpuhdf">下载并使用这个公钥</a>来代替。或者，你还可以使用以下指令：</p>
+<pre><code>curl -s https://openpgpkey.torproject.org/.well-known/openpgpkey/torproject.org/hu/kounek7zrdx745qydx6p59t9mqjpuhdf |gpg --import -
+</code></pre>
+<p>Tor 浏览器开发者密钥也可在 <a href="https://keys.openpgp.org/">keys.openpgp.org</a> 上找到，并可从 <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/EF6E286DDA85EA2A4BA7DE684E2C6E8793298290">https://keys.openpgp.org/vks/v1/by-fingerprint/EF6E286DDA85EA2A4BA7DE684E2C6E8793298290</a> 下载。
+如果正在使用 macOS 或 GNU/Linux，你也可以通过运行以下命令获取密钥：</p>
+<pre><code>gpg --keyserver keys.openpgp.org --search-keys EF6E286DDA85EA2A4BA7DE684E2C6E8793298290
+</code></pre>
+<p>另外，你可能想要<a href="https://www.gnupg.org/documentation/">了解更多 GnuPG 信息</a>。</p>
+
+
+    
+    <div class="card mt-5">
+      <ul class="list-group list-group-flush">
+         <!--li class="list-group-item"><a><span class="card-text text-muted">该页面的贡献者： <a href="#" title="#">cypherpunk</a></span></li-->
+         <li class="list-group-item">
+           
+           <a href="https://gitlab.torproject.org/tpo/web/support/-/edit/main/content/tbb/how-to-verify-signature/contents.lr">编辑此页面</a> -
+           <a href="https://support.torproject.org/misc/bug-or-feedback/">建议和反馈</a> -
+           <a href="https://support.torproject.org/zh-CN/tbb/how-to-verify-signature/">固定链接</a>
+          </li>
+       </ul>
+    </div>
+  </div>
+</div>
+
+
+        </main>
+      </div>
+    </div>
+  </div>
+  
+
+<div class="container-fluid bg-dark footer order-last text-left">
+
+  
+
+  <div class="row">
+      <div class="col-4 d-flex onion-pattern">
+          <img src="%E6%88%91%E8%AF%A5%E5%A6%82%E4%BD%95%E9%AA%8C%E8%AF%81%20Tor%20%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E7%AD%BE%E5%90%8D%EF%BC%9F%20Tor%20Project%20%E6%94%AF%E6%8C%81_files/circle-pattern.svg" class="img-svg">
+    </div>
+    <div class="col-sm-8 d-flex download-section mt-auto">
+      <div class="container pb-2 justify-content-right">
+         <h2 class="text-white text-bold">下载 Tor 浏览器</h2>
+         <p class="text-white">下载 Tor 浏览器，没有跟踪、监视或审查，真正的隐私浏览体验。</p><a class="btn text-primary bg-white btn-light pull-right mt-2" href="https://www.torproject.org/download/">
+          下载 Tor 浏览器<i class="ml-2 pt-1 fas fa-arrow-down-png-purple"></i>
+         </a>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div class="col-sm-6 offset-lx-1 offset-sm-0 mt-5">
+	        <h5 class="font-weight-bold mt-5 text-white">我们的使命：</h5>
+          <p class="text-white mb-5">开发并部署自由开源的匿名隐私技术，为其不受限制的可用性和使用提供支持，提升学术界和公众对它的理解和认知，从而促进人权和自由的发展。</p>
+      </div>
+      <div class="col-sm-2 mt-5 d-none d-sm-block">
+        <ul class="nav flex-column mt-sm-5">
+          
+          
+          <li class="nav-item">
+          
+          
+            
+            
+              <a class="nav-link text-light" href="https://www.torproject.org/zh-CN/about/jobs/">
+            
+          
+              工作
+              
+            </a>
+          </li>
+          
+          <li class="nav-item">
+          
+          
+            
+            
+              <a class="nav-link text-light" href="https://blog.torproject.org/">
+            
+          
+              博客
+              
+            </a>
+          </li>
+          
+          <li class="nav-item">
+          
+          
+            
+            
+              <a class="nav-link text-light" href="https://www.torproject.org/zh-CN/contact/">
+            
+          
+              联系我们
+              
+            </a>
+          </li>
+          
+          <li class="nav-item">
+          
+          
+            
+            
+              <a class="nav-link text-light" href="https://www.torproject.org/zh-CN/press/">
+            
+          
+              媒体评论
+              
+            </a>
+          </li>
+          
+          <li class="nav-item">
+          
+          
+            
+            
+              <a class="nav-link text-light" href="https://www.torproject.org/privchat">
+            
+          
+              PrivChat
+              
+            </a>
+          </li>
+          
+        </ul>
+        
+        
+        
+          <a href="https://donate.torproject.org/" title="捐赠"><h5><span class="badge badge-warning p-2 mt-2">立即捐赠</span></h5></a>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div class="col-sm-6 offset-lx-1 offset-sm-0 mt-5">
+        <p class="text-primary-light text-uppercase">订阅新闻简报</p>
+        <p class="text-light">获取 Tor Project 每月更新和工作机会的消息：</p>
+        <p class="w"><a class="btn btn-small btn-dark mt-2 text-white text-uppercase active" role="button" aria-pressed="true" href="https://newsletter.torproject.org/">订阅</a></p>
+      </div>
+      <div class="col-sm-2 mt-5 d-none d-sm-block">
+        <div class="row">
+          <h4><a class="text-white px-3" target="_blank" href="https://forum.torproject.org/"><i class="fab fa-discourse"></i></a></h4>
+          <h4><a class="text-white px-3" target="_blank" href="https://www.facebook.com/TorProject/"><i class="fab fa-facebook"></i></a></h4>
+          <h4><a class="mastodon text-white px-3" target="_blank" href="https://mastodon.social/@torproject" rel="me"><i class="fab fa-mastodon"></i></a></h4>
+        </div>
+        <div class="row">
+          <h4><a class="instagram text-white px-3" target="_blank" href="https://www.instagram.com/torproject"><i class="fab fa-instagram"></i></a></h4>
+          <h4><a class="twitter text-white px-3" target="_blank" href="https://twitter.com/torproject"><i class="fab fa-twitter"></i></a></h4>
+          <h4><a class="linkedin text-white px-3" target="_blank" href="https://www.linkedin.com/company/tor-project"><i class="fab fa-linkedin"></i></a></h4>
+        </div>
+        <div class="row">
+          <h4><a class="github text-white px-3" target="_blank" href="https://github.com/torproject"><i class="fab fa-github"></i></a></h4>
+          <h4><a class="telegram text-white px-3" target="_blank" href="https://t.me/torproject"><i class="fab fa-telegram"></i></a></h4>
+          <h4><a class="gitlab text-white px-3" target="_blank" href="https://gitlab.torproject.org/"><i class="fab fa-gitlab"></i></a></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div class="col-8 mt-5">
+        
+        <p class="text-primary text-light">商标、版权声明以及第三方使用规则，可在 
+  <a href="https://www.torproject.org/about/trademark/" target="_blank" class="text-primary text-light"><u>FAQ</u></a>
+ 查找。</p>
+      </div>
+      <div class="col-sm-2 mt-5 d-none d-sm-block">
+        <div class="btn-group dropup float-right">
+      	  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            简体中文 (zh-CN)
+      	  </button>
+      	  <div class="dropdown-menu">
+            
+              
+    	          <a class="dropdown-item" href="https://support.torproject.org/tbb/how-to-verify-signature/">English (en)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="https://support.torproject.org/ar/tbb/how-to-verify-signature/">ﻉﺮﺒﻳﺓ (ar)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="https://support.torproject.org/de/tbb/how-to-verify-signature/">Deutsch (de)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="https://support.torproject.org/es/tbb/how-to-verify-signature/">Español (es)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="https://support.torproject.org/fa/tbb/how-to-verify-signature/">فارسی (fa)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="https://support.torproject.org/fr/tbb/how-to-verify-signature/">Français (fr)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="https://support.torproject.org/id/tbb/how-to-verify-signature/">Indonesia (id)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="https://support.torproject.org/it/tbb/how-to-verify-signature/">Italiano (it)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="https://support.torproject.org/ko/tbb/how-to-verify-signature/">한국어(ko)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="https://support.torproject.org/pt-BR/tbb/how-to-verify-signature/">Português Br. (pt-BR)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="https://support.torproject.org/ro/tbb/how-to-verify-signature/">Română (ro)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="https://support.torproject.org/ru/tbb/how-to-verify-signature/">Русский (ru)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="https://support.torproject.org/sw/tbb/how-to-verify-signature/">Kiswahili (sw)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="https://support.torproject.org/tr/tbb/how-to-verify-signature/">Türkçe (tr)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="https://support.torproject.org/uk/tbb/how-to-verify-signature/">українська (uk)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="https://support.torproject.org/vi/tbb/how-to-verify-signature/">Tiếng Việt (vi)</a>
+              
+            
+              
+            
+              
+    	          <a class="dropdown-item" href="https://support.torproject.org/zh-TW/tbb/how-to-verify-signature/">正體中文 (zh-TW)</a>
+              
+            
+        	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="%E6%88%91%E8%AF%A5%E5%A6%82%E4%BD%95%E9%AA%8C%E8%AF%81%20Tor%20%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E7%AD%BE%E5%90%8D%EF%BC%9F%20Tor%20Project%20%E6%94%AF%E6%8C%81_files/jquery-3.2.1.min.js"></script>
+  <script src="%E6%88%91%E8%AF%A5%E5%A6%82%E4%BD%95%E9%AA%8C%E8%AF%81%20Tor%20%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E7%AD%BE%E5%90%8D%EF%BC%9F%20Tor%20Project%20%E6%94%AF%E6%8C%81_files/popper.min.js"></script>
+  <script src="%E6%88%91%E8%AF%A5%E5%A6%82%E4%BD%95%E9%AA%8C%E8%AF%81%20Tor%20%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E7%AD%BE%E5%90%8D%EF%BC%9F%20Tor%20Project%20%E6%94%AF%E6%8C%81_files/bootstrap.bundle.min.js"></script>
+  <script src="%E6%88%91%E8%AF%A5%E5%A6%82%E4%BD%95%E9%AA%8C%E8%AF%81%20Tor%20%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E7%AD%BE%E5%90%8D%EF%BC%9F%20Tor%20Project%20%E6%94%AF%E6%8C%81_files/scrollspy.min.js"></script>
+  <script src="%E6%88%91%E8%AF%A5%E5%A6%82%E4%BD%95%E9%AA%8C%E8%AF%81%20Tor%20%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E7%AD%BE%E5%90%8D%EF%BC%9F%20Tor%20Project%20%E6%94%AF%E6%8C%81_files/modernizr.js"></script>
+  <script src="%E6%88%91%E8%AF%A5%E5%A6%82%E4%BD%95%E9%AA%8C%E8%AF%81%20Tor%20%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E7%AD%BE%E5%90%8D%EF%BC%9F%20Tor%20Project%20%E6%94%AF%E6%8C%81_files/download.js"></script>
+  <script src="%E6%88%91%E8%AF%A5%E5%A6%82%E4%BD%95%E9%AA%8C%E8%AF%81%20Tor%20%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E7%AD%BE%E5%90%8D%EF%BC%9F%20Tor%20Project%20%E6%94%AF%E6%8C%81_files/fallback.js"></script>
+  </div>
+
+
+
+
+
+</body></html>

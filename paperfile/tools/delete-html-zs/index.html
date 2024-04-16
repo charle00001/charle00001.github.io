@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <title>一键去除HTML注释 | Charle00001`s Blog</title>
+    <meta name="keywords" content="HTML, JS, JavaScript, CSS, 去除注释, 批量删除注释, HTML批量删除注释, 删除全部注释, 一键删除注释, 一键去除注释, HTML去除注释">
+    <style>
+        /* 设置网页的样式 */
+        body {
+            font-family: Arial, sans-serif; /* 设置字体 */
+            margin: 20px; /* 设置外边距 */
+        }
+        textarea {
+            width: 45%; /* 设置输入框和输出框的宽度，原来是280px，现在改为百分比 */
+            height: 300px; /* 设置输入框和输出框的高度 */
+            font-size: 14px; /* 设置字体大小 */
+            border: 2px solid #ccc; /* 设置边框 */
+            padding: 10px; /* 设置内边距 */
+            resize: none; /* 禁止调整大小 */
+        }
+        button {
+            width: 200px; /* 设置按钮的宽度，原来是100px */
+            height: 80px; /* 设置按钮的高度，原来是40px */
+            font-size: 16px; /* 设置字体大小 */
+            color: #fff; /* 设置字体颜色 */
+            border: none; /* 去除边框 */
+            cursor: pointer; /* 设置鼠标指针为手形 */
+            margin: 20px; /* 设置按钮的上下左右边距，原来只有上边距 */
+            transition: transform 0.3s; /* 添加平滑的变换效果 */
+        }
+        /* 鼠标悬停时的样式 */
+        button:hover {
+            transform: scale(1.25); /* 缩放效果，原来没有 */
+        }
+        h1 {
+            text-align: center; /* 设置标题居中对齐 */
+        }
+        /* 新增一个容器元素，用于布局 */
+        .container {
+            display: flex; /* 设置为弹性盒子布局 */
+            justify-content: space-between; /* 设置两个框之间有一定的间距 */
+        }
+        /* 新增一个按钮组元素，用于布局 */
+        .button-group {
+            display: flex; /* 设置为弹性盒子布局 */
+            justify-content: center; /* 设置按钮居中对齐 */
+        }
+        /* 设置第一个按钮的背景颜色，原来是#5390fe */
+        #button1 {
+            background-color: #5390fe;
+        }
+        /* 设置第二个按钮的背景颜色，原来是#fca */
+        #button2 {
+            background-color: #fca;
+        }
+        /* 设置第三个按钮的背景颜色，原来没有 */
+        #button3 {
+            background-color: #9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML|JavaScript|CSS|注释去除器</h1>
+    <br>
+    <p>这里是一些html代码（new bing生成的），里面包括了js和css，而且还有很多注释。你可以将这些代码粘贴入这个工具，看看它的效果。链接：<a href="/paperfile/test/">在这里</a></p>
+    <!-- 修改了HTML结构，将两个框放在一个容器元素中 -->
+    <div class="container">
+        <textarea id="input" placeholder="请在下面的输入框中输入HTML代码（其中可以包含CSS和JavaScript）"></textarea>
+        <textarea id="output" placeholder="在这里看到去除了注释后的代码" readonly></textarea>
+    </div>
+    <!-- 修改了HTML结构，将三个按钮放在一个按钮组元素中 -->
+    <div class="button-group">
+        <!-- 给第一个按钮添加了一个id属性，用于区分 -->
+        <button id="button1">去除注释</button>
+        <!-- 给第二个按钮添加了一个id属性，用于区分 -->
+        <button id="button2">复制输出</button>
+        <!-- 新增了第三个按钮，也添加了一个id属性，用于区分 -->
+        <button id="button3">重置内容</button>
+    </div>
+    <script>
+        // 获取元素
+        var input = document.getElementById('input');
+        var button1 = document.getElementById('button1');
+        var button2 = document.getElementById('button2');
+        var button3 = document.getElementById('button3');
+        var output = document.getElementById('output');
+        // 添加第一个按钮点击事件监听器
+        button1.addEventListener('click', function() {
+            // 获取输入框的内容
+            var code = input.value;
+            // 去除注释的正则表达式，增加了HTML注释的匹配
+            var regex = /\/\*[\s\S]*?\*\/|\/\/.*$|<!--[\s\S]*?-->/gm;
+            // 使用正则表达式替换注释为空字符串
+            var result = code.replace(regex, '');
+            // 去除空行的正则表达式
+            var regex2 = /^\s*\n/gm;
+            // 使用正则表达式替换空行为空字符串
+            var result2 = result.replace(regex2, '');
+            // 将结果显示在输出框中
+            output.value = result2;
+        });
+        // 添加第二个按钮点击事件监听器，新增了复制输出的功能
+        button2.addEventListener('click', function() {
+            // 获取输出框的内容
+            var code = output.value;
+            // 创建一个临时的输入框，用于复制
+            var temp = document.createElement('textarea');
+            // 将输出框的内容赋值给临时输入框
+            temp.value = code;
+            // 将临时输入框添加到文档中
+            document.body.appendChild(temp);
+            // 选中临时输入框的内容
+            temp.select();
+            // 复制临时输入框的内容到剪贴板
+            document.execCommand('copy');
+            // 从文档中移除临时输入框
+            document.body.removeChild(temp);
+            // 弹出一个提示框，告诉用户已经复制成功
+            alert('已复制输出到剪贴板');
+        });
+        // 添加第三个按钮点击事件监听器，新增了重置内容的功能
+        button3.addEventListener('click', function() {
+            // 清空输入框和输出框的内容
+            input.value = '';
+            output.value = '';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+﻿<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="initial-scale=1">
+	<meta name="keywords" content="扫雷, HTML游戏, 扫雷游戏, Windows经典游戏, 休闲游戏, 扫雷玩法, 挑战游戏, Windows娱乐, Minesweeper">
+	<meta name="description" content="经典扫雷游戏">
+	<title>扫雷游戏网页版</title>
+
+	<style>
+		input {
+			height: 1.5rem;
+			font-size: 1.1rem;
+			width: 4rem;
+		}
+
+		#face {
+			border: 2px solid #808080;
+			border-left-color: #fff;
+			border-top-color: #fff;
+			width: 21px;
+			height: 21px;
+		}
+
+		#face:active {
+			border: 2px solid #808080;
+			border-bottom: 1px solid #808080;
+			border-right: 1px solid #808080;
+
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		.pad {
+			border: 2px solid #808080;
+			border-right-color: #fff;
+			border-bottom-color: #fff;
+		}
+	</style>
+	<base target="_top">
+</head>
+
+<body bgcolor="f7f7f0" style="margin:0;" onload="start()">
+	<center>
+
+		<div style="margin-top:0.8rem;">
+			<b>在线扫雷游戏</b> <small>→<a href="about.html">说明</a></small>
+		</div>
+
+		<div style="margin-top:0.8rem;">
+			<a href="javascript:_123(1)">基础</a>
+			&nbsp;
+			<a href="javascript:_123(2)">中级</a>
+			&nbsp;
+			<a href="javascript:_123(3)">专家</a>
+			&nbsp;
+			<a href="javascript:_123(4)">满屏</a>
+			&nbsp;
+			<a href="javascript:_123(5)">自定义</a>
+		</div>
+		<div id="custom" style="display:none">
+			横向：<input id="hm" type="number" value="40">
+			竖向：<input id="vm" type="number" value="24">
+			雷数：<input id="mm" type="number" value="199">
+			<input type="button" onclick="udf()" value="确定">
+		</div>
+		<table style="margin-top:0.8rem;border-radius:6px;background:#cccccc">
+			<tr>
+				<td style="padding:9px;">
+
+					<table id="p42" class="pad" style="height:34px">
+						<tr>
+							<td width="50%"><canvas id="rm" height="23" width="39"></canvas>
+								<!--img><img><img-->
+							</td>
+							<td align="center"><img onmouseup="_45()" id="face">
+							</td>
+							<td width="50%" align="right">
+								<canvas id="es" height="23" width="39"></canvas>
+								<!--img><img><img-->
+							</td>
+						</tr>
+					</table>
+					<!--table style="margin-top:6px;" class=pad id=paf></table-->
+					<canvas id="paf" class="pad" style="margin-top:6px;" width="0" height="0"></canvas>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+				</td>
+			</tr>
+		</table>
+		<div style="margin-top:2rem;">
+		</div>
+		<div id="zz" style="margin-top:4rem;">
+		</div>
+		<div style="margin-top:5rem;">
+			<br>
+			<span id="uid" style="color:#f7f7f0"></span>
+			<!--a href=setting.htm>改名</a-->
+		</div>
+		<script src="static/js/gfs.js"></script>
+		<script src="static/js/ms3.5.js"></script>
+		<script src="static/js/zz4.js"></script>
+	</center>
+	<script language="javascript" type="text/javascript" src="http://js.users.51.la/18759442.js"></script>
+	<div style="display: none">
+		<script type="text/javascript" src="https://s9.cnzz.com/z_stat.php?id=1279824854&web_id=1279824854"></script>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+{
+    "name": "relationship.js",
+    "version": "1.2.4",
+    "description": "Chinese kinship library",
+    "author": "HaoLe Zheng",
+    "license": "MIT",
+    "keywords": [
+        "relationship",
+        "relationship.js",
+        "chinese",
+        "family",
+        "kinship",
+        "家庭亲戚称谓",
+        "亲戚关系算法"
+    ],
+    "main": "./dist/relationship.min.js",
+    "module": "./dist/relationship.min.mjs",
+    "exports": {
+        "default": "./dist/relationship.min.js",
+        "import": "./dist/relationship.min.mjs"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mumuy/relationship.git"
+    },
+    "bugs": {
+        "url": "https://github.com/mumuy/relationship/issues"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.23.2",
+        "@babel/plugin-syntax-import-attributes": "^7.22.5",
+        "@babel/plugin-transform-class-properties": "^7.22.5",
+        "@babel/plugin-transform-runtime": "^7.23.2",
+        "@babel/preset-env": "^7.23.2",
+        "@babel/runtime": "^7.23.2",
+        "@rollup/plugin-babel": "^6.0.3",
+        "@rollup/plugin-node-resolve": "^15.1.0",
+        "@rollup/plugin-terser": "^0.4.1",
+        "acorn-import-assertions": "^1.9.0",
+        "rollup": "^3.26.3",
+        "rollup-plugin-import-assert": "^3.0.1",
+        "tape": "^5.6.3",
+        "gulp": "^4.0.2",
+        "gulp-cht": "^2.0.20",
+        "gulp-rename": "^2.0.0"
+    },
+    "scripts": {
+        "test": "node test/index.js",
+        "build": "rollup -c && gulp && npm run test",
+        "watch": "rollup -wc"
+    },
+    "homepage": "https://passer-by.com/relationship/",
+    "directories": {
+        "test": "test"
+    }
+}
